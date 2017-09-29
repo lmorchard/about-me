@@ -1,0 +1,5 @@
+dist/
+*.sw?
+*~
+node_modules/
+
