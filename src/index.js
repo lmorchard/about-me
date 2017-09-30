@@ -1,18 +1,16 @@
-import React from 'react';
-import { hydrate } from 'react-dom';
-
 import { AppContainer } from 'react-hot-loader';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './containers/App';
 
-const render = () => {
-  const App = require('./components/App').default;
-  hydrate(
-    <AppContainer><App /></AppContainer>,
-    document.getElementById('root')
+const rootEl = document.getElementById('root');
+const render = Component =>
+  ReactDOM.render(
+    <AppContainer>
+      <Component />
+    </AppContainer>,
+    rootEl
   );
-}
 
-render();
-
-if (module.hot) {
-  module.hot.accept('./components/App', render);
-}
+render(App);
+if (module.hot) module.hot.accept('./containers/App', () => render(App));

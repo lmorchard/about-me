@@ -1,5 +1,3 @@
-require('babel-register');
-
 const path = require('path');
 const webpack = require('webpack');
 
@@ -9,7 +7,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const createElement = require('react').createElement;
 const renderToString = require('react-dom/server').renderToString;
 
-const App = require('./src/components/App').default;
+// HACK: Ignore CSS imports used for dependencies in webpack
+require.extensions['.scss'] = require.extensions['.css'] = () => {};
+
+require('babel-register')({
+  "presets": [ "es2015", "stage-2", "react" ],
+  "plugins": [ "react-hot-loader/babel" ]
+});
+const App = require('./src/containers/App').default;
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
@@ -17,7 +22,39 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const IS_DEV = NODE_ENV === 'development';
 
 const config = module.exports = {
-  entry: {},
+  entry: {
+    index: ['./src/index.js']
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].js',
+  },
+  devtool: 'eval',
+  devServer: {
+    public: `${HOST}:${PORT}`,
+    port: PORT,
+    disableHostCheck: true,
+    contentBase: 'dist',
+    hot: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: IS_DEV
+          ? ['style-loader', 'css-loader', 'sass-loader']
+          : ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader'],
+          })
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
+  },
   plugins: [
     new ExtractTextPlugin({
       filename: '[name].css',
@@ -34,34 +71,6 @@ const config = module.exports = {
       body: renderToString(createElement(App))
     })
   ],
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
-  },
-  devtool: 'source-map',
-  devServer: {
-    public: `${HOST}:${PORT}`,
-    port: PORT,
-    disableHostCheck: true,
-    contentBase: 'dist',
-    hot: true
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader'],
-        }),
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: ['babel-loader']
-      }
-    ]
-  }
 };
 
 if (IS_DEV) {
@@ -69,17 +78,14 @@ if (IS_DEV) {
     'react-hot-loader/patch',
     `webpack-dev-server/client?http://${HOST}:${PORT}`,
     'webpack/hot/only-dev-server',
-    './src/index.js'
-  ];
+  ].concat(config.entry.index);
+
   config.plugins = config.plugins.concat([
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ]);
 } else {
-  config.entry.index = [
-    './src/index.js'
-  ];
   config.plugins = config.plugins.concat([
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,

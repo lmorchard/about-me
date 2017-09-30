@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Sub = () => (
-  <p>This is a subcomponent.</p>
+export const Sub = () => (
+  <div>
+    <p>This is a subcomponent.</p>
+  </div>
 );
 
 export default Sub;
