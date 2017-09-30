@@ -11,7 +11,7 @@ const renderToString = require('react-dom/server').renderToString;
 require.extensions['.scss'] = require.extensions['.css'] = () => {};
 
 require('babel-register')({
-  "presets": [ "es2015", "stage-2", "react" ],
+  "presets": [ "env", "react" ],
   "plugins": [ "react-hot-loader/babel" ]
 });
 const App = require('./src/containers/App').default;
