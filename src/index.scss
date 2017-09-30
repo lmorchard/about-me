@@ -1,0 +1,9 @@
+@import './styles/theme';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-rich-black;
+  color: #eeeeee;
+  font: 14px sans-serif;
+}

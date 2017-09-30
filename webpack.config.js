@@ -23,7 +23,10 @@ const IS_DEV = NODE_ENV === 'development';
 
 const config = module.exports = {
   entry: {
-    index: ['./src/index.js']
+    index: [
+      './src/index.scss',
+      './src/index.js'
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),

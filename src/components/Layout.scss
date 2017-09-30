@@ -1,3 +1,5 @@
+@import '../styles/theme';
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +11,8 @@
   box-sizing: border-box;
   margin: .25em;
   padding: 1em;
-  background: #eee;
-  color: #111;
+  background: $color-sienna;
+  color: $color-rust;
 }
 
 @media screen and (min-width: 40em) {
