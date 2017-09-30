@@ -1,10 +1,13 @@
 import React from 'react';
 
-export default function Layout({ children }) {
-  return (
-    <div>
-      <h1>Hello, world!</h1>
+import './Layout.scss';
+
+export const Layout = ({ children }) => (
+  <div className="centered">
+    <section className="cards">
       {children}
-    </div>
-  );
-}
+    </section>
+  </div>
+);
+
+export default Layout;

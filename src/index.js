@@ -5,7 +5,7 @@ import App from './containers/App';
 
 const rootEl = document.getElementById('root');
 const render = Component =>
-  ReactDOM.render(
+  ReactDOM.hydrate(
     <AppContainer>
       <Component />
     </AppContainer>,

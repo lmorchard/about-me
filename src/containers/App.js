@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-import Layout from '../components/Layout';
-import Counter from '../components/Counter';
-import Sub from '../components/Sub';
 
 import './App.scss';
 
-// If you use React Router, make this component
-// render <Router> with your routes. Currently,
-// only synchronous routes are hot reloaded, and
-// you will see a warning from <Router> on every reload.
-// You can ignore this warning. For details, see:
-// https://github.com/reactjs/react-router/issues/2182
+import Layout from '../components/Layout';
+import Card from '../components/Card';
+
 export default class App extends Component {
   render() {
     return (
       <Layout>
-        <Sub />
-        <Counter />
+        <Card key="1" width="2"><p>One</p></Card>
+        <Card key="2"><p>Two</p></Card>
+        <Card key="3"><p>Three</p></Card>
+        <Card key="4"><p>Four</p></Card>
+        <Card key="5"><p>Five</p></Card>
+        <Card key="6"><p>Six</p></Card>
       </Layout>
     );
   }
