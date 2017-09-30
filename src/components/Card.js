@@ -2,8 +2,12 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-export const Card = ({ children, width }) => (
-  <article className={classnames('card', `width-${width}`)}>
+export const Card = ({ children, theme, span }) => (
+  <article className={classnames(
+      'card',
+      span && `span-${span}`,
+      theme && `theme-${theme}`
+  )}>
     {children}
   </article>
 );

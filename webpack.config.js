@@ -7,12 +7,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const createElement = require('react').createElement;
 const renderToString = require('react-dom/server').renderToString;
 
-// HACK: Ignore CSS imports used for dependencies in webpack
-require.extensions['.scss'] = require.extensions['.css'] = () => {};
+// HACK: Ignore imports used for non-JS dependencies in webpack
+['scss', 'css', 'png', 'svg', 'jpg', 'gif']
+  .forEach(ext => require.extensions[`.${ext}`] = () => {});
 
 require('babel-register')({
-  "presets": [ "env", "react" ],
-  "plugins": [ "react-hot-loader/babel" ]
+  presets: ['env', 'react'],
+  plugins: ['react-hot-loader/babel']
 });
 const App = require('./src/containers/App').default;
 
@@ -21,18 +22,15 @@ const PORT = process.env.PORT || 3000;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const IS_DEV = NODE_ENV === 'development';
 
-const config = module.exports = {
+const config = (module.exports = {
   entry: {
-    index: [
-      './src/index.scss',
-      './src/index.js'
-    ]
+    index: ['./src/index.scss', './src/index.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].js'
   },
-  devtool: 'eval',
+  devtool: 'source-maps',
   devServer: {
     public: `${HOST}:${PORT}`,
     port: PORT,
@@ -47,40 +45,44 @@ const config = module.exports = {
         use: IS_DEV
           ? ['style-loader', 'css-loader', 'sass-loader']
           : ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader'],
-          })
+              fallback: 'style-loader',
+              use: ['css-loader', 'sass-loader']
+            })
       },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [{ loader: 'url-loader', options: { limit: 8192 } }]
       }
     ]
   },
   plugins: [
     new ExtractTextPlugin({
       filename: '[name].css',
-      allChunks: true,
+      allChunks: true
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
+      'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
     }),
     new HtmlWebpackPlugin({
       chunks: ['index'],
       template: './src/index.html.ejs',
       filename: 'index.html',
       title: 'About Me',
-      body: renderToString(createElement(App))
+      body: '' //  renderToString(createElement(App))
     })
-  ],
-};
+  ]
+});
 
 if (IS_DEV) {
   config.entry.index = [
     'react-hot-loader/patch',
     `webpack-dev-server/client?http://${HOST}:${PORT}`,
-    'webpack/hot/only-dev-server',
+    'webpack/hot/only-dev-server'
   ].concat(config.entry.index);
 
   config.plugins = config.plugins.concat([
