@@ -1,21 +1,15 @@
 const path = require('path');
+const ejs = require('ejs');
+const fs = require('fs');
 const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
-const createElement = require('react').createElement;
-const renderToString = require('react-dom/server').renderToString;
-
-// HACK: Ignore imports used for non-JS dependencies in webpack
-['scss', 'css', 'png', 'svg', 'jpg', 'gif']
-  .forEach(ext => require.extensions[`.${ext}`] = () => {});
-
-require('babel-register')({
-  presets: ['env', 'react'],
-  plugins: ['react-hot-loader/babel']
-});
-const App = require('./src/containers/App').default;
+const template = ejs.compile(
+  fs.readFileSync(__dirname + '/src/index.html.ejs', 'utf-8')
+);
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
@@ -24,31 +18,20 @@ const IS_DEV = NODE_ENV === 'development';
 
 const config = (module.exports = {
   entry: {
-    index: ['./src/index.scss', './src/index.js']
+    index: ['./src/index.js']
   },
   output: {
+    filename: '[name]-[hash].js',
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    libraryTarget: 'umd'
   },
-  devtool: 'source-maps',
-  devServer: {
-    public: `${HOST}:${PORT}`,
-    port: PORT,
-    disableHostCheck: true,
-    contentBase: 'dist',
-    hot: true
-  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
+    })
+  ],
   module: {
     rules: [
-      {
-        test: /\.s?css$/,
-        use: IS_DEV
-          ? ['style-loader', 'css-loader', 'sass-loader']
-          : ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-              use: ['css-loader', 'sass-loader']
-            })
-      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -56,29 +39,33 @@ const config = (module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [{ loader: 'url-loader', options: { limit: 8192 } }]
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: 'images/[name]-[sha256:hash:base64:8].[ext]'
+            }
+          }
+        ]
       }
     ]
-  },
-  plugins: [
-    new ExtractTextPlugin({
-      filename: '[name].css',
-      allChunks: true
-    }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
-    }),
-    new HtmlWebpackPlugin({
-      chunks: ['index'],
-      template: './src/index.html.ejs',
-      filename: 'index.html',
-      title: 'About Me',
-      body: '' //  renderToString(createElement(App))
-    })
-  ]
+  }
 });
 
 if (IS_DEV) {
+
+  Object.assign(config, {
+    devtool: 'source-maps',
+    devServer: {
+      public: `${HOST}:${PORT}`,
+      port: PORT,
+      disableHostCheck: true,
+      contentBase: 'dist',
+      hot: true
+    }
+  });
+
   config.entry.index = [
     'react-hot-loader/patch',
     `webpack-dev-server/client?http://${HOST}:${PORT}`,
@@ -90,11 +77,35 @@ if (IS_DEV) {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ]);
+
+  config.module.rules.push({
+    test: /\.s?css$/,
+    use: ['style-loader', 'css-loader', 'sass-loader']
+  });
+
 } else {
+
   config.plugins = config.plugins.concat([
+    new ExtractTextPlugin({
+      filename: '[name]-[contenthash].css',
+      allChunks: true
+    }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       comments: false
+    }),
+    new StaticSiteGeneratorPlugin({
+      paths: ['/'],
+      locals: { template, title: 'About Me' }
     })
   ]);
+
+  config.module.rules.push({
+    test: /\.s?css$/,
+    use: ExtractTextPlugin.extract({
+      fallback: 'style-loader',
+      use: ['css-loader', 'sass-loader']
+    })
+  });
+
 }

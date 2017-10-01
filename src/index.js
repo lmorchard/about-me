@@ -1,16 +1,31 @@
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate } from 'react-dom';
+import { renderToString } from 'react-dom/server';
+
+import './index.scss';
 import App from './containers/App';
 
-const rootEl = document.getElementById('root');
-const render = Component =>
-  ReactDOM.hydrate(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
-    rootEl
-  );
+if (typeof global.document !== 'undefined') {
+  const rootEl = document.getElementById('root');
+  const render = Component =>
+    hydrate(
+      <AppContainer>
+        <Component />
+      </AppContainer>,
+      rootEl
+    );
+  render(App);
+  if (module.hot) module.hot.accept('./containers/App', () => render(App));
+}
 
-render(App);
-if (module.hot) module.hot.accept('./containers/App', () => render(App));
+export default data => {
+  const { title } = data;
+  const assets = Object.keys(data.webpackStats.compilation.assets);
+  return data.template({
+    css: assets.filter(value => value.match(/\.css$/)),
+    js: assets.filter(value => value.match(/\.js$/)),
+    body: renderToString(<App />),
+    ...data
+  });
+};

@@ -1,9 +1,19 @@
 <html lang="en">
   <head>
     <meta charSet="utf-8" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title><%= title %></title>
+    <% css.forEach(function(file){ %>
+      <link href="<%- file %>" rel="stylesheet">
+    <% }); %>
   </head>
   <body>
-    <div id="root"><%= htmlWebpackPlugin.options.body %></html>
+    <div id="root">
+      <%- body %>
+    </div>
+    <% js.forEach(function(file){ %>
+      <script src="<%- file %>" async></script>
+    <% }); %>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
   </body>
 </html>
