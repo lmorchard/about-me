@@ -1,0 +1,2812 @@
+[
+  {
+    "id": "6659040997",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 36040894,
+      "name": "gatsbyjs/gatsby",
+      "url": "https://api.github.com/repos/gatsbyjs/gatsby"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2017-10-01T04:57:14Z",
+    "org": {
+      "id": 12551863,
+      "login": "gatsbyjs",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/gatsbyjs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12551863?"
+    }
+  },
+  {
+    "id": "6659036790",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "push_id": 2020956661,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "f566a4f339af7bbfe8da6aa00bc32883305702bf",
+      "before": "5801218e6b1c5c24c4c10738b5a8cc9c85d85a75",
+      "commits": [
+        {
+          "sha": "f566a4f339af7bbfe8da6aa00bc32883305702bf",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Swap over to static-site-generator-webpack-plugin; rework webpack config to separate prod and dev settings a bit more",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/f566a4f339af7bbfe8da6aa00bc32883305702bf"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-01T04:52:01Z"
+  },
+  {
+    "id": "6658607571",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "push_id": 2020685995,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "5801218e6b1c5c24c4c10738b5a8cc9c85d85a75",
+      "before": "c9249e7d90639436e141c7dd97709b4ed14c1445",
+      "commits": [
+        {
+          "sha": "5801218e6b1c5c24c4c10738b5a8cc9c85d85a75",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Play with card layout & colors; try an image",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/5801218e6b1c5c24c4c10738b5a8cc9c85d85a75"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-30T21:30:44Z"
+  },
+  {
+    "id": "6657510714",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "push_id": 2020026405,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "c9249e7d90639436e141c7dd97709b4ed14c1445",
+      "before": "26f7c1e43f8754134092e54ed04f66daf05dd841",
+      "commits": [
+        {
+          "sha": "c9249e7d90639436e141c7dd97709b4ed14c1445",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Play a little more with colors in sass",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/c9249e7d90639436e141c7dd97709b4ed14c1445"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-30T06:40:55Z"
+  },
+  {
+    "id": "6657471448",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "push_id": 2020002871,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "26f7c1e43f8754134092e54ed04f66daf05dd841",
+      "before": "97ec99eda97399bfe626daff51ce285b9bc674df",
+      "commits": [
+        {
+          "sha": "26f7c1e43f8754134092e54ed04f66daf05dd841",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Start playing with card layout",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/26f7c1e43f8754134092e54ed04f66daf05dd841"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-30T06:06:04Z"
+  },
+  {
+    "id": "6657413198",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "push_id": 2019968203,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "97ec99eda97399bfe626daff51ce285b9bc674df",
+      "before": "6ae7e030c01dd471ad491de92b3319a6d013ae36",
+      "commits": [
+        {
+          "sha": "52c089005f88f3c71dfd57fa66afb8c2774e178f",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Try stealing bits from react-hot-boilerplate to see if I can get hot reloading to work",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/52c089005f88f3c71dfd57fa66afb8c2774e178f"
+        },
+        {
+          "sha": "97ec99eda97399bfe626daff51ce285b9bc674df",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Switch back to babel-preset-env",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/about-me/commits/97ec99eda97399bfe626daff51ce285b9bc674df"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-30T05:07:48Z"
+  },
+  {
+    "id": "6656558671",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "ref": "master",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "playing with an about me page",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-09-29T21:07:48Z"
+  },
+  {
+    "id": "6656556338",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 105317199,
+      "name": "lmorchard/about-me",
+      "url": "https://api.github.com/repos/lmorchard/about-me"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "master",
+      "description": "playing with an about me page",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-09-29T21:07:14Z"
+  },
+  {
+    "id": "6655729259",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2894",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2894/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2894/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2894/events",
+        "html_url": "https://github.com/mozilla/testpilot/issues/2894",
+        "id": 261712757,
+        "number": 2894,
+        "title": "Upgrade to React 16",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-09-29T17:37:46Z",
+        "updated_at": "2017-09-29T17:37:46Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "body": ""
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-29T17:37:46Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6655728187",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "ref": "react-16",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "yay all the ideas",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-09-29T17:37:31Z"
+  },
+  {
+    "id": "6652777178",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 81525725,
+      "name": "lmorchard/panic-ranger",
+      "url": "https://api.github.com/repos/lmorchard/panic-ranger"
+    },
+    "payload": {
+      "push_id": 2017549590,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "21dd8ad6974ee33bfd3c824b2f25a7018e0c8ec3",
+      "before": "e7df0024939a56e1c271c53ed3a2a65b9863012b",
+      "commits": [
+        {
+          "sha": "21dd8ad6974ee33bfd3c824b2f25a7018e0c8ec3",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Add some asteroids to current sketch",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/panic-ranger/commits/21dd8ad6974ee33bfd3c824b2f25a7018e0c8ec3"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-29T04:03:28Z"
+  },
+  {
+    "id": "6651810820",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 2892,
+      "pull_request": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2892",
+        "id": 143761138,
+        "html_url": "https://github.com/mozilla/testpilot/pull/2892",
+        "diff_url": "https://github.com/mozilla/testpilot/pull/2892.diff",
+        "patch_url": "https://github.com/mozilla/testpilot/pull/2892.patch",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2892",
+        "number": 2892,
+        "state": "open",
+        "locked": false,
+        "title": "Bugfix for Storybook dynamic require looking for missing stories",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2017-09-28T21:32:52Z",
+        "updated_at": "2017-09-28T21:32:52Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": null,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "requested_reviewers": [
+
+        ],
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2892/commits",
+        "review_comments_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2892/comments",
+        "review_comment_url": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2892/comments",
+        "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/a9241e643cd8d9f5518c166d616b58bb4dfca696",
+        "head": {
+          "label": "lmorchard:storybook-require-fix",
+          "ref": "storybook-require-fix",
+          "sha": "a9241e643cd8d9f5518c166d616b58bb4dfca696",
+          "user": {
+            "login": "lmorchard",
+            "id": 21687,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lmorchard",
+            "html_url": "https://github.com/lmorchard",
+            "followers_url": "https://api.github.com/users/lmorchard/followers",
+            "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+            "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+            "repos_url": "https://api.github.com/users/lmorchard/repos",
+            "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40666253,
+            "name": "testpilot",
+            "full_name": "lmorchard/testpilot",
+            "owner": {
+              "login": "lmorchard",
+              "id": 21687,
+              "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/lmorchard",
+              "html_url": "https://github.com/lmorchard",
+              "followers_url": "https://api.github.com/users/lmorchard/followers",
+              "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+              "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+              "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+              "repos_url": "https://api.github.com/users/lmorchard/repos",
+              "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/lmorchard/testpilot",
+            "description": "yay all the ideas",
+            "fork": true,
+            "url": "https://api.github.com/repos/lmorchard/testpilot",
+            "forks_url": "https://api.github.com/repos/lmorchard/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/lmorchard/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/lmorchard/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/lmorchard/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/lmorchard/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/lmorchard/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/lmorchard/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/lmorchard/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/lmorchard/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/lmorchard/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/lmorchard/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/lmorchard/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/lmorchard/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/lmorchard/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/lmorchard/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/lmorchard/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/lmorchard/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/lmorchard/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/lmorchard/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/lmorchard/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/lmorchard/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/lmorchard/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/lmorchard/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/lmorchard/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/lmorchard/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/lmorchard/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/lmorchard/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/lmorchard/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/lmorchard/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/lmorchard/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/lmorchard/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/lmorchard/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/lmorchard/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/lmorchard/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/lmorchard/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/lmorchard/testpilot/deployments",
+            "created_at": "2015-08-13T15:26:02Z",
+            "updated_at": "2017-02-20T16:49:55Z",
+            "pushed_at": "2017-09-28T21:32:42Z",
+            "git_url": "git://github.com/lmorchard/testpilot.git",
+            "ssh_url": "git@github.com:lmorchard/testpilot.git",
+            "clone_url": "https://github.com/lmorchard/testpilot.git",
+            "svn_url": "https://github.com/lmorchard/testpilot",
+            "homepage": null,
+            "size": 46718,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "mozilla:master",
+          "ref": "master",
+          "sha": "a9e05ff1b6f6ae062db2d36be2691f21ff9dc2f9",
+          "user": {
+            "login": "mozilla",
+            "id": 131524,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mozilla",
+            "html_url": "https://github.com/mozilla",
+            "followers_url": "https://api.github.com/users/mozilla/followers",
+            "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+            "organizations_url": "https://api.github.com/users/mozilla/orgs",
+            "repos_url": "https://api.github.com/users/mozilla/repos",
+            "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mozilla/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40625180,
+            "name": "testpilot",
+            "full_name": "mozilla/testpilot",
+            "owner": {
+              "login": "mozilla",
+              "id": 131524,
+              "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/mozilla",
+              "html_url": "https://github.com/mozilla",
+              "followers_url": "https://api.github.com/users/mozilla/followers",
+              "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+              "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+              "organizations_url": "https://api.github.com/users/mozilla/orgs",
+              "repos_url": "https://api.github.com/users/mozilla/repos",
+              "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/mozilla/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/mozilla/testpilot",
+            "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+            "fork": false,
+            "url": "https://api.github.com/repos/mozilla/testpilot",
+            "forks_url": "https://api.github.com/repos/mozilla/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/mozilla/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/mozilla/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/mozilla/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/mozilla/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/mozilla/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/mozilla/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/mozilla/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/mozilla/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/mozilla/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/mozilla/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/mozilla/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/mozilla/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/mozilla/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/mozilla/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/mozilla/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/mozilla/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/mozilla/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/mozilla/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/mozilla/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/mozilla/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/mozilla/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/mozilla/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/mozilla/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/mozilla/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/mozilla/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/mozilla/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/mozilla/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/mozilla/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/mozilla/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/mozilla/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/mozilla/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/mozilla/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/mozilla/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/mozilla/testpilot/deployments",
+            "created_at": "2015-08-12T21:27:27Z",
+            "updated_at": "2017-09-27T20:31:50Z",
+            "pushed_at": "2017-09-28T21:32:24Z",
+            "git_url": "git://github.com/mozilla/testpilot.git",
+            "ssh_url": "git@github.com:mozilla/testpilot.git",
+            "clone_url": "https://github.com/mozilla/testpilot.git",
+            "svn_url": "https://github.com/mozilla/testpilot",
+            "homepage": "https://testpilot.firefox.com/",
+            "size": 46657,
+            "stargazers_count": 194,
+            "watchers_count": 194,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 94,
+            "mirror_url": null,
+            "open_issues_count": 116,
+            "forks": 94,
+            "open_issues": 116,
+            "watchers": 194,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2892"
+          },
+          "html": {
+            "href": "https://github.com/mozilla/testpilot/pull/2892"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2892"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2892/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2892/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2892/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/statuses/a9241e643cd8d9f5518c166d616b58bb4dfca696"
+          }
+        },
+        "author_association": "MEMBER",
+        "merged": false,
+        "mergeable": null,
+        "rebaseable": null,
+        "mergeable_state": "unknown",
+        "merged_by": null,
+        "comments": 0,
+        "review_comments": 0,
+        "maintainer_can_modify": true,
+        "commits": 1,
+        "additions": 0,
+        "deletions": 2,
+        "changed_files": 1
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T21:32:53Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6651810134",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "ref": "storybook-require-fix",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "yay all the ideas",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-09-28T21:32:42Z"
+  },
+  {
+    "id": "6651617346",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 2881,
+      "pull_request": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2881",
+        "id": 143007843,
+        "html_url": "https://github.com/mozilla/testpilot/pull/2881",
+        "diff_url": "https://github.com/mozilla/testpilot/pull/2881.diff",
+        "patch_url": "https://github.com/mozilla/testpilot/pull/2881.patch",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881",
+        "number": 2881,
+        "state": "closed",
+        "locked": false,
+        "title": "Update pytest-firefox to 0.1.1",
+        "user": {
+          "login": "pyup-bot",
+          "id": 16239342,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/16239342?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pyup-bot",
+          "html_url": "https://github.com/pyup-bot",
+          "followers_url": "https://api.github.com/users/pyup-bot/followers",
+          "following_url": "https://api.github.com/users/pyup-bot/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pyup-bot/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pyup-bot/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pyup-bot/subscriptions",
+          "organizations_url": "https://api.github.com/users/pyup-bot/orgs",
+          "repos_url": "https://api.github.com/users/pyup-bot/repos",
+          "events_url": "https://api.github.com/users/pyup-bot/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pyup-bot/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "\nThere's a new version of [pytest-firefox](https://pypi.python.org/pypi/pytest-firefox) available.\nYou are currently using **0.1.0**. I have updated it to **0.1.1**\n\n\n\nThese links might come in handy:  <a href=\"https://pypi.python.org/pypi/pytest-firefox\">PyPI</a> | <a href=\"https://pyup.io/changelogs/pytest-firefox/\">Changelog</a> | <a href=\"https://github.com/jrbenny35/pytest-firefox\">Repo</a> \n\n\n*I couldn't find a changelog for this release. Do you know where I can find one? [Tell me!](https://github.com/pyupio/changelogs/issues/new)*\n\n\n*Got merge conflicts? Close this PR and delete the branch. I'll create a new PR for you.*\n\nHappy merging! 🤖\n",
+        "created_at": "2017-09-25T23:35:43Z",
+        "updated_at": "2017-09-28T20:45:41Z",
+        "closed_at": "2017-09-28T20:45:41Z",
+        "merged_at": "2017-09-28T20:45:41Z",
+        "merge_commit_sha": "a9e05ff1b6f6ae062db2d36be2691f21ff9dc2f9",
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "requested_reviewers": [
+
+        ],
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2881/commits",
+        "review_comments_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2881/comments",
+        "review_comment_url": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881/comments",
+        "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/37268518f9615dfdb11d12f011ef36bb37d20102",
+        "head": {
+          "label": "mozilla:pyup-update-pytest-firefox-0.1.0-to-0.1.1",
+          "ref": "pyup-update-pytest-firefox-0.1.0-to-0.1.1",
+          "sha": "37268518f9615dfdb11d12f011ef36bb37d20102",
+          "user": {
+            "login": "mozilla",
+            "id": 131524,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mozilla",
+            "html_url": "https://github.com/mozilla",
+            "followers_url": "https://api.github.com/users/mozilla/followers",
+            "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+            "organizations_url": "https://api.github.com/users/mozilla/orgs",
+            "repos_url": "https://api.github.com/users/mozilla/repos",
+            "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mozilla/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40625180,
+            "name": "testpilot",
+            "full_name": "mozilla/testpilot",
+            "owner": {
+              "login": "mozilla",
+              "id": 131524,
+              "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/mozilla",
+              "html_url": "https://github.com/mozilla",
+              "followers_url": "https://api.github.com/users/mozilla/followers",
+              "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+              "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+              "organizations_url": "https://api.github.com/users/mozilla/orgs",
+              "repos_url": "https://api.github.com/users/mozilla/repos",
+              "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/mozilla/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/mozilla/testpilot",
+            "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+            "fork": false,
+            "url": "https://api.github.com/repos/mozilla/testpilot",
+            "forks_url": "https://api.github.com/repos/mozilla/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/mozilla/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/mozilla/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/mozilla/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/mozilla/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/mozilla/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/mozilla/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/mozilla/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/mozilla/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/mozilla/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/mozilla/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/mozilla/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/mozilla/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/mozilla/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/mozilla/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/mozilla/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/mozilla/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/mozilla/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/mozilla/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/mozilla/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/mozilla/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/mozilla/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/mozilla/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/mozilla/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/mozilla/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/mozilla/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/mozilla/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/mozilla/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/mozilla/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/mozilla/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/mozilla/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/mozilla/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/mozilla/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/mozilla/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/mozilla/testpilot/deployments",
+            "created_at": "2015-08-12T21:27:27Z",
+            "updated_at": "2017-09-27T20:31:50Z",
+            "pushed_at": "2017-09-28T20:45:41Z",
+            "git_url": "git://github.com/mozilla/testpilot.git",
+            "ssh_url": "git@github.com:mozilla/testpilot.git",
+            "clone_url": "https://github.com/mozilla/testpilot.git",
+            "svn_url": "https://github.com/mozilla/testpilot",
+            "homepage": "https://testpilot.firefox.com/",
+            "size": 46657,
+            "stargazers_count": 194,
+            "watchers_count": 194,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 94,
+            "mirror_url": null,
+            "open_issues_count": 115,
+            "forks": 94,
+            "open_issues": 115,
+            "watchers": 194,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "mozilla:master",
+          "ref": "master",
+          "sha": "f4000e224f058edffd75894ae5f5643d88081c8d",
+          "user": {
+            "login": "mozilla",
+            "id": 131524,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mozilla",
+            "html_url": "https://github.com/mozilla",
+            "followers_url": "https://api.github.com/users/mozilla/followers",
+            "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+            "organizations_url": "https://api.github.com/users/mozilla/orgs",
+            "repos_url": "https://api.github.com/users/mozilla/repos",
+            "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mozilla/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40625180,
+            "name": "testpilot",
+            "full_name": "mozilla/testpilot",
+            "owner": {
+              "login": "mozilla",
+              "id": 131524,
+              "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/mozilla",
+              "html_url": "https://github.com/mozilla",
+              "followers_url": "https://api.github.com/users/mozilla/followers",
+              "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+              "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+              "organizations_url": "https://api.github.com/users/mozilla/orgs",
+              "repos_url": "https://api.github.com/users/mozilla/repos",
+              "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/mozilla/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/mozilla/testpilot",
+            "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+            "fork": false,
+            "url": "https://api.github.com/repos/mozilla/testpilot",
+            "forks_url": "https://api.github.com/repos/mozilla/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/mozilla/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/mozilla/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/mozilla/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/mozilla/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/mozilla/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/mozilla/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/mozilla/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/mozilla/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/mozilla/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/mozilla/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/mozilla/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/mozilla/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/mozilla/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/mozilla/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/mozilla/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/mozilla/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/mozilla/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/mozilla/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/mozilla/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/mozilla/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/mozilla/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/mozilla/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/mozilla/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/mozilla/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/mozilla/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/mozilla/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/mozilla/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/mozilla/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/mozilla/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/mozilla/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/mozilla/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/mozilla/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/mozilla/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/mozilla/testpilot/deployments",
+            "created_at": "2015-08-12T21:27:27Z",
+            "updated_at": "2017-09-27T20:31:50Z",
+            "pushed_at": "2017-09-28T20:45:41Z",
+            "git_url": "git://github.com/mozilla/testpilot.git",
+            "ssh_url": "git@github.com:mozilla/testpilot.git",
+            "clone_url": "https://github.com/mozilla/testpilot.git",
+            "svn_url": "https://github.com/mozilla/testpilot",
+            "homepage": "https://testpilot.firefox.com/",
+            "size": 46657,
+            "stargazers_count": 194,
+            "watchers_count": 194,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 94,
+            "mirror_url": null,
+            "open_issues_count": 115,
+            "forks": 94,
+            "open_issues": 115,
+            "watchers": 194,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2881"
+          },
+          "html": {
+            "href": "https://github.com/mozilla/testpilot/pull/2881"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2881"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2881/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2881/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2881/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/statuses/37268518f9615dfdb11d12f011ef36bb37d20102"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "merged": true,
+        "mergeable": null,
+        "rebaseable": null,
+        "mergeable_state": "unknown",
+        "merged_by": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "comments": 3,
+        "review_comments": 0,
+        "maintainer_can_modify": false,
+        "commits": 1,
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T20:45:42Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6651019191",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2696",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2696/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2696/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2696/events",
+        "html_url": "https://github.com/mozilla/testpilot/issues/2696",
+        "id": 247086226,
+        "number": 2696,
+        "title": "Misleading \"Just launched\" label",
+        "user": {
+          "login": "chuckharmston",
+          "id": 23885,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/23885?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/chuckharmston",
+          "html_url": "https://github.com/chuckharmston",
+          "followers_url": "https://api.github.com/users/chuckharmston/followers",
+          "following_url": "https://api.github.com/users/chuckharmston/following{/other_user}",
+          "gists_url": "https://api.github.com/users/chuckharmston/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/chuckharmston/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/chuckharmston/subscriptions",
+          "organizations_url": "https://api.github.com/users/chuckharmston/orgs",
+          "repos_url": "https://api.github.com/users/chuckharmston/repos",
+          "events_url": "https://api.github.com/users/chuckharmston/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/chuckharmston/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 275621687,
+            "url": "https://api.github.com/repos/mozilla/testpilot/labels/good%20first%20bug",
+            "name": "good first bug",
+            "color": "009800",
+            "default": false
+          },
+          {
+            "id": 607480093,
+            "url": "https://api.github.com/repos/mozilla/testpilot/labels/skill:js",
+            "name": "skill:js",
+            "color": "5319e7",
+            "default": false
+          },
+          {
+            "id": 373355240,
+            "url": "https://api.github.com/repos/mozilla/testpilot/labels/status:%20planned",
+            "name": "status: planned",
+            "color": "e6e6e6",
+            "default": false
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/milestones/47",
+          "html_url": "https://github.com/mozilla/testpilot/milestone/47",
+          "labels_url": "https://api.github.com/repos/mozilla/testpilot/milestones/47/labels",
+          "id": 2774819,
+          "number": 47,
+          "title": "Stretch",
+          "description": "",
+          "creator": {
+            "login": "wresuolc",
+            "id": 16946141,
+            "avatar_url": "https://avatars3.githubusercontent.com/u/16946141?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/wresuolc",
+            "html_url": "https://github.com/wresuolc",
+            "followers_url": "https://api.github.com/users/wresuolc/followers",
+            "following_url": "https://api.github.com/users/wresuolc/following{/other_user}",
+            "gists_url": "https://api.github.com/users/wresuolc/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/wresuolc/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/wresuolc/subscriptions",
+            "organizations_url": "https://api.github.com/users/wresuolc/orgs",
+            "repos_url": "https://api.github.com/users/wresuolc/repos",
+            "events_url": "https://api.github.com/users/wresuolc/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/wresuolc/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 98,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-09-18T17:09:05Z",
+          "updated_at": "2017-09-25T16:24:22Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 5,
+        "created_at": "2017-08-01T14:22:42Z",
+        "updated_at": "2017-09-28T18:27:52Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "body": "When an experiment is new, it shows a `Just Launched` label on the experiment card that goes away when you visit it:\r\n\r\n<img width=\"1049\" alt=\"screen shot 2017-08-01 at 09 12 23\" src=\"https://user-images.githubusercontent.com/23885/28829916-f286ab9a-769a-11e7-9921-a8ebb5830184.png\">\r\n\r\nThis is unexpected. Visiting a page does not change that an experimented had recently been launched."
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332923728",
+        "html_url": "https://github.com/mozilla/testpilot/issues/2696#issuecomment-332923728",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2696",
+        "id": 332923728,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-28T18:27:52Z",
+        "updated_at": "2017-09-28T18:27:52Z",
+        "author_association": "MEMBER",
+        "body": "> Hi @wresuolc , I am a student at seneca college. I'm currently taking a open source course, looking for my first bug. If this bug is not assigned to someone, can I work on it for my assignment?\r\nThank you!\r\n\r\nThank *you*, we'd very much appreciate the contribution! Feel free to ask for help or raise any questions you might think of!"
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T18:27:53Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650973219",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/events",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+        "id": 261399540,
+        "number": 2891,
+        "title": "Break down ExperimentDetails container into (mostly) simple components",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 4,
+        "created_at": "2017-09-28T17:29:38Z",
+        "updated_at": "2017-09-28T18:17:54Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "pull_request": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891",
+          "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+          "diff_url": "https://github.com/mozilla/testpilot/pull/2891.diff",
+          "patch_url": "https://github.com/mozilla/testpilot/pull/2891.patch"
+        },
+        "body": "Opening a WIP PR for this, now that I'm a bit into it. It's getting to be a large set of changes, but mostly just shuffling things around. Trying to break things up into multiple commits to capture smaller discrete changes.\r\n\r\nOverview of things I've done so far:\r\n\r\n* Move components from `components/` folder into `containers/ExperimentPage/` where they are only ever used by the experiment page. Import paths adjusted as necessary.\r\n* Merged ExperimentPage tests into `containers/ExperimentPage/tests.js`. Import paths adjusted as necessary.\r\n* Lint fixes to test code, because it seems that eslint wasn't checking those and a pile of little problems snuck in.\r\n* Trying to apply more flow type annotations, which seems to work better with separate `types.js` modules. Importing both a component class and a type from the same module seems to be a linting error.\r\n\r\nThings left to do:\r\n- [ ] Fill out more stories around sub-components\r\n- [ ] Further break up the mass of markup in ExperimentPage down into sub-components"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332921041",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891#issuecomment-332921041",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "id": 332921041,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-28T18:17:54Z",
+        "updated_at": "2017-09-28T18:17:54Z",
+        "author_association": "MEMBER",
+        "body": "# Storybook Deployment\nPull Request: http://testpilot-storybook.dev.mozaws.net/pull/2891/index.html\nCommit: http://testpilot-storybook.dev.mozaws.net/09050ce6bf9f550a2fa222dbe09083698365c7bf/"
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T18:17:55Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650916505",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/events",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+        "id": 261399540,
+        "number": 2891,
+        "title": "Break down ExperimentDetails container into (mostly) simple components",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2017-09-28T17:29:38Z",
+        "updated_at": "2017-09-28T18:05:19Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "pull_request": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891",
+          "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+          "diff_url": "https://github.com/mozilla/testpilot/pull/2891.diff",
+          "patch_url": "https://github.com/mozilla/testpilot/pull/2891.patch"
+        },
+        "body": "Opening a WIP PR for this, now that I'm a bit into it. It's getting to be a large set of changes, but mostly just shuffling things around. Trying to break things up into multiple commits to capture smaller discrete changes.\r\n\r\nOverview of things I've done so far:\r\n\r\n* Move components from `components/` folder into `containers/ExperimentPage/` where they are only ever used by the experiment page. Import paths adjusted as necessary.\r\n* Merged ExperimentPage tests into `containers/ExperimentPage/tests.js`. Import paths adjusted as necessary.\r\n* Lint fixes to test code, because it seems that eslint wasn't checking those and a pile of little problems snuck in.\r\n* Trying to apply more flow type annotations, which seems to work better with separate `types.js` modules. Importing both a component class and a type from the same module seems to be a linting error.\r\n\r\nThings left to do:\r\n- [ ] Fill out more stories around sub-components\r\n- [ ] Further break up the mass of markup in ExperimentPage down into sub-components"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332917553",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891#issuecomment-332917553",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "id": 332917553,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-28T18:05:19Z",
+        "updated_at": "2017-09-28T18:05:19Z",
+        "author_association": "MEMBER",
+        "body": "Alright: After some IRC chat, I'm going to take the WIP off this PR and stop adding to it. There's enough here to have a good start on pulling further things out in smaller chunks."
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T18:05:19Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650785716",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/events",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+        "id": 261399540,
+        "number": 2891,
+        "title": "[WIP] Break down ExperimentDetails container into (mostly) simple components",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2017-09-28T17:29:38Z",
+        "updated_at": "2017-09-28T17:36:05Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "pull_request": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891",
+          "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+          "diff_url": "https://github.com/mozilla/testpilot/pull/2891.diff",
+          "patch_url": "https://github.com/mozilla/testpilot/pull/2891.patch"
+        },
+        "body": "Opening a WIP PR for this, now that I'm a bit into it. It's getting to be a large set of changes, but mostly just shuffling things around. Trying to break things up into multiple commits to capture smaller discrete changes.\r\n\r\nOverview of things I've done so far:\r\n\r\n* Move components from `components/` folder into `containers/ExperimentPage/` where they are only ever used by the experiment page. Import paths adjusted as necessary.\r\n* Merged ExperimentPage tests into `containers/ExperimentPage/tests.js`. Import paths adjusted as necessary.\r\n* Lint fixes to test code, because it seems that eslint wasn't checking those and a pile of little problems snuck in.\r\n* Trying to apply more flow type annotations, which seems to work better with separate `types.js` modules. Importing both a component class and a type from the same module seems to be a linting error.\r\n\r\nThings left to do:\r\n- [ ] Fill out more stories around sub-components\r\n- [ ] Further break up the mass of markup in ExperimentPage down into sub-components"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332909455",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891#issuecomment-332909455",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "id": 332909455,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-28T17:36:05Z",
+        "updated_at": "2017-09-28T17:36:05Z",
+        "author_association": "MEMBER",
+        "body": "I'm also kind of on the fence about this bit from [the reorg proposal](https://gist.github.com/chuckharmston/01e5b7a16ba9b771863cbb8b2de64138), now that I'm in the thick of things:\r\n> Dependent components will be defined in the same file as the parent component. \r\nI can merge them together before we merge this PR. But, so far, it's feeling a little more manageable to leave dependent components for ExperimentPage in separate files because there are just so many of them."
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:36:05Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650761674",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/events",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+        "id": 261399540,
+        "number": 2891,
+        "title": "[WIP] Break down ExperimentDetails container into (mostly) simple components",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2017-09-28T17:29:38Z",
+        "updated_at": "2017-09-28T17:30:37Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "pull_request": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891",
+          "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+          "diff_url": "https://github.com/mozilla/testpilot/pull/2891.diff",
+          "patch_url": "https://github.com/mozilla/testpilot/pull/2891.patch"
+        },
+        "body": "Opening a WIP PR for this, now that I'm a bit into it. It's getting to be a large set of changes, but mostly just shuffling things around. Trying to break things up into multiple commits to capture smaller discrete changes.\r\n\r\nOverview of things I've done so far:\r\n\r\n* Move components from `components/` folder into `containers/ExperimentPage/` where they are only ever used by the experiment page. Import paths adjusted as necessary.\r\n* Merged ExperimentPage tests into `containers/ExperimentPage/tests.js`. Import paths adjusted as necessary.\r\n* Trying to apply more flow type annotations, which seems to work better with separate `types.js` modules. Importing both a component class and a type from the same module seems to be a linting error.\r\n\r\nThings left to do:\r\n- [ ] Fill out more stories around sub-components\r\n- [ ] Further break up the mass of markup in ExperimentPage down into sub-components"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332907966",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891#issuecomment-332907966",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "id": 332907966,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-28T17:30:37Z",
+        "updated_at": "2017-09-28T17:30:37Z",
+        "author_association": "MEMBER",
+        "body": "Also, pushing this into a branch on the mozilla repo, so we get some Storybook builds along the way."
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:31:00Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650757116",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 2891,
+      "pull_request": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891",
+        "id": 143709351,
+        "html_url": "https://github.com/mozilla/testpilot/pull/2891",
+        "diff_url": "https://github.com/mozilla/testpilot/pull/2891.diff",
+        "patch_url": "https://github.com/mozilla/testpilot/pull/2891.patch",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891",
+        "number": 2891,
+        "state": "open",
+        "locked": false,
+        "title": "[WIP] Break down ExperimentDetails container into (mostly) simple components",
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Opening a WIP PR for this, now that I'm a bit into it. It's getting to be a large set of changes, but mostly just shuffling things around. Trying to break things up into multiple commits to capture smaller discrete changes.\r\n\r\nOverview of things I've done so far:\r\n\r\n* Move components from `components/` folder into `containers/ExperimentPage/` where they are only ever used by the experiment page\r\n* Merged ExperimentPage tests into `containers/ExperimentPage/tests.js`\r\n* Trying to apply more flow type annotations, which seems to work better with separate `types.js` modules. Importing both a component class and a type from the same module seems to be a linting error.\r\n\r\nThings left to do:\r\n- [ ] Fill out more stories around sub-components\r\n- [ ] Further break up the mass of markup in ExperimentPage down into sub-components",
+        "created_at": "2017-09-28T17:29:38Z",
+        "updated_at": "2017-09-28T17:29:38Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "c2eba97c4f37654279453fe27ce2c7762dd5fe1e",
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "requested_reviewers": [
+
+        ],
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891/commits",
+        "review_comments_url": "https://api.github.com/repos/mozilla/testpilot/pulls/2891/comments",
+        "review_comment_url": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments",
+        "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/09050ce6bf9f550a2fa222dbe09083698365c7bf",
+        "head": {
+          "label": "mozilla:2807-experimentpage-breakdown",
+          "ref": "2807-experimentpage-breakdown",
+          "sha": "09050ce6bf9f550a2fa222dbe09083698365c7bf",
+          "user": {
+            "login": "mozilla",
+            "id": 131524,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mozilla",
+            "html_url": "https://github.com/mozilla",
+            "followers_url": "https://api.github.com/users/mozilla/followers",
+            "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+            "organizations_url": "https://api.github.com/users/mozilla/orgs",
+            "repos_url": "https://api.github.com/users/mozilla/repos",
+            "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mozilla/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40625180,
+            "name": "testpilot",
+            "full_name": "mozilla/testpilot",
+            "owner": {
+              "login": "mozilla",
+              "id": 131524,
+              "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/mozilla",
+              "html_url": "https://github.com/mozilla",
+              "followers_url": "https://api.github.com/users/mozilla/followers",
+              "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+              "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+              "organizations_url": "https://api.github.com/users/mozilla/orgs",
+              "repos_url": "https://api.github.com/users/mozilla/repos",
+              "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/mozilla/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/mozilla/testpilot",
+            "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+            "fork": false,
+            "url": "https://api.github.com/repos/mozilla/testpilot",
+            "forks_url": "https://api.github.com/repos/mozilla/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/mozilla/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/mozilla/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/mozilla/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/mozilla/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/mozilla/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/mozilla/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/mozilla/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/mozilla/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/mozilla/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/mozilla/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/mozilla/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/mozilla/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/mozilla/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/mozilla/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/mozilla/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/mozilla/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/mozilla/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/mozilla/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/mozilla/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/mozilla/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/mozilla/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/mozilla/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/mozilla/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/mozilla/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/mozilla/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/mozilla/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/mozilla/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/mozilla/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/mozilla/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/mozilla/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/mozilla/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/mozilla/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/mozilla/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/mozilla/testpilot/deployments",
+            "created_at": "2015-08-12T21:27:27Z",
+            "updated_at": "2017-09-27T20:31:50Z",
+            "pushed_at": "2017-09-28T17:29:39Z",
+            "git_url": "git://github.com/mozilla/testpilot.git",
+            "ssh_url": "git@github.com:mozilla/testpilot.git",
+            "clone_url": "https://github.com/mozilla/testpilot.git",
+            "svn_url": "https://github.com/mozilla/testpilot",
+            "homepage": "https://testpilot.firefox.com/",
+            "size": 46628,
+            "stargazers_count": 194,
+            "watchers_count": 194,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 94,
+            "mirror_url": null,
+            "open_issues_count": 116,
+            "forks": 94,
+            "open_issues": 116,
+            "watchers": 194,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "mozilla:master",
+          "ref": "master",
+          "sha": "e84b8cd6b96f8431274095ea8e92059aae66b5ed",
+          "user": {
+            "login": "mozilla",
+            "id": 131524,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mozilla",
+            "html_url": "https://github.com/mozilla",
+            "followers_url": "https://api.github.com/users/mozilla/followers",
+            "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+            "organizations_url": "https://api.github.com/users/mozilla/orgs",
+            "repos_url": "https://api.github.com/users/mozilla/repos",
+            "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mozilla/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 40625180,
+            "name": "testpilot",
+            "full_name": "mozilla/testpilot",
+            "owner": {
+              "login": "mozilla",
+              "id": 131524,
+              "avatar_url": "https://avatars2.githubusercontent.com/u/131524?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/mozilla",
+              "html_url": "https://github.com/mozilla",
+              "followers_url": "https://api.github.com/users/mozilla/followers",
+              "following_url": "https://api.github.com/users/mozilla/following{/other_user}",
+              "gists_url": "https://api.github.com/users/mozilla/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/mozilla/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/mozilla/subscriptions",
+              "organizations_url": "https://api.github.com/users/mozilla/orgs",
+              "repos_url": "https://api.github.com/users/mozilla/repos",
+              "events_url": "https://api.github.com/users/mozilla/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/mozilla/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/mozilla/testpilot",
+            "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+            "fork": false,
+            "url": "https://api.github.com/repos/mozilla/testpilot",
+            "forks_url": "https://api.github.com/repos/mozilla/testpilot/forks",
+            "keys_url": "https://api.github.com/repos/mozilla/testpilot/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/mozilla/testpilot/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/mozilla/testpilot/teams",
+            "hooks_url": "https://api.github.com/repos/mozilla/testpilot/hooks",
+            "issue_events_url": "https://api.github.com/repos/mozilla/testpilot/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/mozilla/testpilot/events",
+            "assignees_url": "https://api.github.com/repos/mozilla/testpilot/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/mozilla/testpilot/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/mozilla/testpilot/tags",
+            "blobs_url": "https://api.github.com/repos/mozilla/testpilot/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/mozilla/testpilot/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/mozilla/testpilot/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/mozilla/testpilot/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/mozilla/testpilot/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/mozilla/testpilot/languages",
+            "stargazers_url": "https://api.github.com/repos/mozilla/testpilot/stargazers",
+            "contributors_url": "https://api.github.com/repos/mozilla/testpilot/contributors",
+            "subscribers_url": "https://api.github.com/repos/mozilla/testpilot/subscribers",
+            "subscription_url": "https://api.github.com/repos/mozilla/testpilot/subscription",
+            "commits_url": "https://api.github.com/repos/mozilla/testpilot/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/mozilla/testpilot/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/mozilla/testpilot/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/mozilla/testpilot/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/mozilla/testpilot/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/mozilla/testpilot/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/mozilla/testpilot/merges",
+            "archive_url": "https://api.github.com/repos/mozilla/testpilot/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/mozilla/testpilot/downloads",
+            "issues_url": "https://api.github.com/repos/mozilla/testpilot/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/mozilla/testpilot/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/mozilla/testpilot/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/mozilla/testpilot/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/mozilla/testpilot/labels{/name}",
+            "releases_url": "https://api.github.com/repos/mozilla/testpilot/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/mozilla/testpilot/deployments",
+            "created_at": "2015-08-12T21:27:27Z",
+            "updated_at": "2017-09-27T20:31:50Z",
+            "pushed_at": "2017-09-28T17:29:39Z",
+            "git_url": "git://github.com/mozilla/testpilot.git",
+            "ssh_url": "git@github.com:mozilla/testpilot.git",
+            "clone_url": "https://github.com/mozilla/testpilot.git",
+            "svn_url": "https://github.com/mozilla/testpilot",
+            "homepage": "https://testpilot.firefox.com/",
+            "size": 46628,
+            "stargazers_count": 194,
+            "watchers_count": 194,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 94,
+            "mirror_url": null,
+            "open_issues_count": 116,
+            "forks": 94,
+            "open_issues": 116,
+            "watchers": 194,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2891"
+          },
+          "html": {
+            "href": "https://github.com/mozilla/testpilot/pull/2891"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2891"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/issues/2891/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2891/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/pulls/2891/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/mozilla/testpilot/statuses/09050ce6bf9f550a2fa222dbe09083698365c7bf"
+          }
+        },
+        "author_association": "MEMBER",
+        "merged": false,
+        "mergeable": true,
+        "rebaseable": true,
+        "mergeable_state": "unstable",
+        "merged_by": null,
+        "comments": 0,
+        "review_comments": 0,
+        "maintainer_can_modify": false,
+        "commits": 9,
+        "additions": 582,
+        "deletions": 475,
+        "changed_files": 23
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:29:46Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650754966",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "ref": "2807-experimentpage-breakdown",
+      "ref_type": "branch",
+      "master_branch": "master",
+      "description": "Test Pilot is a platform for performing controlled tests of new product concepts in Firefox",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:29:12Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6650720332",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2016486563,
+      "size": 14,
+      "distinct_size": 14,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "09050ce6bf9f550a2fa222dbe09083698365c7bf",
+      "before": "7dec6238ad8ff2f46b3cc6f790583336fce761d7",
+      "commits": [
+        {
+          "sha": "8de45190010923d74a144cb6c148cca05f562bfb",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Bump Firefox min version up to 54 (#2886)\n\nFixes #2879",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/8de45190010923d74a144cb6c148cca05f562bfb"
+        },
+        {
+          "sha": "bda522ebd59e095c40a9a1160116ffbe04db7042",
+          "author": {
+            "email": "devin@reams.me",
+            "name": "Devin Reams"
+          },
+          "message": "Fix markdown syntax for broken image embed (#2887)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/bda522ebd59e095c40a9a1160116ffbe04db7042"
+        },
+        {
+          "sha": "9796496e5c9134c7014f3675e261b664a6bb342a",
+          "author": {
+            "email": "john.gruen@gmail.com",
+            "name": "John Gruen"
+          },
+          "message": "add start date to web experiments (#2885)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/9796496e5c9134c7014f3675e261b664a6bb342a"
+        },
+        {
+          "sha": "c17175c2a8d81994a5829bb704a82525b93c0072",
+          "author": {
+            "email": "dpreston@mozilla.com",
+            "name": "Donovan Preston"
+          },
+          "message": "Fix #2791 Make sure all <Localized> instances have default content (#2890)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/c17175c2a8d81994a5829bb704a82525b93c0072"
+        },
+        {
+          "sha": "e84b8cd6b96f8431274095ea8e92059aae66b5ed",
+          "author": {
+            "email": "github-bot@pyup.io",
+            "name": "pyup.io bot"
+          },
+          "message": "Update selenium from 3.5.0 to 3.6.0 (#2882)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/e84b8cd6b96f8431274095ea8e92059aae66b5ed"
+        },
+        {
+          "sha": "adda784525860e626c72a621fcb145efff704385",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Remove import of frontend/stories from Storybook config",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/adda784525860e626c72a621fcb145efff704385"
+        },
+        {
+          "sha": "0afc0f31fbbd0741bf6210bdfeeffa6982fbce3f",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Quick linting fix for gulpfile",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/0afc0f31fbbd0741bf6210bdfeeffa6982fbce3f"
+        },
+        {
+          "sha": "e07fd1c5734f9f4adedc4c103013aaae3df12d1e",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Move ExperimentPage container into a bundle directory, move IncompatibleAddons subcomponent into the bundle",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/e07fd1c5734f9f4adedc4c103013aaae3df12d1e"
+        },
+        {
+          "sha": "1287b6ef0db8dda4cb42769cbdeeb86c4dade9ad",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Move ExperimentPage tests into bundle directory",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/1287b6ef0db8dda4cb42769cbdeeb86c4dade9ad"
+        },
+        {
+          "sha": "6746545e008acf0aed6b2004859e0bcf5062e6c8",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Fix linting errors in ExperimentPage tests",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/6746545e008acf0aed6b2004859e0bcf5062e6c8"
+        },
+        {
+          "sha": "29900cb009aac421910833aff58f245b2ddd13cb",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Try extracting TestpilotPromo and adding flowtype annotations to MainInstallButton",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/29900cb009aac421910833aff58f245b2ddd13cb"
+        },
+        {
+          "sha": "324bc18e5f88ffde697cc5fe4209a32b46d0ee29",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Reorganize subcomponents & tests used only by ExperimentPage",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/324bc18e5f88ffde697cc5fe4209a32b46d0ee29"
+        },
+        {
+          "sha": "0bb0edf894b63fe4e60ff33cd1c801042fe70ecf",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: More ExperimentPage test lint fixes",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/0bb0edf894b63fe4e60ff33cd1c801042fe70ecf"
+        },
+        {
+          "sha": "09050ce6bf9f550a2fa222dbe09083698365c7bf",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Quick experiment install fix",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/09050ce6bf9f550a2fa222dbe09083698365c7bf"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:21:44Z"
+  },
+  {
+    "id": "6650674873",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2016463362,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "7dec6238ad8ff2f46b3cc6f790583336fce761d7",
+      "before": "26c47641dacb679fef73e0559e770c951e275efb",
+      "commits": [
+        {
+          "sha": "7dec6238ad8ff2f46b3cc6f790583336fce761d7",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Quick experiment install fix",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/7dec6238ad8ff2f46b3cc6f790583336fce761d7"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:11:28Z"
+  },
+  {
+    "id": "6650637153",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2016444063,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "26c47641dacb679fef73e0559e770c951e275efb",
+      "before": "0235395a5e400b1f1ab6cd9b8bfeb091e4134450",
+      "commits": [
+        {
+          "sha": "26c47641dacb679fef73e0559e770c951e275efb",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: More ExperimentPage test lint fixes",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/26c47641dacb679fef73e0559e770c951e275efb"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-28T17:02:33Z"
+  },
+  {
+    "id": "6647088490",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2014611287,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "0235395a5e400b1f1ab6cd9b8bfeb091e4134450",
+      "before": "bc723e0b7c63030f3da2b467e5a187bb37c3b3ad",
+      "commits": [
+        {
+          "sha": "0235395a5e400b1f1ab6cd9b8bfeb091e4134450",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Reorganize subcomponents & tests used only by ExperimentPage",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/0235395a5e400b1f1ab6cd9b8bfeb091e4134450"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-28T01:38:24Z"
+  },
+  {
+    "id": "6646969659",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2014556791,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "bc723e0b7c63030f3da2b467e5a187bb37c3b3ad",
+      "before": "08656089f1b13d1878a81afcac803472ba553920",
+      "commits": [
+        {
+          "sha": "bc723e0b7c63030f3da2b467e5a187bb37c3b3ad",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Try extracting TestpilotPromo and adding flowtype annotations to MainInstallButton",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/bc723e0b7c63030f3da2b467e5a187bb37c3b3ad"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-28T00:53:57Z"
+  },
+  {
+    "id": "6646322668",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40666253,
+      "name": "lmorchard/testpilot",
+      "url": "https://api.github.com/repos/lmorchard/testpilot"
+    },
+    "payload": {
+      "push_id": 2014230127,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/2807-experimentpage-breakdown",
+      "head": "08656089f1b13d1878a81afcac803472ba553920",
+      "before": "4b7a42e446bfbd25a037eb837608cf732bf41c03",
+      "commits": [
+        {
+          "sha": "1d8e4b9f860b3950a364cae4a6a624679d01c05f",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Fix linting errors in ExperimentPage tests",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/1d8e4b9f860b3950a364cae4a6a624679d01c05f"
+        },
+        {
+          "sha": "08656089f1b13d1878a81afcac803472ba553920",
+          "author": {
+            "email": "me@lmorchard.com",
+            "name": "Les Orchard"
+          },
+          "message": "Issue #2807: Try extracting TestpilotPromo and adding flowtype annotations to MainInstallButton",
+          "distinct": true,
+          "url": "https://api.github.com/repos/lmorchard/testpilot/commits/08656089f1b13d1878a81afcac803472ba553920"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-27T21:20:52Z"
+  },
+  {
+    "id": "6644735456",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2881",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881/events",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2881",
+        "id": 260446729,
+        "number": 2881,
+        "title": "Update pytest-firefox to 0.1.1",
+        "user": {
+          "login": "pyup-bot",
+          "id": 16239342,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/16239342?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pyup-bot",
+          "html_url": "https://github.com/pyup-bot",
+          "followers_url": "https://api.github.com/users/pyup-bot/followers",
+          "following_url": "https://api.github.com/users/pyup-bot/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pyup-bot/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pyup-bot/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pyup-bot/subscriptions",
+          "organizations_url": "https://api.github.com/users/pyup-bot/orgs",
+          "repos_url": "https://api.github.com/users/pyup-bot/repos",
+          "events_url": "https://api.github.com/users/pyup-bot/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pyup-bot/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2017-09-25T23:35:43Z",
+        "updated_at": "2017-09-27T15:35:37Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "pull_request": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/pulls/2881",
+          "html_url": "https://github.com/mozilla/testpilot/pull/2881",
+          "diff_url": "https://github.com/mozilla/testpilot/pull/2881.diff",
+          "patch_url": "https://github.com/mozilla/testpilot/pull/2881.patch"
+        },
+        "body": "\nThere's a new version of [pytest-firefox](https://pypi.python.org/pypi/pytest-firefox) available.\nYou are currently using **0.1.0**. I have updated it to **0.1.1**\n\n\n\nThese links might come in handy:  <a href=\"https://pypi.python.org/pypi/pytest-firefox\">PyPI</a> | <a href=\"https://pyup.io/changelogs/pytest-firefox/\">Changelog</a> | <a href=\"https://github.com/jrbenny35/pytest-firefox\">Repo</a> \n\n\n*I couldn't find a changelog for this release. Do you know where I can find one? [Tell me!](https://github.com/pyupio/changelogs/issues/new)*\n\n\n*Got merge conflicts? Close this PR and delete the branch. I'll create a new PR for you.*\n\nHappy merging! 🤖\n"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332562220",
+        "html_url": "https://github.com/mozilla/testpilot/pull/2881#issuecomment-332562220",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2881",
+        "id": 332562220,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-27T15:35:37Z",
+        "updated_at": "2017-09-27T15:35:37Z",
+        "author_association": "MEMBER",
+        "body": "# Storybook Deployment\nPull Request: http://testpilot-storybook.dev.mozaws.net/pull/2881/index.html\nCommit: http://testpilot-storybook.dev.mozaws.net/37268518f9615dfdb11d12f011ef36bb37d20102/"
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-27T15:36:12Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6644732957",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/2868",
+        "repository_url": "https://api.github.com/repos/mozilla/testpilot",
+        "labels_url": "https://api.github.com/repos/mozilla/testpilot/issues/2868/labels{/name}",
+        "comments_url": "https://api.github.com/repos/mozilla/testpilot/issues/2868/comments",
+        "events_url": "https://api.github.com/repos/mozilla/testpilot/issues/2868/events",
+        "html_url": "https://github.com/mozilla/testpilot/issues/2868",
+        "id": 258551486,
+        "number": 2868,
+        "title": "Test Pilot wrongly removes also the enabled experiments at uninstall",
+        "user": {
+          "login": "SoftVision-PaulOiegas",
+          "id": 17258026,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/17258026?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SoftVision-PaulOiegas",
+          "html_url": "https://github.com/SoftVision-PaulOiegas",
+          "followers_url": "https://api.github.com/users/SoftVision-PaulOiegas/followers",
+          "following_url": "https://api.github.com/users/SoftVision-PaulOiegas/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SoftVision-PaulOiegas/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SoftVision-PaulOiegas/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SoftVision-PaulOiegas/subscriptions",
+          "organizations_url": "https://api.github.com/users/SoftVision-PaulOiegas/orgs",
+          "repos_url": "https://api.github.com/users/SoftVision-PaulOiegas/repos",
+          "events_url": "https://api.github.com/users/SoftVision-PaulOiegas/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SoftVision-PaulOiegas/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 459650619,
+            "url": "https://api.github.com/repos/mozilla/testpilot/labels/qa:verified",
+            "name": "qa:verified",
+            "color": "5319e7",
+            "default": false
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/mozilla/testpilot/milestones/46",
+          "html_url": "https://github.com/mozilla/testpilot/milestone/46",
+          "labels_url": "https://api.github.com/repos/mozilla/testpilot/milestones/46/labels",
+          "id": 2774512,
+          "number": 46,
+          "title": "Sprint 32",
+          "description": "",
+          "creator": {
+            "login": "wresuolc",
+            "id": 16946141,
+            "avatar_url": "https://avatars3.githubusercontent.com/u/16946141?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/wresuolc",
+            "html_url": "https://github.com/wresuolc",
+            "followers_url": "https://api.github.com/users/wresuolc/followers",
+            "following_url": "https://api.github.com/users/wresuolc/following{/other_user}",
+            "gists_url": "https://api.github.com/users/wresuolc/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/wresuolc/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/wresuolc/subscriptions",
+            "organizations_url": "https://api.github.com/users/wresuolc/orgs",
+            "repos_url": "https://api.github.com/users/wresuolc/repos",
+            "events_url": "https://api.github.com/users/wresuolc/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/wresuolc/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 13,
+          "state": "open",
+          "created_at": "2017-09-18T15:24:58Z",
+          "updated_at": "2017-09-27T15:25:33Z",
+          "due_on": "2017-09-28T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 6,
+        "created_at": "2017-09-18T17:00:39Z",
+        "updated_at": "2017-09-27T15:35:11Z",
+        "closed_at": "2017-09-27T13:20:09Z",
+        "author_association": "NONE",
+        "body": "**[Affected versions]:**\r\n- Firefox 55.0.3 and above\r\n\r\n**[Affected Platforms]:**\r\n- All Windows\r\n\r\n**[Prerequisites]:**\r\n- The \"testpilot.env\" string pref was manually added with \"stage\" value on a new clean profile in \"about:config\" page.\r\n- The \"extensions.webapi.testing\" boolean pref was manually added with \"true\" value on the crated profile.\r\n- Test Pilot stage add-on was already installed on the created profile.\r\n\r\n**[Steps to reproduce]:**\r\n1. Open Firefox browser with the profile from prerequisites and navigate to https://testpilot.dev.mozaws.net page.\r\n2. Choose to install Test Pilot add-on.\r\n3. Click on any of the active experiments cards and enable at least one of them\r\n4. Restart the browser.\r\n5. Navigate again to https://testpilot.dev.mozaws.net page and click on \"Settings\" top right button.\r\n6. While observing the enabled experiment(s) card(s) ,choose to uninstall Test Pilot and confirm the action. \r\n\r\n**[Expected result]:**\r\n- Test Pilot add-on is removed, you are redirected to Homepage but the enabled experiment remains enabled.\r\n\r\n**[Actual result]:**\r\n- Test Pilot add-on is removed but you wrongly remain on the experiments page and the enabled experiment is also removed.\r\n\r\n**[Notes]:**\r\n- The same behavior occurs even if you manually remove Test Pilot add-on from about:addons page."
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/mozilla/testpilot/issues/comments/332562098",
+        "html_url": "https://github.com/mozilla/testpilot/issues/2868#issuecomment-332562098",
+        "issue_url": "https://api.github.com/repos/mozilla/testpilot/issues/2868",
+        "id": 332562098,
+        "user": {
+          "login": "lmorchard",
+          "id": 21687,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/21687?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lmorchard",
+          "html_url": "https://github.com/lmorchard",
+          "followers_url": "https://api.github.com/users/lmorchard/followers",
+          "following_url": "https://api.github.com/users/lmorchard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lmorchard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lmorchard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lmorchard/subscriptions",
+          "organizations_url": "https://api.github.com/users/lmorchard/orgs",
+          "repos_url": "https://api.github.com/users/lmorchard/repos",
+          "events_url": "https://api.github.com/users/lmorchard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lmorchard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-09-27T15:35:11Z",
+        "updated_at": "2017-09-27T15:35:11Z",
+        "author_association": "MEMBER",
+        "body": ">  but I'll keep an eye for any strange behavior in the future\r\n\r\nThanks for keeping an eye on this stuff! It's annoying that it seems like it has a mind of its own sometimes 😟 "
+      }
+    },
+    "public": true,
+    "created_at": "2017-09-27T15:35:41Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  },
+  {
+    "id": "6644683924",
+    "type": "PushEvent",
+    "actor": {
+      "id": 21687,
+      "login": "lmorchard",
+      "display_login": "lmorchard",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lmorchard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21687?"
+    },
+    "repo": {
+      "id": 40625180,
+      "name": "mozilla/testpilot",
+      "url": "https://api.github.com/repos/mozilla/testpilot"
+    },
+    "payload": {
+      "push_id": 2013399197,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "e84b8cd6b96f8431274095ea8e92059aae66b5ed",
+      "before": "c17175c2a8d81994a5829bb704a82525b93c0072",
+      "commits": [
+        {
+          "sha": "e84b8cd6b96f8431274095ea8e92059aae66b5ed",
+          "author": {
+            "email": "github-bot@pyup.io",
+            "name": "pyup.io bot"
+          },
+          "message": "Update selenium from 3.5.0 to 3.6.0 (#2882)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/mozilla/testpilot/commits/e84b8cd6b96f8431274095ea8e92059aae66b5ed"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-09-27T15:26:48Z",
+    "org": {
+      "id": 131524,
+      "login": "mozilla",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/mozilla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131524?"
+    }
+  }
+]

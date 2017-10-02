@@ -38,6 +38,17 @@ const config = (module.exports = {
         use: ['babel-loader']
       },
       {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name]-[sha256:hash:base64:8].[ext]'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
@@ -75,7 +86,15 @@ if (IS_DEV) {
   config.plugins = config.plugins.concat([
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      chunks: ['index'],
+      template: './src/index.html.ejs',
+      filename: 'index.html',
+      title: 'About Me',
+      css: [],
+      js: []
+    })
   ]);
 
   config.module.rules.push({

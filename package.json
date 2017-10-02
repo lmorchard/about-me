@@ -34,7 +34,7 @@
     "css-loader": "^0.28.7",
     "ejs": "^2.5.7",
     "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^1.1.3",
+    "file-loader": "^1.1.4",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "react-hot-loader": "^3.0.0-beta.7",
@@ -48,9 +48,13 @@
   },
   "dependencies": {
     "commonmark": "^0.28.1",
+    "fxemoji": "git+https://github.com/mozilla/fxemoji.git",
     "http-server": "^0.10.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-markdown": "^2.5.0"
+    "react-emojione": "^3.1.10",
+    "react-markdown": "^2.5.0",
+    "react-remarkable": "^1.1.2",
+    "timeago.js": "^3.0.2"
   }
 }

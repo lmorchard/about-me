@@ -6,12 +6,21 @@ import { renderToString } from 'react-dom/server';
 import './index.scss';
 import App from './containers/App';
 
+import GITHUB_DATA from '../data/github.json';
+
+const state = {
+  github: {
+    username: 'lmorchard',
+    events: GITHUB_DATA
+  }
+};
+
 if (typeof global.document !== 'undefined') {
   const rootEl = document.getElementById('root');
   const render = Component =>
     hydrate(
       <AppContainer>
-        <Component />
+        <Component {...state} />
       </AppContainer>,
       rootEl
     );
@@ -23,9 +32,13 @@ export default data => {
   const { title } = data;
   const assets = Object.keys(data.webpackStats.compilation.assets);
   return data.template({
-    css: assets.filter(value => value.match(/\.css$/)),
-    js: assets.filter(value => value.match(/\.js$/)),
-    body: renderToString(<App />),
-    ...data
+    htmlWebpackPlugin: {
+      options: {
+        title,
+        css: assets.filter(value => value.match(/\.css$/)),
+        js: assets.filter(value => value.match(/\.js$/)),
+        body: renderToString(<App {...state} />)
+      }
+    }
   });
 };

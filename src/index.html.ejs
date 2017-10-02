@@ -1,16 +1,16 @@
 <html lang="en">
   <head>
     <meta charSet="utf-8" />
-    <title><%= title %></title>
-    <% css.forEach(function(file){ %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% htmlWebpackPlugin.options.css.forEach(function(file){ %>
       <link href="<%- file %>" rel="stylesheet">
     <% }); %>
   </head>
   <body>
     <div id="root">
-      <%- body %>
+      <%- htmlWebpackPlugin.options.body %>
     </div>
-    <% js.forEach(function(file){ %>
+    <% htmlWebpackPlugin.options.js.forEach(function(file){ %>
       <script src="<%- file %>" async></script>
     <% }); %>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
