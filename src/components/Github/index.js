@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import timeago from 'timeago.js';
+import ReactMarkdown from 'react-markdown';
 
 import Card from '../Card';
 import './index.scss';
@@ -189,7 +190,8 @@ export class GitHub extends React.Component {
 
   renderCommitMessage(event) {
     const { message } = event.payload.commits[0];
-    return <span className="commitMessage">{message}</span>;
+    const summary = message.split(/\n/)[0];
+    return <span className="commitMessage">{summary}</span>;
   }
 
   renderBranch(event) {
