@@ -18,7 +18,8 @@
         &::before { content: "\1F49F"; }
       }
       &.PushEvent {
-        &::before { content: "\1F5E7"; }
+        &::before { content: "\27A1"; }
+        // &::before { content: "\1F5E7"; }
       }
       &.PullRequestEvent {
         &::before { content: "\1F5E4"; }

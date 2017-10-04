@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run server",
+    "update": "node ./bin/update.js",
     "server": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack -p"
   },
@@ -34,14 +35,18 @@
     "css-loader": "^0.28.7",
     "ejs": "^2.5.7",
     "extract-text-webpack-plugin": "^3.0.0",
+    "feedparser": "^2.2.1",
+    "fetch": "^1.1.0",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "react-hot-loader": "^3.0.0-beta.7",
     "sass-loader": "^6.0.6",
     "schema-utils": "^0.3.0",
+    "spotify-web-api-node": "^2.5.0",
     "static-site-generator-webpack-plugin": "^3.4.1",
     "style-loader": "^0.18.2",
+    "twitter": "^1.7.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
@@ -53,6 +58,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-markdown": "^2.5.0",
-    "timeago.js": "^3.0.2"
+    "timeago.js": "^3.0.2",
+    "twitter-text": "^1.14.7"
   }
 }

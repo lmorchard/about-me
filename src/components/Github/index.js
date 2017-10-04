@@ -1,14 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
 import timeago from 'timeago.js';
-import ReactMarkdown from 'react-markdown';
 
 import Card from '../Card';
 import './index.scss';
 
 const BASE_URL = 'https://github.com';
 
-export class GitHub extends React.Component {
+export class Github extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -215,15 +214,21 @@ export class GitHub extends React.Component {
   }
 
   /* TODO - https://developer.github.com/v3/activity/events/types/
-  renderCommitCommentEvent
+  renderForkEvent
   renderDeleteEvent
+  renderFollowEvent
+  renderGistEvent
+  renderPageBuildEvent
+  renderPullRequestReviewEvent
+  renderPullRequestReviewCommentEvent
+  renderCommitCommentEvent
+  renderReleaseEvent
+  renderRepositoryEvent
+  renderStatusEvent
   renderDeploymentEvent
   renderDeploymentStatusEvent
   renderDownloadEvent
-  renderFollowEvent
-  renderForkEvent
   renderForkApplyEvent
-  renderGistEvent
   renderGollumEvent
   renderInstallationEvent
   renderInstallationRepositoriesEvent
@@ -234,19 +239,13 @@ export class GitHub extends React.Component {
   renderMilestoneEvent
   renderOrganizationEvent
   renderOrgBlockEvent
-  renderPageBuildEvent
   renderProjectCardEvent
   renderProjectColumnEvent
   renderProjectEvent
   renderPublicEvent
-  renderPullRequestReviewEvent
-  renderPullRequestReviewCommentEvent
-  renderReleaseEvent
-  renderRepositoryEvent
-  renderStatusEvent
   renderTeamEvent
   renderTeamAddEvent
   */
 }
 
-export default GitHub;
+export default Github;

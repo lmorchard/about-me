@@ -20,6 +20,14 @@
   color: #eee;
   line-height: 1.5em;
 
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   h3 {
     position: absolute;
     top: 0;

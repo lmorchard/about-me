@@ -6,26 +6,25 @@ import { renderToString } from 'react-dom/server';
 import './index.scss';
 import App from './containers/App';
 
-import GITHUB_DATA from '../data/github.json';
-
-const state = {
-  github: {
-    username: 'lmorchard',
-    events: GITHUB_DATA
-  }
-};
+let state = require('../data.json');
 
 if (typeof global.document !== 'undefined') {
   const rootEl = document.getElementById('root');
-  const render = Component =>
+  const render = (Component, state) =>
     hydrate(
       <AppContainer>
         <Component {...state} />
       </AppContainer>,
       rootEl
     );
-  render(App);
-  if (module.hot) module.hot.accept('./containers/App', () => render(App));
+  render(App, state);
+  if (module.hot) {
+    module.hot.accept('./containers/App', () => render(App, state));
+    module.hot.accept('../data.json', () => {
+      state = require('../data.json');
+      render(App, state);
+    });
+  }
 }
 
 export default data => {

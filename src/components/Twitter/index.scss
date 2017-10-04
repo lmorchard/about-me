@@ -1,0 +1,30 @@
+.card.twitter {
+  ul {
+    list-style: none;
+    margin: 0.5em 1em;
+    padding: 0;
+    li {
+      margin-bottom: 1em;
+      padding-left: 1.75em;
+      text-indent: -1.75em;
+      &::before {
+        float: left;
+        width: 1.75em;
+        font-style: normal;
+        font-weight: normal;
+        font-family: "fxemoji-symbols";
+        content: "\1F5E3";
+      }
+      .tweet-url {
+        font-weight: bold;
+      }
+      .createdAt {
+        white-space: nowrap;
+        padding-left: 0.5em;
+        font-size: 0.75em;
+        text-decoration: underline dotted;
+      }
+    }
+  }
+}
+
