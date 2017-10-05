@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 100em) {
   .card {
     flex: 0 1 calc(33% - 0.3em);
     &.span-wide { flex: 0 2 calc(66% - 0.15em); }

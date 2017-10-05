@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames';
-import timeago from 'timeago.js';
 
 import Card from '../Card';
 import './index.scss';
