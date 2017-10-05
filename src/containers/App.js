@@ -9,6 +9,8 @@ import Card from '../components/Card';
 import Bio from '../components/Bio';
 import Github from '../components/Github';
 import Twitter from '../components/Twitter';
+import Spotify from '../components/Spotify';
+import Steam from '../components/Steam';
 
 export default class App extends Component {
   render() {
@@ -22,9 +24,9 @@ export default class App extends Component {
         </Card>
 
         <Bio theme="secondary-1" {...this.props.Bio} />
-
+        <Steam theme="default" {...this.props.Steam} />
+        <Spotify theme="complement" {...this.props.Spotify} />
         <Github theme="primary" {...this.props.Github} />
-
         <Twitter theme="secondary-2" {...this.props.Twitter} />
 
         {/*
