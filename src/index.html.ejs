@@ -11,7 +11,9 @@
       <%- htmlWebpackPlugin.options.body %>
     </div>
     <% htmlWebpackPlugin.options.js.forEach(function(file){ %>
-      <script src="<%- file %>" async></script>
+      <% if (file.indexOf('static') !== 0) { %>
+        <script src="<%- file %>" async></script>
+      <% } %>
     <% }); %>
   </body>
 </html>

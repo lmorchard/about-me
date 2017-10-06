@@ -13,6 +13,8 @@ import Twitter from '../components/Twitter';
 import Spotify from '../components/Spotify';
 import Steam from '../components/Steam';
 
+import Counter from '../components/Counter';
+
 export default class App extends Component {
   render() {
     return ([
@@ -22,6 +24,16 @@ export default class App extends Component {
           <h3>Les Orchard &lt;me@lmorchard.com&gt;</h3>
           <div className="img"><img src={Avatar} /></div>
           <h4>This is me!</h4>
+        </Card>
+
+        <Card>
+          <h3>Counter</h3>
+          <section>
+            <div id="counter1"><Counter /></div>
+            <div id="counter2"><Counter /></div>
+            <div id="counter3"><Counter /></div>
+            <div id="counter4"><Counter /></div>
+          </section>
         </Card>
 
         <Bio theme="secondary-1" {...this.props.Bio} />

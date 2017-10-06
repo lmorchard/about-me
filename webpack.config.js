@@ -17,9 +17,6 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const IS_DEV = NODE_ENV === 'development';
 
 const config = (module.exports = {
-  entry: {
-    index: ['./src/index.js']
-  },
   output: {
     filename: '[name]-[hash].js',
     path: path.join(__dirname, 'dist'),
@@ -66,6 +63,15 @@ const config = (module.exports = {
 
 if (IS_DEV) {
 
+  config.entry = {
+    index: [
+      'react-hot-loader/patch',
+      `webpack-dev-server/client?http://${HOST}:${PORT}`,
+      'webpack/hot/only-dev-server',
+      './src/dev/index.js'
+    ]
+  };
+
   Object.assign(config, {
     devtool: 'source-maps',
     devServer: {
@@ -76,12 +82,6 @@ if (IS_DEV) {
       hot: true
     }
   });
-
-  config.entry.index = [
-    'react-hot-loader/patch',
-    `webpack-dev-server/client?http://${HOST}:${PORT}`,
-    'webpack/hot/only-dev-server'
-  ].concat(config.entry.index);
 
   config.plugins = config.plugins.concat([
     new webpack.NamedModulesPlugin(),
@@ -103,6 +103,11 @@ if (IS_DEV) {
   });
 
 } else {
+
+  config.entry = {
+    index: [ './src/prod/index.js' ],
+    static: [ './src/prod/static.js' ]
+  };
 
   config.plugins = config.plugins.concat([
     new ExtractTextPlugin({
