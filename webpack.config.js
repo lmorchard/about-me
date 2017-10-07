@@ -32,7 +32,20 @@ const config = (module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+            presets: [
+              ["env", {modules: false}],
+              "react"
+            ],
+            plugins: [
+              "transform-object-rest-spread",
+              "react-hot-loader/babel"
+            ]
+          }
+        }
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
