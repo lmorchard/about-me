@@ -56,6 +56,10 @@ const config = (module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(md|txt)$/,
+        use: 'raw-loader'
       }
     ]
   }

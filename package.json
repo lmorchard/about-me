@@ -40,6 +40,7 @@
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.0.0-beta.7",
     "sass-loader": "^6.0.6",
     "schema-utils": "^0.3.0",
@@ -59,6 +60,7 @@
     "react-dom": "^16.0.0",
     "react-markdown": "^2.5.0",
     "timeago.js": "^3.0.2",
-    "twitter-text": "^1.14.7"
+    "twitter-text": "^1.14.7",
+    "xml2js": "^0.4.19"
   }
 }

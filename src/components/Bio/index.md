@@ -14,6 +14,5 @@ exhaust on the web. It might offer a better idea of what I'm about.
 * pinboard.in
 * pocket?
 * Tooter
-* Goodreads
 * Featured projects
 

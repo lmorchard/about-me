@@ -18,7 +18,7 @@ export class Steam extends React.Component {
 
     const filterSort = list =>
       list
-        .filter(game => game.playtime_forever > 60)
+        .filter(game => game.playtime_forever > 30)
         .filter(game => !ignoreAppids.includes(game.appid))
         .sort((a, b) => b.playtime_forever - a.playtime_forever);
 

@@ -7,18 +7,18 @@ delete babelrc.presets[0][1].modules;
 require('babel-register')(babelrc);
 
 const config = require('../config');
-const components = config.global.components;
+const toFetch = config.global.fetch;
 
 function main() {
   Promise.all(
-    components.map(name =>
+    toFetch.map(name =>
       require(`../src/components/${name}/fetch.js`).default(config[name])
     )
   ).then(results => {
     const state = {
       Bio: { }
     };
-    results.forEach((data, idx) => (state[components[idx]] = data));
+    results.forEach((data, idx) => (state[toFetch[idx]] = data));
     fs.writeFileSync(
       __dirname + '/../data.json',
       JSON.stringify(state, null, ' ')
