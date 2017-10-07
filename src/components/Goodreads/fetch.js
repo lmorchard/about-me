@@ -5,15 +5,12 @@ import { all, map } from '../../lib/utils';
 
 const parseString = promisify(xml2js.parseString);
 
-const userUrl = ({ key, user_id }) =>
-  `https://www.goodreads.com/user/show/${user_id}.xml?key=${key}`;
-
-const reviewsUrl = ({ key, user_id }) =>
-  `https://www.goodreads.com/review/list/${user_id}.xml?key=${key}&v=2`;
-
 export default async function fetchData(config) {
-  const [user, reviews] = await map([userUrl, reviewsUrl], async urlFn => {
-    const url = urlFn(config);
+  const { user_id, key } = config;
+  const [user, reviews] = await map([
+    `https://www.goodreads.com/user/show/${user_id}.xml?key=${key}`,
+    `https://www.goodreads.com/review/list/${user_id}.xml?key=${key}&v=2`
+  ], async url => {
     const res = await fetch(url);
     const xml = await res.text();
     const data = await parseString(xml);
