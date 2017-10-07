@@ -12,11 +12,13 @@ const reviewsUrl = ({ key, user_id }) =>
   `https://www.goodreads.com/review/list/${user_id}.xml?key=${key}&v=2`;
 
 export default async function fetchData(config) {
-  const urls = [userUrl(config), reviewsUrl(config)];
-  const responses = await map(urls, url => fetch(url));
-  const xmls = await map(responses, res => res.text());
-  const data = await map(xmls, xml => parseString(xml));
-  const [user, reviews] = data.map(d => d.GoodreadsResponse);
+  const [user, reviews] = await map([userUrl, reviewsUrl], async urlFn => {
+    const url = urlFn(config);
+    const res = await fetch(url);
+    const xml = await res.text();
+    const data = await parseString(xml);
+    return data.GoodreadsResponse;
+  });
 
   return {
     username: user.user[0].user_name[0],
