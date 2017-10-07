@@ -5,6 +5,7 @@ const fs = require('fs');
 const babelrc = JSON.parse(fs.readFileSync(__dirname + '/../.babelrc'));
 delete babelrc.presets[0][1].modules;
 require('babel-register')(babelrc);
+require("regenerator-runtime/runtime");
 
 const config = require('../config');
 const toFetch = config.global.fetch;

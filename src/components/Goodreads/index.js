@@ -5,10 +5,7 @@ import './index.scss';
 
 export class Goodreads extends React.Component {
   render() {
-    const user = this.props.user;
-    const username = user.user_name[0];
-    const link = user.link[0];
-    const reviews = this.props.reviews.review;
+    const { username, link, reviews } = this.props;
 
     return (
       <Card className="goodreads" {...this.props}>
@@ -25,10 +22,7 @@ export class Goodreads extends React.Component {
   }
 
   renderReview(review, idx) {
-    const book = review.book[0];
-    const title = book.title[0];
-    const image_url = book.image_url[0];
-    const link = book.link[0];
+    const { title, image_url, link } = review;
 
     return (
       <li key={idx} className="review">
