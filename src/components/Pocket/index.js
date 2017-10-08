@@ -31,12 +31,12 @@ export class Pocket extends React.Component {
       <li key={idx} className="item">
         {image && <img src={image} title={title} />}
         <div>
-          <a href={link} className="title">
-            {title}
-          </a>
           <span className="createdAt">
             {timeago().format(updatedAdj)}
           </span>
+          <a href={link} className="title">
+            {title}
+          </a>
           <p className="excerpt">{excerpt}</p>
         </div>
       </li>
