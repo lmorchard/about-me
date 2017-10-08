@@ -41,7 +41,8 @@ export class Github extends React.Component {
     }
     return (
       <li key={idx} className={classnames('event', event.type)}>
-        {children} {this.renderCreatedAt(event)}
+        {this.renderCreatedAt(event)}
+        {children}
       </li>
     );
   }

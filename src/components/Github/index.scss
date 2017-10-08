@@ -4,6 +4,7 @@
     margin: 0.5em 1em;
     padding: 0;
     li {
+      clear: both;
       margin-bottom: 1em;
       padding-left: 1.75em;
       text-indent: -1.75em;
@@ -40,8 +41,10 @@
         font-style: italic;
       }
       .createdAt {
+        float: right;
         white-space: nowrap;
-        padding-left: 0.5em;
+        padding: 0 0 1em 1em;
+        text-indent: 0;
         font-size: 0.75em;
         text-decoration: underline dotted;
       }
