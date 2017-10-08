@@ -18,7 +18,7 @@ const IS_DEV = NODE_ENV === 'development';
 
 const config = (module.exports = {
   output: {
-    filename: '[name]-[hash].js',
+    filename: 'about-me/[name]-[hash].js',
     path: path.join(__dirname, 'dist'),
     libraryTarget: 'umd'
   },
@@ -53,7 +53,7 @@ const config = (module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'fonts/[name]-[sha256:hash:base64:8].[ext]'
+              name: 'about-me/fonts/[name]-[sha256:hash:base64:8].[ext]'
             }
           }
         ]
@@ -65,7 +65,7 @@ const config = (module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: 'images/[name]-[sha256:hash:base64:8].[ext]'
+              name: 'about-me/images/[name]-[sha256:hash:base64:8].[ext]'
             }
           }
         ]
@@ -128,7 +128,7 @@ if (IS_DEV) {
 
   config.plugins = config.plugins.concat([
     new ExtractTextPlugin({
-      filename: '[name]-[contenthash].css',
+      filename: 'about-me/[name]-[contenthash].css',
       allChunks: true
     }),
     new webpack.optimize.UglifyJsPlugin({
