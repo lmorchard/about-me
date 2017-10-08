@@ -5,14 +5,13 @@ home{brew,roast}er; [serially enthusiastic][]; he/him; mozillian*
 
 I don't like writing my own bio. So, I've been kicking around that too-clever
 thing above for the last decade or so. Seems like it's been a stable
-description.
+description, if you don't mind reading curly braces.
 
-What I like better than writing a bio is tinkering with code and
-data. So, the rest of this page is a collection of my personal data
-exhaust. It might offer a better idea of what I'm about.
+Tinkering with data & code is something I like *much* better than writing a bio.
+So, the rest of this page is a collection of my personal data exhaust and featured
+projects. 
 
-* pinboard.in
-* pocket?
-* Tooter
-* Featured projects
-
+If you feel like it, drop me [an email](mailto:me@lmorchard.com) or 
+[a tweet](https://twitter.com/lmorchard) or 
+[a toot](https://toot.lmorchard.com/@lmorchard) &mdash; or find me in one of
+the other usual places below.

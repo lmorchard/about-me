@@ -7,7 +7,7 @@ import './index.scss';
 
 export class Bio extends React.Component {
   render() {
-    const { src } = this.props;
+    const { avatarTitle, title, src } = this.props;
 
     const reader = new commonmark.Parser();
     const writer = new commonmark.HtmlRenderer();
@@ -16,9 +16,11 @@ export class Bio extends React.Component {
 
     const createMarkup = () => ({ __html: content });
     return (
-      <Card className="bio" {...this.props}>
-        <h3>About Me</h3>
-        <section dangerouslySetInnerHTML={createMarkup()} />
+      <Card {...this.props} className={classnames('bio', this.props.className)}>
+        <h3>{title}</h3>
+        <section>
+          <div className="text" dangerouslySetInnerHTML={createMarkup()} />
+        </section>
       </Card>
     );
   }
