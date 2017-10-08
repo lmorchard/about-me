@@ -21,7 +21,7 @@ const themes = [
   'primary',
   'secondary-1',
   'secondary-2',
-  'complement'
+  'complement',
 ];
 let themeIdx = -1;
 const theme = () => {
@@ -61,6 +61,13 @@ export default class App extends Component {
             link="https://github.com/lmorchard/panic-ranger"
             thumbnail={require('../content/panic-ranger.gif')}
             src={require('../content/panic-ranger.md')}
+            theme={theme()}
+          />
+          <Project
+            title="Poke the Mongo"
+            link="https://lmorchard.itch.io/poke-the-mongo"
+            thumbnail={require('../content/poke-the-mongo.gif')}
+            src={require('../content/poke-the-mongo.md')}
             theme={theme()}
           />
           <Project
