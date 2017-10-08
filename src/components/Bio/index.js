@@ -7,7 +7,7 @@ import './index.scss';
 
 export class Bio extends React.Component {
   render() {
-    const { avatarTitle, title, src } = this.props;
+    const { title, src } = this.props;
 
     const reader = new commonmark.Parser();
     const writer = new commonmark.HtmlRenderer();

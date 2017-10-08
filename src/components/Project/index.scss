@@ -1,0 +1,19 @@
+.card.project {
+  section {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+    .thumbnail img {
+      margin: 1em;
+      max-width: 50%;
+      max-height: 50%;
+    }
+    a {
+      font-weight: bold;
+    }
+    p {
+      text-align: left;
+      margin: 1em;
+    }
+  }
+}

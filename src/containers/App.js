@@ -14,8 +14,7 @@ import Spotify from '../components/Spotify';
 import Steam from '../components/Steam';
 import Goodreads from '../components/Goodreads';
 import Pocket from '../components/Pocket';
-
-import bioSrc from '../components/Bio/index.md';
+import Project from '../components/Project';
 
 const themes = [
   'default',
@@ -38,7 +37,39 @@ export default class App extends Component {
         <Header title="Les Orchard <me@lmorchard.com>" />
         <Layout>
           <Avatar theme={theme()} title="That's me!" />
-          <Bio theme={theme()} title="About Me" src={bioSrc} />
+          <Bio
+            theme={theme()}
+            title="About Me"
+            src={require('../content/bio.md')}
+          />
+          <Project
+            title="Firefox Test Pilot"
+            link="https://testpilot.firefox.com/"
+            thumbnail={require('../content/testpilot.png')}
+            src={require('../content/testpilot.md')}
+            theme={theme()}
+          />
+          <Project
+            title="Snooze Tabs"
+            link="https://testpilot.firefox.com/experiments/snooze-tabs"
+            thumbnail={require('../content/snoozetabs.png')}
+            src={require('../content/snoozetabs.md')}
+            theme={theme()}
+          />
+          <Project
+            title="Panic Ranger"
+            link="https://github.com/lmorchard/panic-ranger"
+            thumbnail={require('../content/panic-ranger.gif')}
+            src={require('../content/panic-ranger.md')}
+            theme={theme()}
+          />
+          <Project
+            title="lmorchard.com"
+            link="https://github.com/lmorchard/about-me"
+            thumbnail={require('../content/aboutme.png')}
+            src={require('../content/aboutme.md')}
+            theme={theme()}
+          />
           <Blog theme={theme()} {...this.props.Blog} />
           <Twitter theme={theme()} {...this.props.Twitter} />
           <Github theme={theme()} {...this.props.Github} />
