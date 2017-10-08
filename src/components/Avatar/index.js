@@ -7,14 +7,15 @@ import AvatarImage from './me.jpg';
 
 export class Avatar extends React.Component {
   render() {
-    const { title } = this.props;
+    const { title, subtitle } = this.props;
 
     return (
       <Card {...this.props} className={classnames('avatar', this.props.className)}>
-        <h3>{title}</h3>
+        {title && <h3>{title}</h3>}
         <section>
           <img className="avatar" src={AvatarImage} />
         </section>
+        {subtitle && <h4>{subtitle}</h4>}
       </Card>
     );
   }

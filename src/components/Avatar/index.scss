@@ -1,6 +1,6 @@
 .card.avatar {
   section {
     text-align: center;
-    img { height: 100%; }
+    img { height: calc(100% - 3em); }
   }
 }

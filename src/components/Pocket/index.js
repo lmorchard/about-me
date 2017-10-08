@@ -12,7 +12,7 @@ export class Pocket extends React.Component {
     return (
       <Card className="pocket" {...this.props}>
         <h3>
-          Pocket (<a href={profileURL}>{username}</a>)
+          Pocket (<a href={profileURL}>@{username}</a>)
         </h3>
         <section>
           <ul>{items.map((item, idx) => this.renderItem(item, idx))}</ul>

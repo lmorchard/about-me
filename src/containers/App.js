@@ -35,7 +35,11 @@ export default class App extends Component {
     themeIdx = -1;
     return [
       <Layout>
-        <Avatar theme={theme()} title="Les Orchard <me@lmorchard.com>" />
+        <Avatar
+          theme={theme()}
+          title="Les Orchard <me@lmorchard.com>"
+          subtitle="That's me!"
+        />
         <Bio theme={theme()} title="About Me" src={bioSrc} />
         <Blog theme={theme()} {...this.props.Blog} />
         <Twitter theme={theme()} {...this.props.Twitter} />
