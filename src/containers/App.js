@@ -15,6 +15,7 @@ import Steam from '../components/Steam';
 import Goodreads from '../components/Goodreads';
 import Pocket from '../components/Pocket';
 import Project from '../components/Project';
+import ActivityPub from '../components/ActivityPub';
 
 const themes = [
   'default',
@@ -78,6 +79,7 @@ export default class App extends Component {
             theme={theme()}
           />
           <Blog {...this.props.Blog} theme={theme()} />
+          <ActivityPub {...this.props.Toots} name="Toots" maxItems={100} theme={theme()} />
           <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
           <Github {...this.props.Github} maxItems={7} theme={theme()} />
           <Pocket {...this.props.Pocket} maxItems={7} theme={theme()} />

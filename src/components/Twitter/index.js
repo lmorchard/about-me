@@ -34,7 +34,8 @@ export class Twitter extends React.Component {
   renderStatus(status, idx) {
     return (
       <li key={idx} className="status">
-        {this.renderText(status)} {this.renderCreatedAt(status)}
+        {this.renderCreatedAt(status)}
+        {this.renderText(status)}
       </li>
     );
   }
