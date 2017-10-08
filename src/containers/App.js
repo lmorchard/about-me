@@ -77,13 +77,13 @@ export default class App extends Component {
             src={require('../content/aboutme.md')}
             theme={theme()}
           />
-          <Blog theme={theme()} {...this.props.Blog} />
-          <Twitter theme={theme()} {...this.props.Twitter} />
-          <Github theme={theme()} {...this.props.Github} />
-          <Pocket theme={theme()} {...this.props.Pocket} />
-          <Spotify theme={theme()} {...this.props.Spotify} />
-          <Steam theme={theme()} {...this.props.Steam} />
-          <Goodreads theme={theme()} {...this.props.Goodreads} />
+          <Blog {...this.props.Blog} theme={theme()} />
+          <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
+          <Github {...this.props.Github} maxItems={7} theme={theme()} />
+          <Pocket {...this.props.Pocket} maxItems={7} theme={theme()} />
+          <Spotify {...this.props.Spotify} maxItems={7} theme={theme()} />
+          <Steam {...this.props.Steam} maxItems={10} theme={theme()} />
+          <Goodreads {...this.props.Goodreads} maxItems={10} theme={theme()} />
         </Layout>
       </article>
     );

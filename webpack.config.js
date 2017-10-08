@@ -18,7 +18,7 @@ const IS_DEV = NODE_ENV === 'development';
 
 const config = (module.exports = {
   output: {
-    filename: 'about-me/[name]-[hash].js',
+    filename: 'about-me/[name].js',
     path: path.join(__dirname, 'dist'),
     libraryTarget: 'umd'
   },
@@ -36,14 +36,8 @@ const config = (module.exports = {
           loader: 'babel-loader',
           options: {
             cacheDirectory: true,
-            presets: [
-              ["env", {modules: false}],
-              "react"
-            ],
-            plugins: [
-              "transform-object-rest-spread",
-              "react-hot-loader/babel"
-            ]
+            presets: [['env', { modules: false }], 'react'],
+            plugins: ['transform-object-rest-spread', 'react-hot-loader/babel']
           }
         }
       },
@@ -79,7 +73,6 @@ const config = (module.exports = {
 });
 
 if (IS_DEV) {
-
   config.entry = {
     index: [
       'react-hot-loader/patch',
@@ -116,14 +109,19 @@ if (IS_DEV) {
 
   config.module.rules.push({
     test: /\.s?css$/,
-    use: ['style-loader', 'css-loader', 'sass-loader']
+    use: [
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      {
+        loader: 'sass-loader',
+        options: { sourceMap: true }
+      }
+    ]
   });
-
 } else {
-
   config.entry = {
-    index: [ './src/prod/index.js' ],
-    static: [ './src/prod/static.js' ]
+    static: ['./src/prod/static.js'],
+    index: ['./src/prod/index.js']
   };
 
   config.plugins = config.plugins.concat([
@@ -136,6 +134,7 @@ if (IS_DEV) {
       comments: false
     }),
     new StaticSiteGeneratorPlugin({
+      entry: 'static',
       paths: ['/'],
       locals: { template, title: 'About Me' }
     })
@@ -145,8 +144,14 @@ if (IS_DEV) {
     test: /\.s?css$/,
     use: ExtractTextPlugin.extract({
       fallback: 'style-loader',
-      use: ['css-loader', 'sass-loader']
+      publicPath: '../',
+      use: [
+        { loader: 'css-loader' },
+        {
+          loader: 'sass-loader',
+          options: { sourceMap: true }
+        }
+      ]
     })
   });
-
 }
