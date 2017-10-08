@@ -12,7 +12,7 @@
       <%- htmlWebpackPlugin.options.body %>
     </div>
     <% htmlWebpackPlugin.options.js.forEach(function(file){ %>
-      <% if (file.indexOf('static') !== 0) { %>
+      <% if (file.indexOf('about-me/static') !== 0) { %>
         <script src="<%- file %>" async></script>
       <% } %>
     <% }); %>
