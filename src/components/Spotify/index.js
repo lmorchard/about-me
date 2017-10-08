@@ -8,6 +8,8 @@ import './index.scss';
 export class Spotify extends React.Component {
   render() {
     const { username, user, tracks } = this.props;
+    const maxItems = this.props.maxItems || 10;
+
     return (
       <Card className="spotify" {...this.props}>
         <h3>
@@ -16,7 +18,11 @@ export class Spotify extends React.Component {
           </a>)
         </h3>
         <section>
-          <ul>{tracks.map((item, idx) => this.renderItem(item, idx))}</ul>
+          <ul>
+            {tracks
+              .slice(0, maxItems)
+              .map((item, idx) => this.renderItem(item, idx))}
+          </ul>
         </section>
       </Card>
     );

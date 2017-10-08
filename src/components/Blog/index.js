@@ -6,11 +6,18 @@ import './index.scss';
 export class Blog extends React.Component {
   render() {
     const { posts, siteTitle, baseURL } = this.props;
+    const maxItems = this.props.maxItems || 9;
     return (
       <Card className="blog" {...this.props}>
-        <h3>Blog (<a href={baseURL}>{siteTitle}</a>)</h3>
+        <h3>
+          Blog (<a href={baseURL}>{siteTitle}</a>)
+        </h3>
         <section>
-          <ul>{posts.map((post, idx) => this.renderPost(post, idx))}</ul>
+          <ul>
+            {posts
+              .slice(0, maxItems)
+              .map((post, idx) => this.renderPost(post, idx))}
+          </ul>
         </section>
       </Card>
     );

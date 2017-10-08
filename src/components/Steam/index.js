@@ -7,7 +7,7 @@ import './index.scss';
 export class Steam extends React.Component {
   render() {
     const { username, steamid, user, recent, owned } = this.props;
-    const maxGames = this.props.maxGames || 16;
+    const maxItems = this.props.maxItems || 16;
 
     // Ignore some games I just don't play anymore
     const ignoreAppids = [
@@ -24,7 +24,7 @@ export class Steam extends React.Component {
 
     const games = []
       .concat(filterSort(recent), filterSort(owned))
-      .slice(0, maxGames);
+      .slice(0, maxItems);
 
     return (
       <Card className="steam" {...this.props}>

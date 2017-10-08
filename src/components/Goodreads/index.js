@@ -6,6 +6,7 @@ import './index.scss';
 export class Goodreads extends React.Component {
   render() {
     const { username, link, reviews } = this.props;
+    const maxItems = this.props.maxItems || 15;
 
     return (
       <Card className="goodreads" {...this.props}>
@@ -14,7 +15,9 @@ export class Goodreads extends React.Component {
         </h3>
         <section>
           <ul>
-            {reviews.map((review, idx) => this.renderReview(review, idx))}
+            {reviews
+              .slice(0, maxItems)
+              .map((review, idx) => this.renderReview(review, idx))}
           </ul>
         </section>
       </Card>

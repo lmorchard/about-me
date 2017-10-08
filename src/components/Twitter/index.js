@@ -11,6 +11,7 @@ const BASE_URL = 'https://twitter.com';
 export class Twitter extends React.Component {
   render() {
     const { username, statuses, theme } = this.props;
+    const maxItems = this.props.maxItems || 12;
     const displayName = statuses[0].user.name;
     return (
       <Card className="twitter" theme={theme}>
@@ -21,7 +22,9 @@ export class Twitter extends React.Component {
         </h3>
         <section>
           <ul>
-            {statuses.map((status, idx) => this.renderStatus(status, idx))}
+            {statuses
+              .slice(0, maxItems)
+              .map((status, idx) => this.renderStatus(status, idx))}
           </ul>
         </section>
       </Card>

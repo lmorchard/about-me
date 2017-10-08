@@ -15,13 +15,18 @@ export class Github extends React.Component {
 
   render() {
     const { username, events, theme } = this.props;
+    const maxItems = this.props.maxItems || 15;
     return (
       <Card className="github" theme={theme}>
         <h3>
           Github (<a href={`${BASE_URL}/${username}`}>@{username}</a>)
         </h3>
         <section>
-          <ul>{events.map((event, idx) => this.renderEvent(event, idx))}</ul>
+          <ul>
+            {events
+              .slice(0, maxItems)
+              .map((event, idx) => this.renderEvent(event, idx))}
+          </ul>
         </section>
       </Card>
     );

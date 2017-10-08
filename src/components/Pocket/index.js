@@ -7,6 +7,7 @@ import './index.scss';
 export class Pocket extends React.Component {
   render() {
     const { username, items } = this.props;
+    const maxItems = this.props.maxItems || 10;
 
     const profileURL = `https://getpocket.com/@${username}`;
     return (
@@ -15,7 +16,7 @@ export class Pocket extends React.Component {
           Pocket (<a href={profileURL}>@{username}</a>)
         </h3>
         <section>
-          <ul>{items.map((item, idx) => this.renderItem(item, idx))}</ul>
+          <ul>{items.slice(0, maxItems).map((item, idx) => this.renderItem(item, idx))}</ul>
         </section>
       </Card>
     );

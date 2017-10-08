@@ -4,7 +4,7 @@ import './App.scss';
 
 import Layout from '../components/Layout';
 import Card from '../components/Card';
-
+import Header from '../components/Header';
 import Avatar from '../components/Avatar';
 import Bio from '../components/Bio';
 import Blog from '../components/Blog';
@@ -33,22 +33,21 @@ const theme = () => {
 export default class App extends Component {
   render() {
     themeIdx = -1;
-    return [
-      <Layout>
-        <Avatar
-          theme={theme()}
-          title="Les Orchard <me@lmorchard.com>"
-          subtitle="That's me!"
-        />
-        <Bio theme={theme()} title="About Me" src={bioSrc} />
-        <Blog theme={theme()} {...this.props.Blog} />
-        <Twitter theme={theme()} {...this.props.Twitter} />
-        <Github theme={theme()} {...this.props.Github} />
-        <Pocket theme={theme()} {...this.props.Pocket} />
-        <Spotify theme={theme()} {...this.props.Spotify} />
-        <Steam theme={theme()} {...this.props.Steam} />
-        <Goodreads theme={theme()} {...this.props.Goodreads} />
-      </Layout>
-    ];
+    return (
+      <article>
+        <Header title="Les Orchard <me@lmorchard.com>" />
+        <Layout>
+          <Avatar theme={theme()} title="That's me!" />
+          <Bio theme={theme()} title="About Me" src={bioSrc} />
+          <Blog theme={theme()} {...this.props.Blog} />
+          <Twitter theme={theme()} {...this.props.Twitter} />
+          <Github theme={theme()} {...this.props.Github} />
+          <Pocket theme={theme()} {...this.props.Pocket} />
+          <Spotify theme={theme()} {...this.props.Spotify} />
+          <Steam theme={theme()} {...this.props.Steam} />
+          <Goodreads theme={theme()} {...this.props.Goodreads} />
+        </Layout>
+      </article>
+    );
   }
 }
