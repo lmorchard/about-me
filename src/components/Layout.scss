@@ -156,7 +156,7 @@ a {
   }
 }
 
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 110em) {
   .card {
     flex: 0 1 calc(25% - 0.5em);
     &.span-wide { flex: 0 2 66%; }
