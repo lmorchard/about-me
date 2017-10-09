@@ -3,8 +3,8 @@
     margin-left: 1em;
     margin-right: 1em;
     text-align: center;
-    .thumbnail img {
-      margin: 1em;
+    .thumbnail img, .video video {
+      margin: 0.25em;
       max-width: 50%;
       max-height: 50%;
     }

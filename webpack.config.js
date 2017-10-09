@@ -65,6 +65,18 @@ const config = (module.exports = {
         ]
       },
       {
+        test: /\.(mp3|mp4)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: 'about-me/media/[name]-[sha256:hash:base64:8].[ext]'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(md|txt)$/,
         use: 'raw-loader'
       }

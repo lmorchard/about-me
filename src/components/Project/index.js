@@ -7,7 +7,7 @@ import './index.scss';
 
 export class Project extends React.Component {
   render() {
-    const { title, link, src, thumbnail } = this.props;
+    const { title, link, src, thumbnail, video } = this.props;
 
     const reader = new commonmark.Parser();
     const writer = new commonmark.HtmlRenderer();
@@ -16,10 +16,27 @@ export class Project extends React.Component {
 
     const createMarkup = () => ({ __html: content });
     return (
-      <Card {...this.props} className={classnames('project', this.props.className)}>
-        <h3>Featured Project: <a href={link}>{title}</a></h3>
+      <Card
+        {...this.props}
+        className={classnames('project', this.props.className)}
+      >
+        <h3>
+          Project: <a href={link}>{title}</a>
+        </h3>
         <section>
-          <a className="thumbnail" href={link}><img src={thumbnail} /></a>
+          {thumbnail &&
+            <a className="thumbnail" href={link}>
+              <img src={thumbnail} />
+            </a>}
+          {video &&
+            <div className="video">
+              <video
+                controls="true"
+                loop="true"
+                preload="metadata"
+                src={video}
+              />
+            </div>}
           <div className="text" dangerouslySetInnerHTML={createMarkup()} />
         </section>
       </Card>

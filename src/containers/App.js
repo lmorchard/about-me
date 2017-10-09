@@ -60,7 +60,7 @@ export default class App extends Component {
           <Project
             title="Panic Ranger"
             link="https://github.com/lmorchard/panic-ranger"
-            thumbnail={require('../content/panic-ranger.gif')}
+            video={require('../content/panic-ranger.mp4')}
             src={require('../content/panic-ranger.md')}
             theme={theme()}
           />
