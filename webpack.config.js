@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
+const siteConfig = require('./config');
 const template = ejs.compile(
   fs.readFileSync(__dirname + '/src/index.html.ejs', 'utf-8')
 );
@@ -113,7 +114,7 @@ if (IS_DEV) {
       chunks: ['index'],
       template: './src/index.html.ejs',
       filename: 'index.html',
-      title: 'About Me',
+      title: siteConfig.siteTitle,
       css: [],
       js: []
     })
@@ -148,7 +149,7 @@ if (IS_DEV) {
     new StaticSiteGeneratorPlugin({
       entry: 'static',
       paths: ['/'],
-      locals: { template, title: 'About Me' }
+      locals: { template, title: siteConfig.siteTitle }
     })
   ]);
 
