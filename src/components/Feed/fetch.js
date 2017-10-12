@@ -1,0 +1,28 @@
+import fetch from 'node-fetch';
+import FeedParser from 'feedparser';
+
+export default async function fetchData(config, name) {
+  const { title, feedUrls } = config;
+
+  return Promise.all(
+    feedUrls.map(async feedUrl => {
+      const res = await fetch(feedUrl);
+      return new Promise((resolve, reject) => {
+        const feed = { name, title, meta: {}, items: [] };
+        res.body
+          .on('error', error => reject(error))
+          .pipe(new FeedParser())
+          .on('error', error => reject(error))
+          .on('meta', meta => (feed.meta = meta))
+          .on('readable', function() {
+            const stream = this;
+            let item;
+            while ((item = stream.read())) {
+              feed.items.push(item);
+            }
+          })
+          .on('end', () => resolve(feed));
+      });
+    })
+  ).then(feeds => ({ name, title, feeds }));
+}

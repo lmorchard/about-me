@@ -14,7 +14,7 @@ export class ActivityPub extends React.Component {
     return (
       <Card {...this.props} className={classnames('activitypub', name)}>
         <h3>
-          {name} (<a href={`${profileUrl}`} title={username}>@{username}</a>)
+          {name} (<a href={profileUrl} title={username}>@{username}</a>)
         </h3>
         <section>
           <ul>

@@ -17,7 +17,7 @@ old-school Web 2.0 mashup using my own personal data exhaust.
 
 ## TODO
 
-- [ ] RSS / Atom component
+- [ ] DRY out the SCSS in common between components
 
 - [ ] Flickr photos component
 
