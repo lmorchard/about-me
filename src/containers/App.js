@@ -72,16 +72,10 @@ export default class App extends Component {
             src={require('../content/poke-the-mongo.md')}
             theme={theme()}
           />
-          <Project
-            title="lmorchard.com"
-            link="https://github.com/lmorchard/about-me"
-            thumbnail={require('../content/aboutme.png')}
-            src={require('../content/aboutme.md')}
-            theme={theme()}
-          />
           <Blog {...this.props.Blog} theme={theme()} />
-          <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
+          <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
           <Feed {...this.props.TTRSS} maxItems={12} theme={theme()} />
+          <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
           <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
           <Github {...this.props.Github} maxItems={7} theme={theme()} />
           <Pocket {...this.props.Pocket} maxItems={7} theme={theme()} />

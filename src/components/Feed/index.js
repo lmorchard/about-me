@@ -5,9 +5,11 @@ import timeago from 'timeago.js';
 import Card from '../Card';
 import './index.scss';
 
+import FeedIcon from './icon.svg';
+
 export class Feed extends React.Component {
   render() {
-    const { name, title, feeds } = this.props;
+    const { name, title, feeds, link, feedUrls } = this.props;
     const maxItems = this.props.maxItems || 12;
     const seenUrls = new Set();
 
@@ -24,7 +26,14 @@ export class Feed extends React.Component {
 
     return (
       <Card {...this.props} className={classnames('feed', name)}>
-        <h3>{title}</h3>
+        <h3>
+          {link ? <a href={link}>{title}</a> : title}{' '}
+          {feedUrls.map((url, idx) => (
+            <a key={idx} href={url}>
+              <img className="feedIcon" src={FeedIcon} />
+            </a>
+          ))}
+        </h3>
         <section>
           <ul>
             {items
@@ -44,8 +53,12 @@ export class Feed extends React.Component {
         <a className="createdAt" href={link} title={date} dateTime={date}>
           {timeago().format(date)}
         </a>
-        <a className="link" href={link}><span className="title">{title}</span></a>
-        {summary && <div className="content" dangerouslySetInnerHTML={createMarkup()} />}
+        <a className="link" href={link}>
+          <span className="title">{title}</span>
+        </a>
+        {summary && (
+          <div className="content" dangerouslySetInnerHTML={createMarkup()} />
+        )}
       </li>
     );
   }

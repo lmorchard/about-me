@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import FeedParser from 'feedparser';
 
 export default async function fetchData(config, name) {
-  const { title, feedUrls } = config;
+  const { title, link, feedUrls } = config;
 
   return Promise.all(
     feedUrls.map(async feedUrl => {
@@ -24,5 +24,5 @@ export default async function fetchData(config, name) {
           .on('end', () => resolve(feed));
       });
     })
-  ).then(feeds => ({ name, title, feeds }));
+  ).then(feeds => ({ name, title, link, feedUrls, feeds }));
 }
