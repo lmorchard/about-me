@@ -37,7 +37,7 @@ export class Spotify extends React.Component {
     return (
       <li key={idx} className="item">
         <a href={track.external_urls.spotify} className="cover">
-          <img src={image.url} />
+          {image ? <img src={image.url} /> : ' '}
         </a>
         <span className="track">
           "<a href={track.external_urls.spotify} className="name">
