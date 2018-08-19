@@ -1,13 +1,21 @@
-import React from 'react';
-import classnames from 'classnames';
-import commonmark from 'commonmark';
+import React from "react";
+import classnames from "classnames";
+import commonmark from "commonmark";
 
-import Card from '../Card';
-import './index.scss';
+import Card from "../Card";
+import "./index.scss";
 
 export class Project extends React.Component {
   render() {
-    const { title, link, src, thumbnail, video } = this.props;
+    const {
+      title,
+      link,
+      src = "",
+      thumbnail,
+      video,
+      iframe,
+      children
+    } = this.props;
 
     const reader = new commonmark.Parser();
     const writer = new commonmark.HtmlRenderer();
@@ -18,17 +26,18 @@ export class Project extends React.Component {
     return (
       <Card
         {...this.props}
-        className={classnames('project', this.props.className)}
+        className={classnames("project", this.props.className)}
       >
         <h3>
           Project: <a href={link}>{title}</a>
         </h3>
         <section>
-          {thumbnail &&
+          {thumbnail && (
             <a className="thumbnail" href={link}>
               <img src={thumbnail} />
-            </a>}
-          {video &&
+            </a>
+          )}
+          {video && (
             <div className="video">
               <video
                 controls="true"
@@ -36,7 +45,18 @@ export class Project extends React.Component {
                 preload="metadata"
                 src={video}
               />
-            </div>}
+            </div>
+          )}
+          {iframe && (
+            <div className="iframe">
+              <iframe
+                frameBorder="0"
+                scrolling="no"
+                src={iframe}
+              />
+            </div>
+          )}
+          {children}
           <div className="text" dangerouslySetInnerHTML={createMarkup()} />
         </section>
       </Card>

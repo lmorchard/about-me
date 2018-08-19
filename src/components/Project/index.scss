@@ -5,8 +5,12 @@
     text-align: center;
     .thumbnail img, .video video {
       margin: 0.25em;
-      max-width: 50%;
-      max-height: 50%;
+      max-width: 60%;
+      max-height: 60%;
+    }
+    .iframe iframe {
+      margin: 0.125em;
+      width: 80%;
     }
     a {
       font-weight: bold;

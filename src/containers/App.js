@@ -45,6 +45,13 @@ export default class App extends Component {
             src={require('../content/bio.md')}
           />
           <Project
+            title="Twitch Streaming"
+            link="https://twitch.tv/lmorchard"
+            iframe="http://player.twitch.tv/?channel=lmorchard&muted=true&autoplay=true"
+            src={require('../content/twitch.md')}
+            theme={theme()}
+          />
+          <Project
             title="Firefox Test Pilot"
             link="https://testpilot.firefox.com/"
             thumbnail={require('../content/testpilot.png')}
@@ -52,33 +59,18 @@ export default class App extends Component {
             theme={theme()}
           />
           <Project
-            title="Snooze Tabs"
-            link="https://testpilot.firefox.com/experiments/snooze-tabs"
-            thumbnail={require('../content/snoozetabs.png')}
-            src={require('../content/snoozetabs.md')}
-            theme={theme()}
-          />
-          <Project
-            title="Panic Ranger"
-            link="https://github.com/lmorchard/panic-ranger"
-            video={require('../content/panic-ranger.mp4')}
-            src={require('../content/panic-ranger.md')}
-            theme={theme()}
-          />
-          <Project
-            title="Poke the Mongo"
-            link="https://lmorchard.itch.io/poke-the-mongo"
-            thumbnail={require('../content/poke-the-mongo.gif')}
-            src={require('../content/poke-the-mongo.md')}
+            title="Firefox Color"
+            link="https://testpilot.firefox.com/experiments/color"
+            thumbnail={require('../content/fx-color.jpg')}
+            src={require('../content/fx-color.md')}
             theme={theme()}
           />
           <Blog {...this.props.Blog} theme={theme()} />
-          <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
-          <Feed {...this.props.TTRSS} maxItems={12} theme={theme()} />
-          <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
-          <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
           <Github {...this.props.Github} maxItems={7} theme={theme()} />
-          <Pocket {...this.props.Pocket} maxItems={7} theme={theme()} />
+          <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
+          <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
+          <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
+          <Feed {...this.props.TTRSS} maxItems={12} theme={theme()} />
           <Spotify {...this.props.Spotify} maxItems={7} theme={theme()} />
           <Steam {...this.props.Steam} maxItems={10} theme={theme()} />
           <Goodreads {...this.props.Goodreads} maxItems={10} theme={theme()} />

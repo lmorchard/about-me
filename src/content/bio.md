@@ -1,5 +1,4 @@
-**TL;DR**: *{web,mad,computer} scientist; {tech,scifi} writer;
-home{brew,roast}er; [serially enthusiastic][]; he/him; mozillian*
+**TL;DR**: *Tinkerer; maker of things; webdev; crazy cat gentleman; serial enthusiast; Mozillian. He / him.*
 
 [serially enthusiastic]: https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/
 
