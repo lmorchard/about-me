@@ -48,7 +48,7 @@ export default class App extends Component {
           <Project
             title="Twitch Streaming"
             link="https://twitch.tv/lmorchard"
-            iframe="http://player.twitch.tv/?channel=lmorchard&muted=true&autoplay=true"
+            iframe="https://player.twitch.tv/?channel=lmorchard&muted=true&autoplay=true"
             src={require('../content/twitch.md')}
             theme={theme()}
           />
