@@ -12,9 +12,12 @@ const fetchPath = (config, name) => {
 };
 
 async function main() {
-  const results = await map(toFetch, name =>
-    require(fetchPath(config[name], name)).default(config[name], name)
-  );
+  const results = await map(toFetch, name => {
+    console.log(`${Date.now()} start fetching ${name}`);
+    const result = require(fetchPath(config[name], name)).default(config[name], name)
+    console.log(`${Date.now()} finish fetching ${name}`);
+    return result;
+  });
   const state = {};
   results.forEach((data, idx) => (state[toFetch[idx]] = data));
   fs.writeFileSync(

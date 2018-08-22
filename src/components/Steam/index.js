@@ -16,10 +16,17 @@ export class Steam extends React.Component {
       204300, // awesomenauts
     ];
 
+    const seenAppIds = {};
+
     const filterSort = list =>
       list
         .filter(game => game.playtime_forever > 30)
         .filter(game => !ignoreAppids.includes(game.appid))
+        .filter(game => {
+          const seen = game.appid in seenAppIds;
+          seenAppIds[game.appid] = true;
+          return !seen;
+        })
         .sort((a, b) => b.playtime_forever - a.playtime_forever);
 
     const games = []

@@ -9,6 +9,7 @@ import Avatar from '../components/Avatar';
 import Bio from '../components/Bio';
 import Blog from '../components/Blog';
 import Github from '../components/Github';
+import Glitch from '../components/Glitch';
 import Twitter from '../components/Twitter';
 import Spotify from '../components/Spotify';
 import Steam from '../components/Steam';
@@ -51,6 +52,7 @@ export default class App extends Component {
             src={require('../content/twitch.md')}
             theme={theme()}
           />
+          <Glitch {...this.props.Glitch} theme={theme()} />
           <Project
             title="Firefox Test Pilot"
             link="https://testpilot.firefox.com/"
@@ -68,8 +70,8 @@ export default class App extends Component {
           <Blog {...this.props.Blog} theme={theme()} />
           <Github {...this.props.Github} maxItems={7} theme={theme()} />
           <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
-          <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
           <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
+          <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
           <Feed {...this.props.TTRSS} maxItems={12} theme={theme()} />
           <Spotify {...this.props.Spotify} maxItems={7} theme={theme()} />
           <Steam {...this.props.Steam} maxItems={10} theme={theme()} />
