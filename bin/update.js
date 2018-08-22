@@ -17,13 +17,13 @@ const fetchDataSource = async ([name, fetchConfig]) => {
   const result = await fetcher(fetchConfig, name);
   const endTime = Date.now();
   console.log(`${endTime} finish ${name} (${endTime - startTime}ms)`);
-  return result;
+  return [name, result];
 };
 
 async function main() {
   const results = await map(Object.entries(toFetch), fetchDataSource);
   const state = results.reduce(
-    (acc, data, idx) => ({ ...acc, [toFetch[idx]]: data }),
+    (acc, [name, result], idx) => ({ ...acc, [name]: result }),
     {}
   );
   fs.writeFileSync(
