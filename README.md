@@ -17,6 +17,10 @@ old-school Web 2.0 mashup using my own personal data exhaust.
 
 ## TODO
 
+- [ ] Generate components in App entirely from config, rather than hardcoded
+
+- [ ] Move secrets from config and into env vars, so config can be checked into repo
+
 - [ ] DRY out the SCSS in common between components
 
 - [ ] Flickr photos component
