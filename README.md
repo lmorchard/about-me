@@ -17,6 +17,8 @@ old-school Web 2.0 mashup using my own personal data exhaust.
 
 ## TODO
 
+- [ ] Download & locally cache Steam images to serve over SSL
+
 - [ ] Generate components in App entirely from config, rather than hardcoded
 
 - [ ] Move secrets from config and into env vars, so config can be checked into repo
