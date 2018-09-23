@@ -5,15 +5,17 @@
     padding: 0;
     li {
       margin-bottom: 1em;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      align-content: flex-start;
-      img {
-        width: 33%;
-        margin: 0 1em 1em 0;
-        float: left;
+      min-height: 5em;
+      padding-left: calc(20% + 1em);
+      background-repeat: no-repeat;
+      background-size: 20% auto;
+      .createdAt {
+        float: right;
+        white-space: nowrap;
+        padding: 0 0 1em 1em;
+        text-indent: 0;
+        font-size: 0.75em;
+        text-decoration: underline dotted;
       }
       .title {
         font-weight: bold
@@ -22,14 +24,6 @@
         font-size: 0.85em;
         max-height: 8.5em;
         overflow-y: hidden;
-      }
-      .createdAt {
-        float: right;
-        white-space: nowrap;
-        padding: 0 0 1em 1em;
-        text-indent: 0;
-        font-size: 0.75em;
-        text-decoration: underline dotted;
       }
     }
   }
