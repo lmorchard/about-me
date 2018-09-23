@@ -47,19 +47,21 @@ export class ActivityPub extends React.Component {
     const { type, object } = item;
     const { published, url, content } = object;
     const createMarkup = () => ({ __html: content });
-    return [
-      <div className="content" dangerouslySetInnerHTML={createMarkup()} />,
-    ];
+    return (
+      <div className="content" dangerouslySetInnerHTML={createMarkup()} />
+    );
   }
 
   renderAnnounceItem(item, idx) {
     const { type, object } = item;
     const { published, url, content, attributedTo } = object;
     const createMarkup = () => ({ __html: content });
-    return [
-      <span class="retooted">retooted <a href={attributedTo}>{attributedTo}</a></span>,
-      <div className="content" dangerouslySetInnerHTML={createMarkup()} />,
-    ];
+    return (
+      <React.Fragment>
+        <span className="retooted">retooted <a href={attributedTo}>{attributedTo}</a></span>
+        <div className="content" dangerouslySetInnerHTML={createMarkup()} />
+      </React.Fragment>
+    );
   }
 }
 

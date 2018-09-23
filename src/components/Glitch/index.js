@@ -35,7 +35,7 @@ export class Glitch extends React.Component {
         <a href={projectUrl(project)}>
           <img className="thumbnail" title={domain} src={projectAvatar(project)} />
           <span className="title">{domain}</span>
-          <p class="description"><span>{description}</span></p>
+          <p className="description"><span>{description}</span></p>
         </a>
       </li>
     );
