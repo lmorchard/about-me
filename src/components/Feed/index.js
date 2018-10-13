@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import timeago from 'timeago.js';
+import url from 'url';
 
 import Card from '../Card';
 import './index.scss';
@@ -48,7 +49,7 @@ export class Feed extends React.Component {
   renderItem(item, idx) {
     const { title, summary, link, date } = item;
     const createMarkup = () => ({ __html: summary });
-    const absLink = new URL(link, this.props.link).toString()
+    const absLink = url.resolve(this.props.link, link);
     return (
       <li key={idx} className="item">
         <a className="createdAt" href={link} title={date} dateTime={date}>
