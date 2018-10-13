@@ -69,7 +69,6 @@ export default class App extends Component {
           />
           <Blog {...this.props.Blog} theme={theme()} />
           <Github {...this.props.Github} maxItems={7} theme={theme()} />
-          <Pocket {...this.props.Pocket} maxItems={10} theme={theme()} />
           <ActivityPub {...this.props.Toots} name="Toots" maxItems={7} theme={theme()} />
           <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
           <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
