@@ -4,8 +4,6 @@ import timeago from 'timeago.js';
 import Card from '../Card';
 import './index.scss';
 
-const BLANK_IMG = "https://getpocket.com/i/v4/shared_emptyimage@1x.png";
-
 export class Pocket extends React.Component {
   render() {
     const { username, items } = this.props;
@@ -25,19 +23,22 @@ export class Pocket extends React.Component {
   }
 
   renderItem(item, idx) {
-    const { title, link, ago, excerpt, image } = item;
-    const style = {
-      backgroundImage: `url(${image || BLANK_IMG})`
-    };
+    const { title, link, added, updated, excerpt, image } = item;
+
+    const updatedAdj = updated * 1000;
+
     return (
-      <li key={idx} className="item" style={style}>
-        <span className="createdAt">
-          {ago}
-        </span>
-        <a href={link} className="title">
-          {title}
-        </a>
-        <p className="excerpt">{excerpt}</p>
+      <li key={idx} className="item">
+        {image && <img src={image} title={title} />}
+        <div>
+          <span className="createdAt">
+            {timeago().format(updatedAdj)}
+          </span>
+          <a href={link} className="title">
+            {title}
+          </a>
+          <p className="excerpt">{excerpt}</p>
+        </div>
       </li>
     );
   }

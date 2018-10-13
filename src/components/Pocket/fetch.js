@@ -1,27 +1,34 @@
 import fetch from 'node-fetch';
-import cheerio from 'cheerio';
+import { pluck, params } from '../../lib/utils';
 
 export default async function fetchData(config) {
   const { username, consumer_key, access_token } = config;
   const maxItems = config.maxItems || 20;
 
-  const url = `https://getpocket.com/@${username}`;
-  const res = await fetch(url);
-  const html = await res.text();
-  const $ = cheerio.load(html);
+  const url = 'https://getpocket.com/v3/get?' + params({
+    consumer_key,
+    access_token,
+    favorite: 1,
+    sort: 'newest',
+    detailType: 'complete'
+  });
 
-  const items = $('.sprofile-content .sprofile-post')
-    .map((idx, srcEl) => {
-      const el = $(srcEl);
-      return ({
-        title: el.find('.sprofile-article-title').text(),
-        link: el.find('.sprofile-article-link').attr('href'),
-        excerpt: el.find('.sprofile-attribution-quote').text(),
-        ago: el.find('.sprofile-post-time').text(),
-        image: el.find('.sprofile-article-img').attr('data-bgimg'),
-      });
-    })
-    .get();
+  const res = await fetch(url);
+  const data = await res.json();
+
+  const items = Object.values(data.list)
+    .sort((a, b) => b.time_updated - a.time_updated)
+    .slice(0, maxItems)
+    .map(
+      pluck({
+        title: 'resolved_title',
+        link: 'resolved_url',
+        added: 'time_added',
+        updated: 'time_updated',
+        excerpt: 'excerpt',
+        image: item => item.image && item.image.src
+      })
+    );
 
   return { username, items };
 }
