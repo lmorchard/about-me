@@ -48,12 +48,13 @@ export class Feed extends React.Component {
   renderItem(item, idx) {
     const { title, summary, link, date } = item;
     const createMarkup = () => ({ __html: summary });
+    const absLink = new URL(link, this.props.link).toString()
     return (
       <li key={idx} className="item">
         <a className="createdAt" href={link} title={date} dateTime={date}>
           {timeago().format(date)}
         </a>
-        <a className="link" href={link}>
+        <a className="link" href={absLink}>
           <span className="title">{title}</span>
         </a>
         {summary && (
