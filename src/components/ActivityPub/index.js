@@ -56,12 +56,10 @@ export class ActivityPub extends React.Component {
     const { type, object } = item;
     const { published, url, content, attributedTo } = object;
     const createMarkup = () => ({ __html: content });
-    return (
-      <React.Fragment>
-        <span className="retooted">retooted <a href={attributedTo}>{attributedTo}</a></span>
-        <div className="content" dangerouslySetInnerHTML={createMarkup()} />
-      </React.Fragment>
-    );
+    return [
+      <span key="0" className="retooted">retooted <a href={attributedTo}>{attributedTo}</a></span>,
+      <div key="1" className="content" dangerouslySetInnerHTML={createMarkup()} />
+    ];
   }
 }
 
