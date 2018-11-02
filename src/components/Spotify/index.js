@@ -13,7 +13,7 @@ export class Spotify extends React.Component {
     return (
       <Card className="spotify" {...this.props}>
         <h3>
-          Spotify (<a href={user.external_urls.spotify} title={username}>
+          Spotify (<a rel="me" href={user.external_urls.spotify} title={username}>
             {user.display_name}
           </a>)
         </h3>

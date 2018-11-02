@@ -19,7 +19,7 @@ export class Github extends React.Component {
     return (
       <Card className="github" theme={theme}>
         <h3>
-          Github (<a href={`${BASE_URL}/${username}`}>@{username}</a>)
+          Github (<a rel="me" href={`${BASE_URL}/${username}`}>@{username}</a>)
         </h3>
         <section>
           <ul>

@@ -15,7 +15,7 @@ export class Glitch extends React.Component {
     return (
       <Card className="glitch" {...this.props}>
         <h3>
-          Glitch Projects (<a href={userUrl(user)}>{login}</a>)
+          Glitch Projects (<a rel="me" href={userUrl(user)}>{login}</a>)
         </h3>
         <section>
           <ul>

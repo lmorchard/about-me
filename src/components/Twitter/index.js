@@ -16,7 +16,7 @@ export class Twitter extends React.Component {
     return (
       <Card className="twitter" theme={theme}>
         <h3>
-          Twitter (<a href={`${BASE_URL}/${username}`} title={username}>
+          Twitter (<a rel="me" href={`${BASE_URL}/${username}`} title={username}>
             {displayName}
           </a>)
         </h3>

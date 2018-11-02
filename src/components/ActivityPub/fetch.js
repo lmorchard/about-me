@@ -9,7 +9,7 @@ export default async function fetchData(config, name) {
     // HACK: Dereference retoots by fetching them
     if (item.type === "Announce") {
       item.objectUri = item.object;
-      item.object = (await fetchJson(`${item.object}/activity`)).object;
+      item.object = (await fetchJson(item.object));
     }
     return { ...item };
   });

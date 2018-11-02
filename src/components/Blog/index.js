@@ -10,7 +10,7 @@ export class Blog extends React.Component {
     return (
       <Card className="blog" {...this.props}>
         <h3>
-          Blog (<a href={baseURL}>{siteTitle}</a>)
+          Blog (<a rel="me" href={baseURL}>{siteTitle}</a>)
         </h3>
         <section>
           <ul>

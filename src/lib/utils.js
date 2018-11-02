@@ -18,4 +18,12 @@ export const params = params =>
     .map(k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`)
     .join('&');
 
-export const fetchJson = url => fetch(url).then(res => res.json());
+export const fetchJson = url =>
+  fetch(
+    url,
+    {
+      headers: {
+        Accept: 'application/ld+json; profile="https://www.w3.org/ns/activitystreams", application/json'
+      }
+    }
+  ).then(res => res.json());
