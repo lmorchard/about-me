@@ -135,6 +135,15 @@ a {
   }
 }
 
+@media screen and (max-width: 50em) {
+  .card {
+    &.has-h3, &.has-h4, &.has-h3 section {
+      height: unset;
+      min-height: 400px;
+    }
+  }
+}
+
 @media screen and (min-width: 50em) {
   .cards {
     display: flex;

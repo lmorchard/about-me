@@ -17,6 +17,7 @@ import Goodreads from '../components/Goodreads';
 import Project from '../components/Project';
 import ActivityPub from '../components/ActivityPub';
 import Feed from '../components/Feed';
+import YouTube from '../components/YouTube';
 
 const themes = [
   'default',
@@ -44,6 +45,11 @@ export default class App extends Component {
             title="About Me"
             src={require('../content/bio.md')}
           />
+          <YouTube
+            {...this.props.YouTube}
+            maxItems={12}
+            theme={theme()}
+          />
           <Project
             title="Twitch Streaming"
             link="https://twitch.tv/lmorchard"
@@ -51,7 +57,12 @@ export default class App extends Component {
             src={require('../content/twitch.md')}
             theme={theme()}
           />
-          <Feed {...this.props.Typing} link="https://typing.lmorchard.com" maxItems={12} theme={theme()} />
+          <Feed
+            {...this.props.Typing}
+            link="https://typing.lmorchard.com"
+            maxItems={12}
+            theme={theme()}
+          />
           <Glitch {...this.props.Glitch} theme={theme()} />
           <Project
             title="Firefox Test Pilot"
