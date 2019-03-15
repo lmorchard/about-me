@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../Card';
 import './index.scss';
 
-const userUrl = (username) => `https://youtube.com/${username}`;
+const userUrl = (username) => `https://www.youtube.com/user/${username}/videos`;
 const videoUrl = ({ id: { videoId } }) => `https://www.youtube.com/watch?v=${videoId}`;
 
 export class YouTube extends React.Component {
