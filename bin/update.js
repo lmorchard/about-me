@@ -11,18 +11,23 @@ const fetchPath = (fetchConfig, name) => {
 };
 
 const fetchDataSource = async ([name, fetchConfig]) => {
-  const startTime = Date.now();
-  console.log(`${startTime} start ${name}`);
-  const fetcher = require(fetchPath(fetchConfig, name)).default;
-  const result = await fetcher(fetchConfig, name);
-  const endTime = Date.now();
-  console.log(`${endTime} finish ${name} (${endTime - startTime}ms)`);
-  return [name, result];
+  try {
+    const startTime = Date.now();
+    console.log(`${startTime} start ${name}`);
+    const fetcher = require(fetchPath(fetchConfig, name)).default;
+    const result = await fetcher(fetchConfig, name);
+    const endTime = Date.now();
+    console.log(`${endTime} finish ${name} (${endTime - startTime}ms)`);
+    return [name, result];  
+  } catch (err) {
+    console.error(`${name} failed: ${err}`);
+    return null;
+  }
 };
 
 async function main() {
   const results = await map(Object.entries(toFetch), fetchDataSource);
-  const state = results.reduce(
+  const state = results.filter(r => !!r).reduce(
     (acc, [name, result], idx) => ({ ...acc, [name]: result }),
     {}
   );

@@ -57,6 +57,7 @@
     "commonmark": "^0.28.1",
     "fxemoji": "git+https://github.com/mozilla/fxemoji.git",
     "http-server": "^0.10.0",
+    "node-fetch": "^2.6.0",
     "node-getpocket": "^1.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

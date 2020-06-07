@@ -12,7 +12,7 @@ import Github from '../components/Github';
 import Glitch from '../components/Glitch';
 import Twitter from '../components/Twitter';
 import Spotify from '../components/Spotify';
-import Steam from '../components/Steam';
+// import Steam from '../components/Steam';
 import Goodreads from '../components/Goodreads';
 import Project from '../components/Project';
 import ActivityPub from '../components/ActivityPub';
@@ -84,7 +84,7 @@ export default class App extends Component {
           <Twitter {...this.props.Twitter} maxItems={7} theme={theme()} />
           <Feed {...this.props.Pinboard} maxItems={12} theme={theme()} />
           <Spotify {...this.props.Spotify} maxItems={7} theme={theme()} />
-          <Steam {...this.props.Steam} maxItems={10} theme={theme()} />
+          {/* <Steam {...this.props.Steam} maxItems={10} theme={theme()} /> */}
           <Goodreads {...this.props.Goodreads} maxItems={10} theme={theme()} />
         </Layout>
       </article>
