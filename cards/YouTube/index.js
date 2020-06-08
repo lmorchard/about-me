@@ -7,7 +7,7 @@ module.exports = (props) => {
   const maxItems = props.maxItems || 12;
 
   return Card(
-    { ...props, className: classnames("youtube", className) },
+    { ...props, className: "youtube" },
     html`
       <h3>
         YouTube Videos (<a rel="me" href="${userUrl(username)}">${username}</a>)

@@ -1,10 +1,13 @@
 const { html, unescaped } = require("../lib/html");
 const fs = require("fs");
+
 const Header = require("./Header");
 const Layout = require("./Layout");
 const Avatar = require("../cards/Avatar");
 const Bio = require("../cards/Bio");
 const YouTube = require("../cards/YouTube");
+const Feed = require("../cards/Feed");
+const Blog = require("../cards/Blog");
 
 const themes = [
   "default",
@@ -43,6 +46,18 @@ module.exports = ({ config, data }) => html`
               maxItems: 12,
               ...data.YouTube,
             })}
+            ${Feed({
+              theme: theme(),
+              link: "https://typing.lmorchard.com",
+              maxItems: 12,
+              ...data.Typing,
+            })}
+            ${Feed({
+              theme: theme(),
+              maxItems: 12,
+              ...data.Pinboard,
+            })}
+            ${Blog({ theme: theme(), ...data.Blog })}
           `)}
         </article>
       </div>

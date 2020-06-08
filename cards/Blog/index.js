@@ -1,42 +1,38 @@
-import React from 'react';
+const { html } = require("../../lib/html");
+const classnames = require("classnames");
+const Card = require("../../content/Card");
 
-import Card from '../Card';
-import './index.scss';
+module.exports = (props) => {
+  const { posts, siteTitle, baseURL } = props;
+  const maxItems = props.maxItems || 9;
 
-export class Blog extends React.Component {
-  render() {
-    const { posts, siteTitle, baseURL } = this.props;
-    const maxItems = this.props.maxItems || 9;
-    return (
-      <Card className="blog" {...this.props}>
-        <h3>
-          Blog (<a rel="me" href={baseURL}>{siteTitle}</a>)
-        </h3>
-        <section>
-          <ul>
-            {posts
-              .slice(0, maxItems)
-              .map((post, idx) => this.renderPost(post, idx))}
-          </ul>
-        </section>
-      </Card>
-    );
-  }
+  return Card(
+    { ...props, className: "blog" },
+    html`
+      <h3>Blog (<a rel="me" href=${baseURL}>${siteTitle}</a>)</h3>
+      <section>
+        <ul>
+          ${posts
+            .slice(0, maxItems)
+            .map((post, idx) => renderPost(post, baseURL, idx))}
+        </ul>
+      </section>
+    `
+  );
+};
 
-  renderPost({ title, summary, thumbnail, date, url }, idx) {
-    const { baseURL } = this.props;
-    const thumbnailUrl = !!thumbnail
-      ? thumbnail.indexOf('http') === 0 ? thumbnail : `${baseURL}${thumbnail}`
-      : 'https://blog.lmorchard.com/favicon.ico';
-    return (
-      <li key={idx} className="post">
-        <a href={`${baseURL}${url}`}>
-          <img className="thumbnail" title={title} src={thumbnailUrl} />
-          <span className="title">{title}</span>
-        </a>
-      </li>
-    );
-  }
+function renderPost({ title, summary, thumbnail, date, url }, baseURL, idx) {
+  const thumbnailUrl = !!thumbnail
+    ? thumbnail.indexOf("http") === 0
+      ? thumbnail
+      : `${baseURL}${thumbnail}`
+    : "https://blog.lmorchard.com/favicon.ico";
+  return html`
+    <li key="{idx}" className="post">
+      <a href=${`${baseURL}${url}`}>
+        <img className="thumbnail" title=${title} src=${thumbnailUrl} />
+        <span className="title">${title}</span>
+      </a>
+    </li>
+  `;
 }
-
-export default Blog;
