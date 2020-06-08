@@ -28,10 +28,10 @@ function renderPost({ title, summary, thumbnail, date, url }, baseURL, idx) {
       : `${baseURL}${thumbnail}`
     : "https://blog.lmorchard.com/favicon.ico";
   return html`
-    <li key="{idx}" className="post">
+    <li key="{idx}" class="post">
       <a href=${`${baseURL}${url}`}>
-        <img className="thumbnail" title=${title} src=${thumbnailUrl} />
-        <span className="title">${title}</span>
+        <img class="thumbnail" title=${title} src=${thumbnailUrl} />
+        <span class="title">${title}</span>
       </a>
     </li>
   `;

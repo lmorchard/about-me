@@ -32,7 +32,7 @@ module.exports = (props) => {
         ${feedUrls.map(
           (url, idx) => html`
             <a key=${idx} href=${url}>
-              <img className="feedIcon" src="{FeedIcon}" />
+              <img class="feedIcon" src="{FeedIcon}" />
             </a>
           `
         )}
@@ -50,14 +50,14 @@ function renderItem(item, baseLink, idx) {
   const { title, summary, link, date } = item;
   const absLink = url.resolve(baseLink, link);
   return html`
-    <li key=${idx} className="item">
-      <a className="createdAt" href=${link} title=${date} dateTime=${date}>
+    <li key=${idx} class="item">
+      <a class="createdAt" href=${link} title=${date} dateTime=${date}>
         ${timeago.format(date)}
       </a>
-      <a className="link" href=${absLink}>
-        <span className="title">${title}</span>
+      <a class="link" href=${absLink}>
+        <span class="title">${title}</span>
       </a>
-      ${summary && html` <div className="content">${unescaped(summary)}</div> `}
+      ${summary && html` <div class="content">${unescaped(summary)}</div> `}
     </li>
   `;
 }

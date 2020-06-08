@@ -1,40 +1,34 @@
-import React from 'react';
+const { html, unescaped } = require("../../lib/html");
+const classnames = require("classnames");
+const Card = require("../../content/Card");
 
-import Card from '../Card';
-import './index.scss';
+module.exports = (props) => {
+  const { username, link, reviews, className } = props;
+  const maxItems = props.maxItems || 15;
 
-export class Goodreads extends React.Component {
-  render() {
-    const { username, link, reviews } = this.props;
-    const maxItems = this.props.maxItems || 15;
+  return Card(
+    { ...props, className: classnames("goodreads", className) },
+    html`
+      <h3>Goodreads (<a href=${link}>${username}</a>)</h3>
+      <section>
+        <ul>
+          ${reviews
+            .slice(0, maxItems)
+            .map((review, idx) => renderReview(review, idx))}
+        </ul>
+      </section>
+    `
+  );
+};
 
-    return (
-      <Card className="goodreads" {...this.props}>
-        <h3>
-          Goodreads (<a href={link}>{username}</a>)
-        </h3>
-        <section>
-          <ul>
-            {reviews
-              .slice(0, maxItems)
-              .map((review, idx) => this.renderReview(review, idx))}
-          </ul>
-        </section>
-      </Card>
-    );
-  }
+function renderReview(review, idx) {
+  const { title, image_url, link } = review;
 
-  renderReview(review, idx) {
-    const { title, image_url, link } = review;
-
-    return (
-      <li key={idx} className="review">
-        <a href={link}>
-          <img src={image_url} title={title} />
-        </a>
-      </li>
-    );
-  }
+  return html`
+    <li key=${idx} className="review">
+      <a href=${link}>
+        <img src=${image_url} title=${title} />
+      </a>
+    </li>
+  `;
 }
-
-export default Goodreads;

@@ -34,10 +34,10 @@ function renderItem(video, idx) {
     },
   } = video;
   return html`
-    <li key=${idx} className="post">
+    <li key=${idx} class="post">
       <a href=${videoUrl(video)}>
-        <img className="thumbnail" src=${thumbnail.url} />
-        <span className="title">${title}</span>
+        <img class="thumbnail" src=${thumbnail.url} />
+        <span class="title">${title}</span>
       </a>
     </li>
   `;

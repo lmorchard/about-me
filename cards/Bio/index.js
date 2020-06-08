@@ -1,8 +1,8 @@
 const { html, unescaped } = require("../../lib/html");
-const classnames = require('classnames');
-const commonmark = require('commonmark');
+const classnames = require("classnames");
+const commonmark = require("commonmark");
 
-const Card = require('../../content/Card');
+const Card = require("../../content/Card");
 
 module.exports = ({ title, src, className }) => {
   const reader = new commonmark.Parser();
@@ -10,12 +10,13 @@ module.exports = ({ title, src, className }) => {
   const parsed = reader.parse(src);
   const content = writer.render(parsed);
 
-  return html`
-    ${Card({...this.props, className: classnames('bio', className)}, html`
+  return Card(
+    { ...this.props, className: classnames("bio", className) },
+    html`
       <h3>${title}</h3>
       <section>
-        <div className="text">${unescaped(content)}</div>
+        <div class="text">${unescaped(content)}</div>
       </section>
-    `)}
-  `;
-}
+    `
+  );
+};

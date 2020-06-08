@@ -1,67 +1,48 @@
-import React from "react";
-import classnames from "classnames";
-import commonmark from "commonmark";
+const { html, unescaped } = require("../../lib/html");
+const classnames = require("classnames");
+const commonmark = require("commonmark");
 
-import Card from "../Card";
-import "./index.scss";
+const Card = require("../../content/Card");
 
-export class Project extends React.Component {
-  render() {
-    const {
-      title,
-      link,
-      src = "",
-      thumbnail,
-      video,
-      iframe,
-      children
-    } = this.props;
+module.exports = (props, children) => {
+  const { title, link, src = "", thumbnail, video, iframe, className } = props;
 
-    const reader = new commonmark.Parser();
-    const writer = new commonmark.HtmlRenderer();
-    const parsed = reader.parse(src);
-    const content = writer.render(parsed);
+  const reader = new commonmark.Parser();
+  const writer = new commonmark.HtmlRenderer();
+  const parsed = reader.parse(src);
+  const content = writer.render(parsed);
 
-    const createMarkup = () => ({ __html: content });
-    return (
-      <Card
-        {...this.props}
-        className={classnames("project", this.props.className)}
-      >
-        <h3>
-          Project: <a href={link}>{title}</a>
-        </h3>
-        <section>
-          {thumbnail && (
-            <a className="thumbnail" href={link}>
-              <img src={thumbnail} />
-            </a>
-          )}
-          {video && (
-            <div className="video">
-              <video
-                controls="true"
-                loop="true"
-                preload="metadata"
-                src={video}
-              />
-            </div>
-          )}
-          {iframe && (
-            <div className="iframe">
-              <iframe
-                frameBorder="0"
-                scrolling="no"
-                src={iframe}
-              />
-            </div>
-          )}
-          {children}
-          <div className="text" dangerouslySetInnerHTML={createMarkup()} />
-        </section>
-      </Card>
-    );
-  }
-}
-
-export default Project;
+  return Card(
+    { ...props, className: classnames("project", className) },
+    html`
+      <h3>Project: <a href=${link}>${title}</a></h3>
+      <section>
+        ${thumbnail &&
+        html`
+          <a class="thumbnail" href=${link}>
+            <img src=${thumbnail} />
+          </a>
+        `}
+        ${video &&
+        html`
+          <div class="video">
+            <video
+              controls="true"
+              loop="true"
+              preload="metadata"
+              src="${video}"
+            />
+          </div>
+        `}
+        ${iframe &&
+        html`
+          <div class="iframe">
+            <iframe frameborder="0" scrolling="no" src="${iframe}"></iframe>
+          </div>
+        `}
+        ${children}
+        <div class="text">${unescaped(content)}</div>
+      </section>
+    `
+  );
+};
