@@ -46,7 +46,6 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
-            ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Project({
               theme: theme(),
               title: "Twitch Streaming",
@@ -55,14 +54,6 @@ module.exports = ({ config, data }) => html`
                 "https://player.twitch.tv/?channel=lmorchard&muted=true&autoplay=true",
               src: fs.readFileSync("./content/twitch.md", "utf-8"),
             })}
-            ${Blog({ theme: theme(), ...data.Blog })}
-            ${Feed({
-              theme: theme(),
-              link: "https://typing.lmorchard.com",
-              maxItems: 12,
-              ...data.Typing,
-            })}
-            ${Glitch({ theme: theme(), ...data.Glitch })}
             ${Project({
               theme: theme(),
               title: "Firefox Accounts",
@@ -71,8 +62,17 @@ module.exports = ({ config, data }) => html`
                 "https://accounts-static.cdn.mozilla.net/images/16821f55.firefox-logo.svg",
               src: `I'm a core contributor on Firefox Accounts, working mainly on the subscription services platform.`,
             })}
+            ${Blog({ theme: theme(), ...data.Blog })}
+            ${Feed({
+              theme: theme(),
+              link: "https://typing.lmorchard.com",
+              maxItems: 12,
+              ...data.Typing,
+            })}
+            ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
+            ${Glitch({ theme: theme(), ...data.Glitch })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
-            ${Spotify({ theme: theme(), ...data.Spotify, maxItems: 7 })}
+            ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Goodreads({ theme: theme(), ...data.Goodreads })}
           `)}
         </article>
