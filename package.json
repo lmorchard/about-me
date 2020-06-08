@@ -1,0 +1,40 @@
+{
+  "name": "about-me",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch serve:reload",
+    "serve:reload": "reload -d build",
+    "watch": "npm run fetch && onchange -v -i 'index.js' './cards/**' './content/**' -- npm run build",
+    "build": "./index.js build",
+    "fetch": "./index.js fetch"
+  },
+  "author": "Les Orchard <me@lmorchard.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "commander": "^5.1.0",
+    "commonmark": "^0.29.1",
+    "escape-html": "^1.0.3",
+    "feedparser": "^2.2.10",
+    "fxemoji": "git+https://github.com/mozilla/fxemoji.git",
+    "gh-pages": "^3.0.0",
+    "globby": "^11.0.1",
+    "http-server": "^0.12.3",
+    "marked": "^1.1.0",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.26.0",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "recursive-copy": "^2.0.10",
+    "reload": "^3.0.5",
+    "rimraf": "^3.0.2",
+    "snowpack": "^2.3.1",
+    "spotify-web-api-node": "^4.0.0",
+    "twitter": "^1.7.1",
+    "watch": "^1.0.2",
+    "xml2js": "^0.4.23"
+  }
+}
