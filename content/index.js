@@ -10,23 +10,12 @@ const YouTube = require("../cards/YouTube");
 const Feed = require("../cards/Feed");
 const Blog = require("../cards/Blog");
 const Project = require("../cards/Project");
+const Github = require("../cards/Github");
 const Glitch = require("../cards/Glitch");
 const Goodreads = require("../cards/Goodreads");
 const Spotify = require("../cards/Spotify");
 const Twitter = require("../cards/Twitter");
-
-const themes = [
-  "default",
-  "primary",
-  "secondary-1",
-  "secondary-2",
-  "complement",
-];
-let themeIdx = -1;
-const theme = () => {
-  themeIdx = (themeIdx + 1) % themes.length;
-  return themes[themeIdx];
-};
+const ActivityPub = require("../cards/ActivityPub");
 
 module.exports = ({ config, data }) => html`
   <html lang="en">
@@ -71,8 +60,15 @@ module.exports = ({ config, data }) => html`
               ...data.Typing,
             })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
+            ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Glitch({ theme: theme(), ...data.Glitch })}
-            ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter})}
+            ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter })}
+            ${ActivityPub({
+              theme: theme(),
+              maxItems: 7,
+              name: "Toots",
+              ...data.Toots,
+            })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Goodreads({ theme: theme(), ...data.Goodreads })}
@@ -82,3 +78,16 @@ module.exports = ({ config, data }) => html`
     </body>
   </html>
 `;
+
+const themes = [
+  "default",
+  "primary",
+  "secondary-1",
+  "secondary-2",
+  "complement",
+];
+let themeIdx = -1;
+function theme() {
+  themeIdx = (themeIdx + 1) % themes.length;
+  return themes[themeIdx];
+}

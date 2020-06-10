@@ -1,66 +1,64 @@
-import React from 'react';
-import classnames from 'classnames';
-import timeago from 'timeago.js';
+const { html, unescaped } = require("../../lib/html");
+const classnames = require("classnames");
+const timeago = require("timeago.js");
+const Card = require("../../content/Card");
 
-import Card from '../Card';
-import './index.scss';
+module.exports = (props) => {
+  const { name, username, baseUrl, profileUrl, outbox } = props;
+  const maxItems = props.maxItems || 12;
+  const items = outbox.orderedItems;
 
-export class ActivityPub extends React.Component {
-  render() {
-    const { name, username, baseUrl, profileUrl, outbox } = this.props;
-    const maxItems = this.props.maxItems || 12;
-    const items = outbox.orderedItems;
+  return Card(
+    { ...props, className: `activitypub ${name}` },
+    html`
+      <h3>
+        ${name} (<a href=${profileUrl} rel="me" title=${username}
+          >@${username}</a
+        >)
+      </h3>
+      <section>
+        <ul>
+          ${items.slice(0, maxItems).map((item, idx) => renderItem(item, idx))}
+        </ul>
+      </section>
+    `
+  );
+};
 
-    return (
-      <Card {...this.props} className={classnames('activitypub', name)}>
-        <h3>
-          {name} (<a href={profileUrl} rel="me" title={username}>@{username}</a>)
-        </h3>
-        <section>
-          <ul>
-            {items
-              .slice(0, maxItems)
-              .map((item, idx) => this.renderItem(item, idx))}
-          </ul>
-        </section>
-      </Card>
-    );
-  }
-
-  renderItem(item, idx) {
-    const { type, object } = item;
-    const { published, url } = object;
-    const methodName = `render${type}Item`;
-    if (methodName in this) {
-      return (
-        <li key={idx} className={classnames('item', type)}>
-          <a className="createdAt" href={url} title={published} dateTime={published}>
-            {timeago().format(published)}
-          </a>
-          {this[methodName](item, idx)}
-        </li>
-      );
-    }
-  }
-
-  renderCreateItem(item, idx) {
-    const { type, object } = item;
-    const { published, url, content } = object;
-    const createMarkup = () => ({ __html: content });
-    return (
-      <div className="content" dangerouslySetInnerHTML={createMarkup()} />
-    );
-  }
-
-  renderAnnounceItem(item, idx) {
-    const { type, object } = item;
-    const { published, url, content, attributedTo } = object;
-    const createMarkup = () => ({ __html: content });
-    return [
-      <span key="0" className="retooted">retooted <a href={attributedTo}>{attributedTo}</a></span>,
-      <div key="1" className="content" dangerouslySetInnerHTML={createMarkup()} />
-    ];
+function renderItem(item, idx) {
+  const { type, object } = item;
+  const { published, url } = object;
+  if (type in itemTypeTemplates) {
+    return html`
+      <li key="${idx}" class="${classnames("item", type)}">
+        <a
+          class="createdAt"
+          href="${url}"
+          title="${published}"
+          dateTime="${published}"
+        >
+          ${timeago.format(published)}
+        </a>
+        ${itemTypeTemplates[type](item, idx)}
+      </li>
+    `;
   }
 }
 
-export default ActivityPub;
+const itemTypeTemplates = {
+  Create: function renderCreateItem(item, idx) {
+    const { type, object } = item;
+    const { published, url, content } = object;
+    return html`<div class="content">${unescaped(content)}</div>`;
+  },
+  Announce: function renderAnnounceItem(item, idx) {
+    const { type, object } = item;
+    const { published, url, content, attributedTo } = object;
+    return html`
+      <span key="0" class="retooted">
+        retooted <a href="${attributedTo}">${attributedTo}</a>
+      </span>
+      <div class="content">${unescaped(content)}</div>
+    `;
+  },
+};

@@ -1,225 +1,208 @@
-import React from 'react';
-import classnames from 'classnames';
-import timeago from 'timeago.js';
+const { html, unescaped } = require("../../lib/html");
+const classnames = require("classnames");
+const timeago = require("timeago.js");
+const Card = require("../../content/Card");
 
-import Card from '../Card';
-import './index.scss';
+const BASE_URL = "https://github.com";
 
-const BASE_URL = 'https://github.com';
+module.exports = (props) => {
+  const { username, events, theme } = props;
+  const maxItems = props.maxItems || 15;
 
-export class Github extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  return Card(
+    { ...props, className: `github` },
+    html`
+      <h3>
+        Github (<a rel="me" href="${BASE_URL}/${username}" }>@${username}</a>)
+      </h3>
+      <section>
+        <ul>
+          ${events
+            .sort((a, b) => b.created_at.localeCompare(a.created_at))
+            .slice(0, maxItems)
+            .map((event, idx) => renderEvent({ props, ...event }, idx))}
+        </ul>
+      </section>
+    `
+  );
+};
+
+function renderEvent(event, idx) {
+  const { type, created_at } = event;
+  const children = type in eventTemplates ? eventTemplates[type](event) : null;
+  if (!children) {
+    return null;
   }
+  return html`
+    <li key="${idx}" class="${classnames("event", event.type)}">
+      ${renderCreatedAt(event)} ${children}
+    </li>
+  `;
+}
 
-  render() {
-    const { username, events, theme } = this.props;
-    const maxItems = this.props.maxItems || 15;
-    return (
-      <Card className="github" theme={theme}>
-        <h3>
-          Github (<a rel="me" href={`${BASE_URL}/${username}`}>@{username}</a>)
-        </h3>
-        <section>
-          <ul>
-            {events
-              .slice(0, maxItems)
-              .map((event, idx) => this.renderEvent(event, idx))}
-          </ul>
-        </section>
-      </Card>
-    );
-  }
+const eventTemplates = {
+  WatchEvent: (event) => html`
+    <span>
+      ${renderActor(event)} watched ${renderRepo(event)}
+    </span>
+  `,
 
-  renderEvent(event, idx) {
-    const { type, created_at } = event;
-    const method = `render${event.type}`;
-    const children = method in this ? this[method](event) : null;
-    if (!children) {
-      return null;
-    }
-    return (
-      <li key={idx} className={classnames('event', event.type)}>
-        {this.renderCreatedAt(event)}
-        {children}
-      </li>
-    );
-  }
+  PushEvent: (event) => html`
+    <span>
+      ${renderActor(event)} pushed ${renderCommit(event)} to
+      ${renderRepo(event)} (${renderBranch(event)}):
+      ${renderCommitMessage(event)}
+    </span>
+  `,
 
-  renderWatchEvent(event) {
-    return (
-      <span>
-        {this.renderActor(event)} watched {this.renderRepo(event)}
-      </span>
-    );
-  }
-
-  renderPushEvent(event) {
-    return (
-      <span>
-        {this.renderActor(event)} pushed {this.renderCommit(event)} to{' '}
-        {this.renderRepo(event)} ({this.renderBranch(event)}):{' '}
-        {this.renderCommitMessage(event)}
-      </span>
-    );
-  }
-
-  renderCreateEvent(event) {
+  CreateEvent: function renderCreateEvent(event) {
     const { ref_type } = event.payload;
     switch (ref_type) {
-      case 'repository':
-        return (
+      case "repository":
+        return html`
           <span>
-            {this.renderActor(event)} created repository{' '}
-            {this.renderRepo(event)}
+            ${renderActor(event)} created repository ${renderRepo(event)}
           </span>
-        );
-      case 'branch':
-        return (
+        `;
+      case "branch":
+        return html`
           <span>
-            {this.renderActor(event)} created branch {this.renderBranch(event)}{' '}
-            on {this.renderRepo(event)}
+            ${renderActor(event)} created branch ${renderBranch(event)} on
+            ${renderRepo(event)}
           </span>
-        );
-      case 'tag':
-        return (
+        `;
+      case "tag":
+        return html`
           <span>
-            {this.renderActor(event)} created tag {this.renderTag(event)} on{' '}
-            {this.renderRepo(event)}
+            ${renderActor(event)} created tag ${renderTag(event)} on
+            ${renderRepo(event)}
           </span>
-        );
+        `;
       default:
         return null;
     }
+  },
+
+  IssuesEvent: (event) => "",
+
+  PullRequestEvent: (event) => html`
+    <span>
+      ${renderActor(event)} submitted ${renderPullRequest(event)} to
+      ${renderRepo(event)}: ${renderPullRequestTitle(event)}
+    </span>
+  `,
+
+  IssueCommentEvent: (event) => html`
+    <span>
+      ${renderActor(event)} commented on ${renderIssue(event)} in
+      ${renderRepo(event)}: ${renderIssueTitle(event)}
+    </span>
+  `,
+
+  IssuesEvent: (event) => html`
+    <span>
+      ${renderActor(event)} submitted ${renderIssue(event)} to
+      ${renderRepo(event)}: ${renderIssueTitle(event)}
+    </span>
+  `,
+};
+
+function renderCreatedAt(event) {
+  const { created_at } = event;
+  return html`
+    <span class="createdAt" title="${created_at}" dateTime="${created_at}">
+      ${timeago.format(created_at)}
+    </span>
+  `;
+}
+
+function renderActor(event) {
+  const login = event.actor.login;
+  if (login === event.props.username) {
+    return null;
   }
+  const display_login = event.actor.display_login;
+  return html`
+    <a class="actor" href="${BASE_URL}/${login}">
+      ${display_login}
+    </a>
+  `;
+}
 
-  renderIssuesEvent(event) {}
+function renderRepo(event) {
+  const repo = event.repo.name;
+  return html`
+    <a class="repo" href="${BASE_URL}/${repo}">
+      ${repo}
+    </a>
+  `;
+}
 
-  renderPullRequestEvent(event) {
-    return (
-      <span>
-        {this.renderActor(event)} submitted {this.renderPullRequest(event)} to{' '}
-        {this.renderRepo(event)}: {this.renderPullRequestTitle(event)}
-      </span>
-    );
-  }
+function renderIssue(event) {
+  const { html_url, number, title } = event.payload.issue;
+  return html`
+    <a class="issue" href="${html_url}">
+      Issue #${number}
+    </a>
+  `;
+}
 
-  renderIssueCommentEvent(event) {
-    return (
-      <span>
-        {this.renderActor(event)} commented on {this.renderIssue(event)} in{' '}
-        {this.renderRepo(event)}: {this.renderIssueTitle(event)}
-      </span>
-    );
-  }
+function renderIssueTitle(event) {
+  const { title } = event.payload.issue;
+  return html`<span class="issueTitle">${title}</span>`;
+}
 
-  renderIssuesEvent(event) {
-    return (
-      <span>
-        {this.renderActor(event)} submitted {this.renderIssue(event)} to{' '}
-        {this.renderRepo(event)}: {this.renderIssueTitle(event)}
-      </span>
-    );
-  }
+function renderPullRequest(event) {
+  const { number, html_url } = event.payload.pull_request;
+  return html`
+    <a class="pullRequest" href="${html_url}">
+      Pull Request #${number}
+    </a>
+  `;
+}
 
-  renderCreatedAt(event) {
-    const { created_at } = event;
-    return (
-      <span className="createdAt" title={created_at} dateTime={created_at}>
-        {timeago().format(created_at)}
-      </span>
-    );
-  }
+function renderPullRequestTitle(event) {
+  const { title } = event.payload.pull_request;
+  return html`<span class="pullRequestTitle">${title}</span>`;
+}
 
-  renderActor(event) {
-    const login = event.actor.login;
-    if (login === this.props.username) {
-      return null;
-    }
+function renderCommit(event) {
+  const repo = event.repo.name;
+  const { sha } = event.payload.commits[0];
+  return html`
+    <a class="commitHash" href="${BASE_URL}/${repo}/commit/${sha}">
+      ${sha.substring(0, 7)}
+    </a>
+  `;
+}
 
-    const display_login = event.actor.display_login;
-    return (
-      <a className="actor" href={`${BASE_URL}/${login}`}>
-        {display_login}
-      </a>
-    );
-  }
+function renderCommitMessage(event) {
+  const { message } = event.payload.commits[0];
+  const summary = message.split(/\n/)[0];
+  return html`<span class="commitMessage">${summary}</span>`;
+}
 
-  renderRepo(event) {
-    const repo = event.repo.name;
-    return (
-      <a className="repo" href={`${BASE_URL}/${repo}`}>
-        {repo}
-      </a>
-    );
-  }
+function renderBranch(event) {
+  const repo = event.repo.name;
+  const branch = event.payload.ref.replace("refs/heads/", "");
+  return html`
+    <a class="commitBranch" href="${BASE_URL}/${repo}/tree/${branch}">
+      ${branch}
+    </a>
+  `;
+}
 
-  renderIssue(event) {
-    const { html_url, number, title } = event.payload.issue;
-    return (
-      <a className="issue" href={html_url}>
-        Issue #{number}
-      </a>
-    );
-  }
+function renderTag(event) {
+  const repo = event.repo.name;
+  const tag = event.payload.ref.replace("refs/heads/", "");
+  return html`
+    <a class="committag" href="${BASE_URL}/${repo}/tree/${tag}">
+      ${tag}
+    </a>
+  `;
+}
 
-  renderIssueTitle(event) {
-    const { title } = event.payload.issue;
-    return <span className="issueTitle">{title}</span>;
-  }
-
-  renderPullRequest(event) {
-    const { number, html_url } = event.payload.pull_request;
-    return (
-      <a className="pullRequest" href={html_url}>
-        Pull Request #{number}
-      </a>
-    );
-  }
-
-  renderPullRequestTitle(event) {
-    const { title } = event.payload.pull_request;
-    return <span className="pullRequestTitle">{title}</span>;
-  }
-
-  renderCommit(event) {
-    const repo = event.repo.name;
-    const { sha } = event.payload.commits[0];
-    return (
-      <a className="commitHash" href={`${BASE_URL}/${repo}/commit/${sha}`}>
-        {sha.substring(0, 7)}
-      </a>
-    );
-  }
-
-  renderCommitMessage(event) {
-    const { message } = event.payload.commits[0];
-    const summary = message.split(/\n/)[0];
-    return <span className="commitMessage">{summary}</span>;
-  }
-
-  renderBranch(event) {
-    const repo = event.repo.name;
-    const branch = event.payload.ref.replace('refs/heads/', '');
-    return (
-      <a className="commitBranch" href={`${BASE_URL}/${repo}/tree/${branch}`}>
-        {branch}
-      </a>
-    );
-  }
-
-  renderTag(event) {
-    const repo = event.repo.name;
-    const tag = event.payload.ref.replace('refs/heads/', '');
-    return (
-      <a className="committag" href={`${BASE_URL}/${repo}/tree/${tag}`}>
-        {tag}
-      </a>
-    );
-  }
-
-  /* TODO - https://developer.github.com/v3/activity/events/types/
+/* TODO - https://developer.github.com/v3/activity/events/types/
   renderForkEvent
   renderDeleteEvent
   renderFollowEvent
@@ -252,6 +235,3 @@ export class Github extends React.Component {
   renderTeamEvent
   renderTeamAddEvent
   */
-}
-
-export default Github;

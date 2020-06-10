@@ -34,6 +34,12 @@
         font-size: 0.75em;
         text-decoration: underline dotted;
       }
+      .invisible {
+        display: none;
+      }
+      .ellipsis:after {
+        content: "...";
+      }
     }
     li.Announce {
       &::before {
