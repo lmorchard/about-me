@@ -16,6 +16,7 @@ const Glitch = require("../cards/Glitch");
 const Goodreads = require("../cards/Goodreads");
 const Spotify = require("../cards/Spotify");
 const Twitter = require("../cards/Twitter");
+const Twitch = require("../cards/Twitch");
 const ActivityPub = require("../cards/ActivityPub");
 
 module.exports = ({ config, data }) => html`
@@ -61,6 +62,7 @@ module.exports = ({ config, data }) => html`
               maxItems: 12,
               ...data.Typing,
             })}
+            ${Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Glitch({ theme: theme(), ...data.Glitch })}
