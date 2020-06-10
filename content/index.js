@@ -41,14 +41,6 @@ module.exports = ({ config, data }) => html`
             ${Note({ theme: theme(), title: 'Recent notes', ...data.RecentNotes })}
             ${Project({
               theme: theme(),
-              title: "Twitch Streaming",
-              link: "https://twitch.tv/lmorchard",
-              iframe:
-                "https://player.twitch.tv/?channel=lmorchard&muted=true&autoplay=true",
-              src: fs.readFileSync("./content/twitch.md", "utf-8"),
-            })}
-            ${Project({
-              theme: theme(),
               title: "Firefox Accounts",
               link: "https://accounts.firefox.com/",
               thumbnail:
@@ -56,16 +48,9 @@ module.exports = ({ config, data }) => html`
               src: `I'm a core contributor on Firefox Accounts, working mainly on the subscription services platform.`,
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
-            ${Feed({
-              theme: theme(),
-              link: "https://typing.lmorchard.com",
-              maxItems: 12,
-              ...data.Typing,
-            })}
             ${Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
-            ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
-            ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Glitch({ theme: theme(), ...data.Glitch })}
+            ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter })}
             ${ActivityPub({
               theme: theme(),
@@ -73,7 +58,14 @@ module.exports = ({ config, data }) => html`
               name: "Toots",
               ...data.Toots,
             })}
+            ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
+            ${Feed({
+              theme: theme(),
+              link: "https://typing.lmorchard.com",
+              maxItems: 12,
+              ...data.Typing,
+            })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Goodreads({ theme: theme(), ...data.Goodreads })}
           `)}
