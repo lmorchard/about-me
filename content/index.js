@@ -13,6 +13,7 @@ const Project = require("../cards/Project");
 const Glitch = require("../cards/Glitch");
 const Goodreads = require("../cards/Goodreads");
 const Spotify = require("../cards/Spotify");
+const Twitter = require("../cards/Twitter");
 
 const themes = [
   "default",
@@ -71,6 +72,7 @@ module.exports = ({ config, data }) => html`
             })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Glitch({ theme: theme(), ...data.Glitch })}
+            ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter})}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Goodreads({ theme: theme(), ...data.Goodreads })}
