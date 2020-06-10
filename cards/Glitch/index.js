@@ -14,7 +14,7 @@ module.exports = (props) => {
   const { pins, projects } = user;
 
   return Card(
-    { ...this.props, className: "glitch" },
+    { ...props, className: "glitch" },
     html`
       <h3>
         Glitch Projects (<a rel="me" href="${userUrl(user)}">${login}</a>)

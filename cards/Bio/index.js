@@ -4,14 +4,16 @@ const commonmark = require("commonmark");
 
 const Card = require("../../content/Card");
 
-module.exports = ({ title, src, className }) => {
+module.exports = (props) => {
+  const { title, src, className } = props;
+
   const reader = new commonmark.Parser();
   const writer = new commonmark.HtmlRenderer();
   const parsed = reader.parse(src);
   const content = writer.render(parsed);
 
   return Card(
-    { ...this.props, className: classnames("bio", className) },
+    { ...props, className: classnames("bio", className) },
     html`
       <h3>${title}</h3>
       <section>

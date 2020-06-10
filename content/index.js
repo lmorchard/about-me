@@ -5,6 +5,7 @@ const Header = require("./Header");
 const Layout = require("./Layout");
 
 const Avatar = require("../cards/Avatar");
+const Note = require("../cards/Note");
 const Bio = require("../cards/Bio");
 const YouTube = require("../cards/YouTube");
 const Feed = require("../cards/Feed");
@@ -36,6 +37,7 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
+            ${Note({ theme: theme(), title: 'Recent notes', ...data.RecentNotes })}
             ${Project({
               theme: theme(),
               title: "Twitch Streaming",

@@ -12,6 +12,7 @@
   "author": "Les Orchard <me@lmorchard.com>",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
     "commander": "^5.1.0",
     "commonmark": "^0.29.1",

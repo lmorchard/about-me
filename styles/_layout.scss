@@ -23,7 +23,7 @@ a {
   color: #eee;
   line-height: 1.5em;
 
-  h3 {
+  >h3 {
     position: absolute;
     top: 0;
     width: 100%;
@@ -37,7 +37,7 @@ a {
     opacity: 0.8;
   }
 
-  h4 {
+  >h4 {
     font-size: 1.125em;
     font-family: monospace;
     position: absolute;
@@ -50,20 +50,20 @@ a {
     opacity: 0.8;
   }
 
-  section {
+  >section {
     overflow-x: hidden;
     overflow-y: auto;
   }
 
-  &.has-h3 section {
+  &.has-h3 >section {
     height: calc(100% - 3em);
     margin-top: 3em;
   }
-  &.has-h4 section {
+  &.has-h4 >section {
     height: calc(100% - 2.5em);
     margin-bottom: 2.5em;
   }
-  &.with-h3.with-h4 section {
+  &.with-h3.with-h4 >section {
     height: calc(100% - 5.5em);
   }
 
