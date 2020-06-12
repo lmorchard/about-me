@@ -38,18 +38,18 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
-            ${Note({
-              theme: theme(),
-              title: "Recent notes",
-              ...data.RecentNotes,
-            })}
             ${Project({
               theme: theme(),
               title: "Firefox Accounts",
               link: "https://accounts.firefox.com/",
               thumbnail:
                 "https://accounts-static.cdn.mozilla.net/images/16821f55.firefox-logo.svg",
-              src: `I'm a core contributor on Firefox Accounts, working mainly on the subscription services platform.`,
+              src: fs.readFileSync("./content/fxa.md", "utf-8"),
+            })}
+            ${Note({
+              theme: theme(),
+              title: "Recent notes",
+              ...data.RecentNotes,
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
             ${Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}

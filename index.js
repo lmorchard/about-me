@@ -6,6 +6,7 @@ const rimraf = util.promisify(require("rimraf"));
 const { fs } = require("./lib/files");
 const { fetchAll } = require("./lib/fetch");
 const { buildStyles } = require("./lib/styles");
+const { buildAssets } = require("./lib/assets");
 const indexTemplate = require("./templates");
 
 const { Command } = require("commander");
@@ -19,11 +20,13 @@ async function main() {
   await program.parseAsync(process.argv);
 }
 
+program.command("clean").description("clean existing build").action(cleanBuild);
 program.command("fetch").description("fetch data sources").action(fetchAll);
 program.command("build").description("build the page").action(buildAll);
 
 async function buildAll() {
   await buildStyles();
+  await buildAssets();
   await buildIndexPage();
 }
 

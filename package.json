@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel watch serve:reload",
-    "serve:reload": "reload -d build",
-    "watch": "npm run fetch && onchange -v -i 'index.js' './cards/**' './content/**' -- npm run build",
+    "start": "npm-run-all --parallel watch serve",
+    "serve": "reload -d build",
+    "watch": "npm-run-all --serial clean fetch build && onchange -v -i 'index.js' '{lib,templates,styles,content,cards,assets}/**/*' -- npm run build",
+    "clean": "./index.js clean",
     "build": "./index.js build",
     "fetch": "./index.js fetch"
   },
