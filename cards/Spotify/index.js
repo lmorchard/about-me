@@ -1,7 +1,7 @@
 const { html, unescaped } = require("../../lib/html");
 const classnames = require("classnames");
 const timeago = require("timeago.js");
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 module.exports = (props) => {
   const { username, user, tracks } = props;

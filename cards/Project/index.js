@@ -2,7 +2,7 @@ const { html, unescaped } = require("../../lib/html");
 const classnames = require("classnames");
 const commonmark = require("commonmark");
 
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 module.exports = (props, children) => {
   const { title, link, src = "", thumbnail, video, iframe, className } = props;

@@ -6,7 +6,7 @@ const rimraf = util.promisify(require("rimraf"));
 const { fs } = require("./lib/files");
 const { fetchAll } = require("./lib/fetch");
 const { buildStyles } = require("./lib/styles");
-const indexTemplate = require("./content");
+const indexTemplate = require("./templates");
 
 const { Command } = require("commander");
 const pkgJson = require("./package.json");

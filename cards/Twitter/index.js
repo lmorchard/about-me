@@ -2,7 +2,7 @@ const { html, unescaped } = require("../../lib/html");
 const twitterText = require("twitter-text");
 const timeago = require("timeago.js");
 const url = require("url");
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 const BASE_URL = "https://twitter.com";
 

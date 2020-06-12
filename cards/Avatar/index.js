@@ -1,6 +1,6 @@
 const { html } = require("../../lib/html");
 const classnames = require("classnames");
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 // import AvatarImage from './me.jpg';
 

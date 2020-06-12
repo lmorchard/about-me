@@ -145,7 +145,7 @@ a {
   .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
   }
   .card {
     flex: 0 1 calc(50% - 0.5em);

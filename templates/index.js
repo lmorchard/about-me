@@ -38,7 +38,11 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
-            ${Note({ theme: theme(), title: 'Recent notes', ...data.RecentNotes })}
+            ${Note({
+              theme: theme(),
+              title: "Recent notes",
+              ...data.RecentNotes,
+            })}
             ${Project({
               theme: theme(),
               title: "Firefox Accounts",

@@ -2,7 +2,7 @@ const { html, unescaped } = require("../../lib/html");
 const classnames = require("classnames");
 const commonmark = require("commonmark");
 
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 const CDN_URL = "https://cdn.glitch.com";
 const userUrl = ({ login }) => `https://glitch.com/@${login}`;

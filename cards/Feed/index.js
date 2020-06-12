@@ -4,7 +4,7 @@ const classnames = require("classnames");
 const timeago = require("timeago.js");
 const url = require("url");
 
-const Card = require("../../content/Card");
+const Card = require("../../templates/Card");
 
 // import FeedIcon from './icon.svg';
 
