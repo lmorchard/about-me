@@ -41,5 +41,7 @@ jobs:
         GOODREADS_USER_NAME: ${{ secrets.GOODREADS_USER_NAME }}
         GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
         GOODREADS_SECRET: ${{ secrets.GOODREADS_SECRET }}
+    - name: Create .nojekyll
+      run: touch build/.nojekyll
     - name: Deploy for staging
       run: npx gh-pages -t -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
