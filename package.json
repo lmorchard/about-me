@@ -10,6 +10,7 @@
     "build": "./index.js build",
     "fetch": "./index.js fetch",
     "full-build": "npm-run-all --serial clean fetch build",
+    "build:production": "npm run full-build",
     "build:stage": "npm run full-build"
   },
   "author": "Les Orchard <me@lmorchard.com>",

@@ -17,8 +17,8 @@ jobs:
         git config --global user.name "Les Orchard"        
     - name: Yarn install
       run: yarn install
-    - name: Build for staging
-      run: yarn run build:stage
+    - name: Build for production
+      run: yarn run build:production
       env:
         YOUTUBE_USER_ID: ${{ secrets.YOUTUBE_USER_ID }}
         YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
