@@ -1,0 +1,632 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.card {
+  position: relative;
+  flex: 1 100%;
+  height: 400px;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin: .25em;
+  background: #222;
+  color: #eee;
+  line-height: 1.5em; }
+  .card > h3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 1.25em;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 0.25em 0.25em 0 0;
+    background-color: #333;
+    padding: 0.5em 0;
+    margin: 0;
+    opacity: 0.8; }
+  .card > h4 {
+    font-size: 1.125em;
+    font-family: monospace;
+    position: absolute;
+    padding: 0.25em 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background: #333;
+    opacity: 0.8; }
+  .card > section {
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .card.has-h3 > section {
+    height: calc(100% - 3em);
+    margin-top: 3em; }
+  .card.has-h4 > section {
+    height: calc(100% - 2.5em);
+    margin-bottom: 2.5em; }
+  .card.with-h3.with-h4 > section {
+    height: calc(100% - 5.5em); }
+  .card button {
+    cursor: pointer;
+    margin: 0 0.5em;
+    padding: 0.25em 0.75em;
+    border: 1px solid;
+    border-radius: 0.5em;
+    opacity: 0.9;
+    box-shadow: 0px 0px 8px #111; }
+    .card button:active {
+      box-shadow: 0px 0px 2px #111; }
+    .card button:hover {
+      opacity: 1.0; }
+  .card.theme-primary {
+    background: #2E1A25;
+    color: #BCB5B9; }
+    .card.theme-primary h3 {
+      background-color: #280619; }
+    .card.theme-primary h4 {
+      background-color: #280619; }
+    .card.theme-primary a {
+      color: #DBDBDB;
+      text-decoration: none; }
+      .card.theme-primary a:hover {
+        text-decoration: underline; }
+    .card.theme-primary button {
+      border-color: #280619;
+      color: #000000;
+      background-color: #BCB5B9;
+      box-shadow: 0px 0px 8px #000000; }
+      .card.theme-primary button:active {
+        box-shadow: 0px 0px 2px #000000; }
+  .card.theme-secondary-1 {
+    background: #393620;
+    color: #E8E7E0; }
+    .card.theme-secondary-1 h3 {
+      background-color: #322D08; }
+    .card.theme-secondary-1 h4 {
+      background-color: #322D08; }
+    .card.theme-secondary-1 a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      .card.theme-secondary-1 a:hover {
+        text-decoration: underline; }
+    .card.theme-secondary-1 button {
+      border-color: #322D08;
+      color: #000000;
+      background-color: #E8E7E0;
+      box-shadow: 0px 0px 8px #000000; }
+      .card.theme-secondary-1 button:active {
+        box-shadow: 0px 0px 2px #000000; }
+  .card.theme-secondary-2 {
+    background: #1D1727;
+    color: #9B999E; }
+    .card.theme-secondary-2 h3 {
+      background-color: #120822; }
+    .card.theme-secondary-2 h4 {
+      background-color: #120822; }
+    .card.theme-secondary-2 a {
+      color: #C2C2C2;
+      text-decoration: none; }
+      .card.theme-secondary-2 a:hover {
+        text-decoration: underline; }
+    .card.theme-secondary-2 button {
+      border-color: #120822;
+      color: #000000;
+      background-color: #9B999E;
+      box-shadow: 0px 0px 8px #000000; }
+      .card.theme-secondary-2 button:active {
+        box-shadow: 0px 0px 2px #000000; }
+  .card.theme-complement {
+    background: #2D351E;
+    color: #D5D8D0; }
+    .card.theme-complement h3 {
+      background-color: #212E07; }
+    .card.theme-complement h4 {
+      background-color: #212E07; }
+    .card.theme-complement a {
+      color: #F2F2F2;
+      text-decoration: none; }
+      .card.theme-complement a:hover {
+        text-decoration: underline; }
+    .card.theme-complement button {
+      border-color: #212E07;
+      color: #000000;
+      background-color: #D5D8D0;
+      box-shadow: 0px 0px 8px #000000; }
+      .card.theme-complement button:active {
+        box-shadow: 0px 0px 2px #000000; }
+
+@media screen and (max-width: 50em) {
+  .card.has-h3, .card.has-h4, .card.has-h3 section {
+    height: unset;
+    min-height: 400px; } }
+
+@media screen and (min-width: 50em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; }
+  .card {
+    flex: 0 1 calc(50% - 0.5em); }
+    .card.span-wide {
+      flex: 0 3 100%; }
+    .card.span-full {
+      flex: 0 3 100%; } }
+
+@media screen and (min-width: 70em) {
+  .card {
+    flex: 0 1 calc(33% - 0.3em); }
+    .card.span-wide {
+      flex: 0 2 66%; }
+    .card.span-full {
+      flex: 0 3 100%; } }
+
+@media screen and (min-width: 110em) {
+  .card {
+    flex: 0 1 calc(25% - 0.5em); }
+    .card.span-wide {
+      flex: 0 2 66%; }
+    .card.span-full {
+      flex: 0 3 100%; } }
+
+@font-face {
+  font-family: "fxemoji-symbols";
+  src: url("../node_modules/fxemoji/dist/symbols/symbols.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #020402;
+  color: #eeeeee;
+  font: 14px sans-serif;
+  text-align: inherit; }
+
+h2 {
+  text-align: center; }
+
+header {
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin: .25em;
+  background: #222;
+  color: #eee; }
+  header h1 {
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em; }
+
+.card.activitypub ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.activitypub ul li {
+    clear: both;
+    margin-bottom: 1.5em;
+    padding-left: 1.75em; }
+    .card.activitypub ul li::before {
+      float: left;
+      width: 1.75em;
+      margin-left: -1.75em;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "fxemoji-symbols";
+      content: "\1F5E3"; }
+    .card.activitypub ul li a {
+      font-weight: bold; }
+    .card.activitypub ul li .retooted {
+      display: block;
+      font-style: italic;
+      font-size: 0.85em;
+      margin-bottom: -0.75em;
+      text-decoration: underline dotted; }
+    .card.activitypub ul li .createdAt {
+      float: right;
+      font-weight: normal;
+      white-space: nowrap;
+      padding: 0 0 1em 1em;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+    .card.activitypub ul li .invisible {
+      display: none; }
+    .card.activitypub ul li .ellipsis:after {
+      content: "..."; }
+  .card.activitypub ul li.Announce::before {
+    content: '\1F501'; }
+
+.card.avatar section {
+  text-align: center; }
+  .card.avatar section img {
+    height: calc(100% - 3em); }
+
+.card.bio section {
+  margin-left: 1em;
+  margin-right: 1em; }
+  .card.bio section p {
+    margin: 1em; }
+  .card.bio section a {
+    font-weight: bold; }
+
+.card.blog ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .card.blog ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; }
+    .card.blog ul li a {
+      position: relative;
+      width: 128px;
+      height: 128px;
+      overflow: hidden;
+      background-color: rgba(11, 11, 11, 0.7); }
+      .card.blog ul li a img {
+        width: 128px;
+        opacity: 0.7; }
+      .card.blog ul li a:hover img {
+        opacity: 1; }
+      .card.blog ul li a .title {
+        font-size: 0.85em;
+        line-height: 1.25em;
+        display: block;
+        position: absolute;
+        width: calc(100% - 1em);
+        bottom: 0;
+        padding: 0.5em;
+        background-color: rgba(11, 11, 11, 0.8); }
+
+.card.feed h3 .feedIcon {
+  width: 0.75em;
+  height: 0.75em;
+  margin: 0 0.5em 0 0; }
+
+.card.feed ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.feed ul li {
+    clear: both;
+    margin-bottom: 1.5em;
+    padding-left: 1.75em; }
+    .card.feed ul li::before {
+      float: left;
+      width: 1.75em;
+      margin-left: -1.75em;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "fxemoji-symbols";
+      content: "\1F501"; }
+    .card.feed ul li a {
+      font-weight: bold; }
+    .card.feed ul li .createdAt {
+      float: right;
+      font-weight: normal;
+      white-space: nowrap;
+      padding: 0 0 1em 1em;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+
+.card.github ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.github ul li {
+    clear: both;
+    margin-bottom: 1em;
+    padding-left: 1.75em;
+    text-indent: -1.75em; }
+    .card.github ul li::before {
+      float: left;
+      width: 1.75em;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "fxemoji-symbols"; }
+    .card.github ul li.WatchEvent::before {
+      content: "\1F49F"; }
+    .card.github ul li.PushEvent::before {
+      content: "\27A1"; }
+    .card.github ul li.PullRequestEvent::before {
+      content: "\1F5E4"; }
+    .card.github ul li.IssueCommentEvent::before {
+      content: "\1F5E3"; }
+    .card.github ul li.IssuesEvent::before {
+      content: "\203C"; }
+    .card.github ul li.CreateEvent::before {
+      content: "\2795"; }
+    .card.github ul li .actor, .card.github ul li .repo, .card.github ul li .issue, .card.github ul li .pullRequest, .card.github ul li .commitHash, .card.github ul li .commitBranch {
+      font-weight: bold; }
+    .card.github ul li .commitMessage, .card.github ul li .issueTitle, .card.github ul li .pullRequestTitle {
+      font-style: italic; }
+    .card.github ul li .createdAt {
+      float: right;
+      white-space: nowrap;
+      padding: 0 0 1em 1em;
+      text-indent: 0;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+
+.card.glitch ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .card.glitch ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; }
+    .card.glitch ul li a {
+      position: relative;
+      width: 128px;
+      height: 128px;
+      overflow: hidden;
+      background-color: rgba(11, 11, 11, 0.7); }
+      .card.glitch ul li a img {
+        width: 128px;
+        opacity: 1;
+        transition: opacity 0.5s ease; }
+      .card.glitch ul li a p {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 0.85em;
+        z-index: 9999;
+        background-color: rgba(11, 11, 11, 0.7);
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+        .card.glitch ul li a p span {
+          display: block;
+          padding: 0.25em; }
+      .card.glitch ul li a:hover p {
+        opacity: 1; }
+      .card.glitch ul li a:hover img {
+        opacity: 0.5; }
+      .card.glitch ul li a .title {
+        font-size: 0.85em;
+        line-height: 1.25em;
+        display: block;
+        position: absolute;
+        width: calc(100% - 1em);
+        bottom: 0;
+        padding: 0.5em;
+        background-color: rgba(11, 11, 11, 0.8); }
+
+.card.goodreads ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .card.goodreads ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; }
+    .card.goodreads ul li img {
+      width: 98px; }
+
+.card.pocket ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.pocket ul li {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start; }
+    .card.pocket ul li img {
+      width: 33%;
+      margin: 0 1em 1em 0;
+      float: left; }
+    .card.pocket ul li .title {
+      font-weight: bold; }
+    .card.pocket ul li .excerpt {
+      font-size: 0.85em;
+      max-height: 8.5em;
+      overflow-y: hidden; }
+    .card.pocket ul li .createdAt {
+      float: right;
+      white-space: nowrap;
+      padding: 0 0 1em 1em;
+      text-indent: 0;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+
+.card.project section {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center; }
+  .card.project section .thumbnail img, .card.project section .video video {
+    margin: 0.25em;
+    max-width: 60%;
+    max-height: 60%; }
+  .card.project section .iframe iframe {
+    margin: 0.125em;
+    width: 80%;
+    height: 60%; }
+  .card.project section a {
+    font-weight: bold; }
+  .card.project section p {
+    text-align: left;
+    margin: 1em; }
+
+.card.spotify ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.spotify ul li {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start; }
+    .card.spotify ul li .cover {
+      margin-top: 0.25em;
+      margin-right: 0.25em;
+      flex-grow: 0; }
+    .card.spotify ul li .cover img {
+      width: 48px;
+      height: 48px; }
+    .card.spotify ul li .track {
+      flex-grow: 3;
+      margin-left: 1.75em;
+      text-indent: -1em; }
+    .card.spotify ul li .preview {
+      margin-left: 0.25em; }
+    .card.spotify ul li audio {
+      width: 64px; }
+    .card.spotify ul li .name, .card.spotify ul li .album, .card.spotify ul li .artist {
+      font-weight: bold; }
+    .card.spotify ul li .playedAt {
+      white-space: nowrap;
+      padding-left: 0.5em;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+
+.card.twitch ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .card.twitch ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; }
+    .card.twitch ul li a {
+      position: relative;
+      width: 128px;
+      height: 128px;
+      overflow: hidden;
+      background-color: rgba(11, 11, 11, 0.7); }
+      .card.twitch ul li a img {
+        width: 128px;
+        opacity: 0.6;
+        transition: opacity 0.5s ease; }
+      .card.twitch ul li a p {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 0.85em;
+        z-index: 9999;
+        background-color: rgba(11, 11, 11, 0.7);
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+        .card.twitch ul li a p span {
+          display: block;
+          padding: 0.25em; }
+      .card.twitch ul li a:hover p {
+        opacity: 1; }
+      .card.twitch ul li a:hover img {
+        opacity: 1.0; }
+      .card.twitch ul li a .title {
+        font-size: 0.85em;
+        line-height: 1.25em;
+        display: block;
+        position: absolute;
+        width: calc(100% - 1em);
+        bottom: 0;
+        padding: 0.5em;
+        background-color: rgba(11, 11, 11, 0.8); }
+
+.card.twitter ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0; }
+  .card.twitter ul li {
+    clear: both;
+    margin-bottom: 1em;
+    padding-left: 1.75em;
+    text-indent: -1.75em; }
+    .card.twitter ul li::before {
+      float: left;
+      width: 1.75em;
+      font-style: normal;
+      font-weight: normal;
+      font-family: "fxemoji-symbols";
+      content: "\1F5E3"; }
+    .card.twitter ul li .tweet-url {
+      font-weight: bold; }
+    .card.twitter ul li .createdAt {
+      float: right;
+      white-space: nowrap;
+      padding: 0 0 1em 1em;
+      text-indent: 0;
+      font-size: 0.75em;
+      text-decoration: underline dotted; }
+
+.card.youtube ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .card.youtube ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; }
+    .card.youtube ul li a {
+      position: relative;
+      width: 128px;
+      height: 128px;
+      overflow: hidden;
+      background-color: rgba(11, 11, 11, 0.7); }
+      .card.youtube ul li a img {
+        width: 128px;
+        opacity: 0.6;
+        transition: opacity 0.5s ease; }
+      .card.youtube ul li a p {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 0.85em;
+        z-index: 9999;
+        background-color: rgba(11, 11, 11, 0.7);
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+        .card.youtube ul li a p span {
+          display: block;
+          padding: 0.25em; }
+      .card.youtube ul li a:hover p {
+        opacity: 1; }
+      .card.youtube ul li a:hover img {
+        opacity: 1.0; }
+      .card.youtube ul li a .title {
+        font-size: 0.85em;
+        line-height: 1.25em;
+        display: block;
+        position: absolute;
+        width: calc(100% - 1em);
+        bottom: 0;
+        padding: 0.5em;
+        background-color: rgba(11, 11, 11, 0.8); }
