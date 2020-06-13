@@ -32,6 +32,7 @@ module.exports = {
   siteTitle: "lmorchard.com - about me",
   buildPath: "./build",
   fetch: {
+    Colophon: {},
     RecentNotes: {
       component: "Note",
       url: "https://lmorchard.github.io/notes/RecentChanges.html",

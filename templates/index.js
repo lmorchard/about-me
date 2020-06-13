@@ -18,6 +18,7 @@ const Spotify = require("../cards/Spotify");
 const Twitter = require("../cards/Twitter");
 const Twitch = require("../cards/Twitch");
 const ActivityPub = require("../cards/ActivityPub");
+const Colophon = require("../cards/Colophon");
 
 module.exports = ({ config, data }) => html`
   <html lang="en">
@@ -72,6 +73,7 @@ module.exports = ({ config, data }) => html`
             })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Goodreads({ theme: theme(), ...data.Goodreads })}
+            ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
         </article>
       </div>
