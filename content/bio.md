@@ -8,7 +8,7 @@ the other usual places below.
 
 - [🧾 Blog](https://blog.lmorchard.com)
 - [📝 Notes](https://lmorchard.github.io/notes/)
-- [🐘 Fediverse](https://toot.cafe/lmorchard)
+- [🐘 Fediverse](https://toot.cafe/@lmorchard)
 - [🐙 Github](https://github.com/lmorchard)
 - [🐟 Glitch](https://glitch.com/@lmorchard)
 - [📺 Twitch](https://twitch.tv/lmorchard)
