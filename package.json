@@ -3,12 +3,14 @@
   "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel watch serve",
+    "start": "npm run full-build && npm-run-all --parallel watch serve",
     "serve": "reload -d build",
-    "watch": "npm-run-all --serial clean fetch build && onchange -v -i 'index.js' '{lib,templates,styles,content,cards,assets}/**/*' -- npm run build",
+    "watch": "onchange -v -i 'index.js' '{lib,templates,styles,content,cards,assets}/**/*' -- npm run build",
     "clean": "./index.js clean",
     "build": "./index.js build",
-    "fetch": "./index.js fetch"
+    "fetch": "./index.js fetch",
+    "full-build": "npm-run-all --serial clean fetch build",
+    "build:stage": "npm run full-build"
   },
   "author": "Les Orchard <me@lmorchard.com>",
   "license": "MIT",
@@ -17,6 +19,7 @@
     "classnames": "^2.2.6",
     "commander": "^5.1.0",
     "commonmark": "^0.29.1",
+    "dotenv": "^8.2.0",
     "escape-html": "^1.0.3",
     "feedparser": "^2.2.10",
     "fxemoji": "git+https://github.com/mozilla/fxemoji.git",

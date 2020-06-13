@@ -1,0 +1,23 @@
+name: Staging deploy to Github Pages
+on:
+  push:
+    branches: [ stage ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 14.2.0
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.2.0
+    - name: Set git identity
+      run: |
+        git config --global user.email "me@lmorchard.com"
+        git config --global user.name "Les Orchard"        
+    - name: Yarn install
+      run: yarn install
+    - name: Build for staging
+      run: yarn run build:stage
+    - name: Deploy for staging
+      run: npx gh-pages -t -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
