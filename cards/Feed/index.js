@@ -9,7 +9,7 @@ const Card = require("../../templates/Card");
 // import FeedIcon from './icon.svg';
 
 module.exports = (props) => {
-  const { name, title, feeds, link, feedUrls } = props;
+  const { name, title, feeds, link, feedUrls, feedIcon = "assets/feedicon.svg" } = props;
   const maxItems = props.maxItems || 12;
   const seenUrls = new Set();
 
@@ -28,11 +28,11 @@ module.exports = (props) => {
     { ...props, className: classnames("feed", name) },
     html`
       <h3>
-        ${link ? html`<a href=${link}>${title}</a>` : title}
+        ${link ? html`<a href="${link}">${title}</a>` : title}
         ${feedUrls.map(
           (url, idx) => html`
-            <a key=${idx} href=${url}>
-              <img class="feedIcon" src="{FeedIcon}" />
+            <a key="${idx}" href="${url}">
+              <img class="feedIcon" src="${feedIcon}" />
             </a>
           `
         )}
