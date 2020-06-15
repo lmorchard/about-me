@@ -53,6 +53,10 @@ a {
   >section {
     overflow-x: hidden;
     overflow-y: auto;
+
+    >p {
+      margin: 1em 2em;
+    }
   }
 
   &.has-h3 >section {

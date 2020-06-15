@@ -3,7 +3,7 @@ const classnames = require("classnames");
 const Card = require("../../templates/Card");
 
 module.exports = (props) => {
-  const { username, channelId, items, className } = props;
+  const { username, channelId, items, className, error } = props;
   const maxItems = props.maxItems || 12;
 
   return Card(
@@ -11,11 +11,16 @@ module.exports = (props) => {
     html`
       <h3>
         YouTube Videos (<a rel="me" href="${userUrl(username)}">${username}</a>)
-      </h3>
+      </h3>     
       <section>
+      ${items && html`
         <ul>
           ${items.slice(0, maxItems).map((item, idx) => renderItem(item, idx))}
         </ul>
+      `}
+      ${error && html`
+        <p>Fetch failed: ${error.message}</p>
+      `}
       </section>
     `
   );
