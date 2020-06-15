@@ -1,7 +1,7 @@
 name: Scheduled deploy to AWS S3
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '0 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
