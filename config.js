@@ -35,7 +35,7 @@ module.exports = {
     Colophon: {},
     RecentNotes: {
       component: "Note",
-      url: "https://lmorchard.github.io/notes/RecentChanges.html",
+      url: "https://notes.lmorchard.com/RecentChanges.html",
     },
     Blog: {
       siteTitle: "blog.lmorchard.com",
