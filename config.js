@@ -35,6 +35,7 @@ module.exports = {
     Colophon: {},
     RecentNotes: {
       component: "Note",
+      baseUrl: "https://notes.lmorchard.com/",
       url: "https://notes.lmorchard.com/RecentChanges.html",
     },
     Blog: {
