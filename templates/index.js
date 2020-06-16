@@ -50,6 +50,7 @@ module.exports = ({ config, data }) => html`
             ${Note({
               theme: theme(),
               title: "Notes (notes.lmorchard.com)",
+              link: "https://notes.lmorchard.com/",
               ...data.RecentNotes,
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
