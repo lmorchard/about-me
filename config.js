@@ -38,6 +38,11 @@ module.exports = {
       baseUrl: "https://notes.lmorchard.com/",
       url: "https://notes.lmorchard.com/RecentChanges.html",
     },
+    TodaysNote: {
+      component: "Note",
+      baseUrl: "https://notes.lmorchard.com/",
+      url: "https://notes.lmorchard.com/today.html",
+    },
     Blog: {
       siteTitle: "blog.lmorchard.com",
       baseURL: "https://blog.lmorchard.com",

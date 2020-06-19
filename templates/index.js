@@ -39,6 +39,18 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
+            ${Note({
+              theme: theme(),
+              title: "Today (notes.lmorchard.com)",
+              link: "https://notes.lmorchard.com/",
+              ...data.TodaysNote,
+            })}
+            ${Note({
+              theme: theme(),
+              title: "Changes (notes.lmorchard.com)",
+              link: "https://notes.lmorchard.com/",
+              ...data.RecentNotes,
+            })}
             ${Project({
               theme: theme(),
               title: "Firefox Accounts",
@@ -46,12 +58,6 @@ module.exports = ({ config, data }) => html`
               thumbnail:
                 "https://accounts-static.cdn.mozilla.net/images/16821f55.firefox-logo.svg",
               src: fs.readFileSync("./content/fxa.md", "utf-8"),
-            })}
-            ${Note({
-              theme: theme(),
-              title: "Notes (notes.lmorchard.com)",
-              link: "https://notes.lmorchard.com/",
-              ...data.RecentNotes,
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
             ${Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
