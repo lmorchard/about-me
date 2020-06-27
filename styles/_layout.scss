@@ -23,6 +23,10 @@ a {
   color: #eee;
   line-height: 1.5em;
 
+  >img {
+    max-width: 100%;
+  }
+
   >h3 {
     position: absolute;
     top: 0;
