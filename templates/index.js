@@ -79,7 +79,7 @@ module.exports = ({ config, data }) => html`
               ...data.Typing,
             })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
-            ${Goodreads({ theme: theme(), ...data.Goodreads })}
+            ${false && Goodreads({ theme: theme(), ...data.Goodreads })}
             ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
         </article>

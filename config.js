@@ -86,12 +86,14 @@ module.exports = {
       expires_in: 3600,
       scope: "user-read-currently-playing user-read-recently-played",
     },
+    /*
     Goodreads: {
       user_id: GOODREADS_USER_ID,
       user_name: GOODREADS_USER_NAME,
       key: GOODREADS_KEY,
       secret: GOODREADS_SECRET,
     },
+    */
     Toots: {
       component: "ActivityPub",
       username: "lmorchard",
