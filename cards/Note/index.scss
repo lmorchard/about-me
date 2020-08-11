@@ -1,4 +1,11 @@
 .card.note {
+  section {
+    margin-left: 1em;
+    margin-right: 1em;
+    p {
+      margin: 1em;
+    }
+  }
   ul {
     margin-top: 0.75em;
     padding-left: 2em;
