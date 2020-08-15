@@ -93,7 +93,6 @@ module.exports = {
       key: GOODREADS_KEY,
       secret: GOODREADS_SECRET,
     },
-    */
     Toots: {
       component: "ActivityPub",
       username: "lmorchard",
@@ -101,7 +100,8 @@ module.exports = {
       profileUrl: "https://toot.cafe/@lmorchard",
       outboxUrl: "https://toot.cafe/users/lmorchard/outbox?page=true",
     },
-    Typing: {
+    */
+   Typing: {
       component: "Feed",
       title: "Typing (typing.lmorchard.com)",
       feedUrls: ["https://typing.lmorchard.com/feed/index.xml"],

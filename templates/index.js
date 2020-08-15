@@ -60,11 +60,11 @@ module.exports = ({ config, data }) => html`
               src: fs.readFileSync("./content/fxa.md", "utf-8"),
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
-            ${Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
+            ${false && Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
             ${Glitch({ theme: theme(), ...data.Glitch })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter })}
-            ${ActivityPub({
+            ${false && ActivityPub({
               theme: theme(),
               maxItems: 7,
               name: "Toots",
