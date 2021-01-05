@@ -1,5 +1,5 @@
 const SpotifyWebApi = require('spotify-web-api-node');
-const config = require(__dirname + '/../../../config').Spotify;
+const config = require(__dirname + '/../../config').fetch.Spotify;
 
 const code = process.argv[2];
 
