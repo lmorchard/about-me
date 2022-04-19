@@ -7,10 +7,9 @@ This page collects a bunch of the stuff I do online. If you feel like it, drop m
 the other usual places below.
 
 - [🧾 Blog](https://blog.lmorchard.com)
-- [📝 Notes](https://lmorchard.github.io/notes/)
 - [🐘 Fediverse](https://hackers.town/@lmorchard)
-- [💬 Discord](https://discord.com/invite/UXeuPNv)
+- [🐥 Twitter](https://twitter.com/lmorchard)
 - [🐙 Github](https://github.com/lmorchard)
 - [🐟 Glitch](https://glitch.com/@lmorchard)
 - [📺 Twitch](https://twitch.tv/lmorchard)
-- [🐥 Twitter](https://twitter.com/lmorchard)
+- [💬 Discord](https://discord.com/invite/UXeuPNv)
