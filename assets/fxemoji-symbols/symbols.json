@@ -1,0 +1,5467 @@
+[
+  {
+    "icon": {
+      "glyph": {
+        "code": "u27B0",
+        "name": "curlyloop"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u27B0.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25B6",
+        "name": "blackrightpointingarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u25B6.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u25B6.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u25B6.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4F4",
+        "name": "mobilephoneoff"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F4F4.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F4F4.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F4.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFB636",
+          "name": "u1F4F4.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F4.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F4.layer6",
+          "order": 6
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F4.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4F5",
+        "name": "nomobilephones"
+      },
+      "layers": [
+        {
+          "color": "8F9799",
+          "name": "u1F4F5.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F4F5.layer2",
+          "order": 2
+        },
+        {
+          "color": "8F9799",
+          "name": "u1F4F5.layer3",
+          "order": 3
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4F5.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4F6",
+        "name": "antennawithbars"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F4F6.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F4F6.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F6.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F18E",
+        "name": "negativesquaredAB"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F18E.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F18E.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F18E.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F18E.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4F3",
+        "name": "vibrationmode"
+      },
+      "layers": [
+        {
+          "color": "FF7D5A",
+          "name": "u1F4F3.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF623E",
+          "name": "u1F4F3.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4F3.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F194",
+        "name": "squaredid"
+      },
+      "layers": [
+        {
+          "color": "7359E2",
+          "name": "u1F194.layer1",
+          "order": 1
+        },
+        {
+          "color": "5246CC",
+          "name": "u1F194.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F194.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F194.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F195",
+        "name": "squarednew"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F195.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F195.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F195.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F195.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F195.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F196",
+        "name": "squaredng"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F196.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F196.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F196.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F196.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F197",
+        "name": "squaredok"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F197.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F197.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F197.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F197.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F191",
+        "name": "squaredCL"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F191.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F191.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F191.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F191.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F192",
+        "name": "squaredcool"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F192.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F192.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F192.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F192.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F192.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F192.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F193",
+        "name": "squaredfree"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F193.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F193.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F193.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F193.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F193.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F193.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u267B",
+        "name": "blackuniversalrecyclingsymbol"
+      },
+      "layers": [
+        {
+          "color": "00D1AE",
+          "name": "u267B.layer1",
+          "order": 1
+        },
+        {
+          "color": "00B89C",
+          "name": "u267B.layer2",
+          "order": 2
+        },
+        {
+          "color": "00D1AE",
+          "name": "u267B.layer3",
+          "order": 3
+        },
+        {
+          "color": "00B89C",
+          "name": "u267B.layer4",
+          "order": 4
+        },
+        {
+          "color": "00D1AE",
+          "name": "u267B.layer5",
+          "order": 5
+        },
+        {
+          "color": "00B89C",
+          "name": "u267B.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F198",
+        "name": "squaredsos"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F198.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F198.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F198.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F198.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F198.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F199",
+        "name": "squaredup"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F199.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F199.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F199.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F199.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F199.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u267F",
+        "name": "wheelchairsymbol"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u267F.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u267F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u267F.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u267F.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u267F.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F3E7",
+        "name": "automatedtellermachine"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F3E7.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F3E7.layer2",
+          "order": 2
+        },
+        {
+          "color": "0074A8",
+          "name": "u1F3E7.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F3E7.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F3E7.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F3E7.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u26AA",
+        "name": "mediumwhitecircle"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u26AA.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F517",
+        "name": "linksymbol"
+      },
+      "layers": [
+        {
+          "color": "8B8D8E",
+          "name": "u1F517.layer1",
+          "order": 1
+        },
+        {
+          "color": "646768",
+          "name": "u1F517.layer2",
+          "order": 2
+        },
+        {
+          "color": "8B8D8E",
+          "name": "u1F517.layer3",
+          "order": 3
+        },
+        {
+          "color": "8B8D8E",
+          "name": "u1F517.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F518",
+        "name": "radiobutton"
+      },
+      "layers": [
+        {
+          "color": "646768",
+          "name": "u1F518.layer1",
+          "order": 1
+        },
+        {
+          "color": "464A4C",
+          "name": "u1F518.layer2",
+          "order": 2
+        },
+        {
+          "color": "464A4C",
+          "name": "u1F518.layer3",
+          "order": 3
+        },
+        {
+          "color": "F4F3EF",
+          "name": "u1F518.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F518.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F519",
+        "name": "backwithleftwardsarrow"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F519.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F519.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F519.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F519.layer4",
+          "order": 4
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F519.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2733",
+        "name": "eightspokedasterix"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u2733.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u2733.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2733.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2B1C",
+        "name": "whitelargesquare"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u2B1C.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2B1B",
+        "name": "blacklargesquare"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u2B1B.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51A",
+        "name": "endwithleftwardsarrow"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F51A.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51A.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51A.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51A.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51B",
+        "name": "onarrowleftright"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F51B.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51B.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51B.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51B.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51C",
+        "name": "soonwithrightarrow"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F51C.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51C.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51C.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51C.layer4",
+          "order": 4
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51C.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51D",
+        "name": "topwithupwardsarrow"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F51D.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51D.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51D.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51D.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51E",
+        "name": "nooneunder18symbol"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F51E.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F51E.layer2",
+          "order": 2
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F51E.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F51F",
+        "name": "ten"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F51F.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F51F.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F51F.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F51F.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25C0",
+        "name": "blackleftpointingarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u25C0.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u25C0.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u25C0.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F549",
+        "name": "omsymbol"
+      },
+      "layers": [
+        {
+          "color": "464A4C",
+          "name": "u1F549.layer1",
+          "order": 1
+        },
+        {
+          "color": "464A4C",
+          "name": "u1F549.layer2",
+          "order": 2
+        },
+        {
+          "color": "464A4C",
+          "name": "u1F549.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5E4",
+        "name": "threeraysabove"
+      },
+      "layers": [
+        {
+          "color": "16AFE4",
+          "name": "u1F5E4.layer1",
+          "order": 1
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E4.layer2",
+          "order": 2
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E4.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5E5",
+        "name": "threeraysbelow"
+      },
+      "layers": [
+        {
+          "color": "16AFE4",
+          "name": "u1F5E5.layer1",
+          "order": 1
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E5.layer2",
+          "order": 2
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E5.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F251",
+        "name": "circledideographaccept"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F251.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F251.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F251.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F251.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F250",
+        "name": "circledideographadvantage"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer2",
+          "order": 2
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer3",
+          "order": 3
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer4",
+          "order": 4
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer5",
+          "order": 5
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F250.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F19A",
+        "name": "squaredvs"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F19A.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F19A.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F19A.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F19A.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5E3",
+        "name": "speakingheadinsilhouette"
+      },
+      "layers": [
+        {
+          "color": "48677E",
+          "name": "u1F5E3.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u26AB",
+        "name": "mediumblackcircle"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u26AB.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F504",
+        "name": "anticlockwiseupwardsanddownwardsarrows"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F504.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F504.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F504.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F504.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F503",
+        "name": "clockwisedownupcircledarrows"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F503.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F502",
+        "name": "clockwiserightwardsleftwardscirclearrowsone"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F502.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F502.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F502.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F502.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F502.layer5",
+          "order": 5
+        },
+        {
+          "color": "597B91",
+          "name": "u1F502.layer6",
+          "order": 6
+        },
+        {
+          "color": "597B91",
+          "name": "u1F502.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F501",
+        "name": "clockwiserightwardsleftwardscirclearrows"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F501.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F501.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F501.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F501.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F500",
+        "name": "twistedrightwardsarrows"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F500.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F500.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F500.layer3",
+          "order": 3
+        },
+        {
+          "color": "597B91",
+          "name": "u1F500.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F500.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F56A",
+        "name": "rightspeaker3soundwaves"
+      },
+      "layers": [
+        {
+          "color": "ADB8BC",
+          "name": "u1F56A.layer1",
+          "order": 1
+        },
+        {
+          "color": "597B91",
+          "name": "u1F56A.layer2",
+          "order": 2
+        },
+        {
+          "color": "7D9DAF",
+          "name": "u1F56A.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2B05",
+        "name": "leftwardsblackarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2B05.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2B05.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2B05.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u21AA",
+        "name": "rightwardsarrowwithhook"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u21AA.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u21AA.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u21AA.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4AE",
+        "name": "whiteflower"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F4AE.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4AE.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4AF",
+        "name": "hundredpointssymbol"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F4AF.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4AF.layer2",
+          "order": 2
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4AF.layer3",
+          "order": 3
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4AF.layer4",
+          "order": 4
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F4AF.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D7",
+        "name": "overlap"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5D7.layer1",
+          "order": 1
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F5D7.layer2",
+          "order": 2
+        },
+        {
+          "color": "597B91",
+          "name": "u1F5D7.layer3",
+          "order": 3
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F5D7.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D6",
+        "name": "maximize"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5D6.layer1",
+          "order": 1
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F5D6.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D5",
+        "name": "minimize"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5D5.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D4",
+        "name": "window"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5D4.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F5D4.layer2",
+          "order": 2
+        },
+        {
+          "color": "132028",
+          "name": "u1F5D4.layer3",
+          "order": 3
+        },
+        {
+          "color": "59CAFC",
+          "name": "u1F5D4.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F5D4.layer5",
+          "order": 5
+        },
+        {
+          "color": "CFD3D3",
+          "name": "u1F5D4.layer6",
+          "order": 6
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F5D4.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2663",
+        "name": "blackclubsuit"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2663.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D9",
+        "name": "cancellationx"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F5D9.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5D8",
+        "name": "clockwiseleftrightarrows"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F5D8.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F5D8.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2666",
+        "name": "blackdiamondsuit"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u2666.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2652",
+        "name": "aquarius"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2652.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2652.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2652.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2652.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2049",
+        "name": "exclaimationquestionmark"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2049.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u2049.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264A",
+        "name": "gemini"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264A.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264A.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264A.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u27A1",
+        "name": "blackrightwardsarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u27A1.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u27A1.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u27A1.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F170",
+        "name": "negativesquaredlatincaptialA"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F170.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F170.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F170.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F171",
+        "name": "negativesquaredlatincaptialB"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F171.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F171.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F171.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2796",
+        "name": "heavyminussign"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2796.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2797",
+        "name": "heavydivisionsign"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2797.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u2797.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u2797.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F572",
+        "name": "nopiracy"
+      },
+      "layers": [
+        {
+          "color": "EDC0A2",
+          "name": "u1F572.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F572.layer2",
+          "order": 2
+        },
+        {
+          "color": "68442A",
+          "name": "u1F572.layer3",
+          "order": 3
+        },
+        {
+          "color": "D19871",
+          "name": "u1F572.layer4",
+          "order": 4
+        },
+        {
+          "color": "332A23",
+          "name": "u1F572.layer5",
+          "order": 5
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F572.layer6",
+          "order": 6
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F572.layer7",
+          "order": 7
+        },
+        {
+          "color": "FF5850",
+          "name": "u1F572.layer8",
+          "order": 8
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u27BF",
+        "name": "doublecurlyloop"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u27BF.layer0",
+          "order": 0
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2653",
+        "name": "pisces"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2653.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2653.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2653.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264F",
+        "name": "scorpius"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264F.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264F.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2651",
+        "name": "capricorn"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2651.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2651.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2651.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F201",
+        "name": "squaredkatakanakoko"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F201.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F201.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F201.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F57B",
+        "name": "lefthandphone"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u1F57B.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F57C",
+        "name": "phonewithpage"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u1F57C.layer1",
+          "order": 1
+        },
+        {
+          "color": "BCBCBC",
+          "name": "u1F57C.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2795",
+        "name": "heavyplussign"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2795.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B8",
+        "name": "childrencrossing"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F6B8.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F6B8.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F6B8.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F57D",
+        "name": "righthandphone"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u1F57D.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F22F",
+        "name": "CJKunifiedideograph_a"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u1F22F.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u1F22F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F22F.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F22F.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F22F.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2714",
+        "name": "heavycheckmark"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2714.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u3299",
+        "name": "circledideographsecret"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u3299.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u3299.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u3299.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u3299.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u3299.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F17F",
+        "name": "negativesquaredlatincapitalletterP"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F17F.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F17F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F17F.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F17E",
+        "name": "negativesquaredlatincaptialO"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F17E.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F17E.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F17E.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F235",
+        "name": "CJKunifiedideograph_f"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F235.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F235.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F235.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F235.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F235.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F235.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F234",
+        "name": "CJKunifiedideograph_e"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F234.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F234.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F234.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F234.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5DA",
+        "name": "increasefontsize"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5DA.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F5DA.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F236",
+        "name": "CJKunifiedideograph_g"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F236.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F236.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F236.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4A0",
+        "name": "diamondshapewithdotinside"
+      },
+      "layers": [
+        {
+          "color": "59CAFC",
+          "name": "u1F4A0.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F4A0.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F233",
+        "name": "CJKunifiedideograph_d"
+      },
+      "layers": [
+        {
+          "color": "8866B9",
+          "name": "u1F233.layer1",
+          "order": 1
+        },
+        {
+          "color": "744DB2",
+          "name": "u1F233.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F233.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5DD",
+        "name": "oldkey"
+      },
+      "layers": [
+        {
+          "color": "FFC145",
+          "name": "u1F5DD.layer1",
+          "order": 1
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F5DD.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F239",
+        "name": "CJKunifiedideograph_k"
+      },
+      "layers": [
+        {
+          "color": "FF6E83",
+          "name": "u1F239.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF5072",
+          "name": "u1F239.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F239.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F239.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F239.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F239.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F238",
+        "name": "CJKunifiedideograph_j"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F238.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F238.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F238.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2650",
+        "name": "saggitarius"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2650.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2650.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2650.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F569",
+        "name": "speakerwith1soundwave"
+      },
+      "layers": [
+        {
+          "color": "ADB8BC",
+          "name": "u1F569.layer1",
+          "order": 1
+        },
+        {
+          "color": "597B91",
+          "name": "u1F569.layer2",
+          "order": 2
+        },
+        {
+          "color": "7D9DAF",
+          "name": "u1F569.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F568",
+        "name": "rightspeaker"
+      },
+      "layers": [
+        {
+          "color": "ADB8BC",
+          "name": "u1F568.layer1",
+          "order": 1
+        },
+        {
+          "color": "597B91",
+          "name": "u1F568.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B3",
+        "name": "nobicycles"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F6B3.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F6B3.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F561",
+        "name": "clock6thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F561.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F561.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F561.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F561.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F560",
+        "name": "clock5thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F560.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F560.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F560.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F560.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F202",
+        "name": "squaredkatakanasa"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F202.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F202.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F202.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2934",
+        "name": "arrowrightwardsupwards"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2934.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2934.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2934.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F567",
+        "name": "clock12thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F567.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F567.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F567.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F567.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2734",
+        "name": "eightpointedblackstar"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u2734.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u2734.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2734.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2935",
+        "name": "arrowrightwardsdownwards"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2935.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2935.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2935.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u203C",
+        "name": "doubleexclaimationmark"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u203C.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u203C.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2648",
+        "name": "aries"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2648.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2648.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2648.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2649",
+        "name": "taurus"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u2649.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u2649.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2649.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u303D",
+        "name": "partalternationmark"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u303D.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2139",
+        "name": "informationsource"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2139.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2139.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2139.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2139.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u21A9",
+        "name": "leftwardsarrowwithhook"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u21A9.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u21A9.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u21A9.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F21A",
+        "name": "CJKunifiedideograph_i"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F21A.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F21A.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F21A.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F21A.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F21A.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F21A.layer6",
+          "order": 6
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F21A.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4B1",
+        "name": "currencyexchange"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F4B1.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F4B1.layer2",
+          "order": 2
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F4B1.layer3",
+          "order": 3
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F4B1.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4B2",
+        "name": "heavydollarsign"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F4B2.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B9",
+        "name": "menssymbol"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F6B9.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F6B9.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6B9.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F550",
+        "name": "clock1oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F550.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F550.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F550.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F550.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F551",
+        "name": "clock2oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F551.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F551.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F551.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F551.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F552",
+        "name": "clock3oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F552.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F552.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F552.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F552.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F553",
+        "name": "clock4oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F553.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F553.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F553.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F553.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F4B9",
+        "name": "chartupwardstrendyen"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u1F4B9.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u1F4B9.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4B9.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F4B9.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B0",
+        "name": "potablewatersystem"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F6B0.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F6B0.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6B0.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B1",
+        "name": "nonpotablewatersymbol"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F6B1.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F6B1.layer2",
+          "order": 2
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F6B1.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6B7",
+        "name": "nopedestrians"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F6B7.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F6B7.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u26CE",
+        "name": "ophiuchus"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u26CE.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u26CE.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u26CE.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u23E9",
+        "name": "blackrightpointingdoublearrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u23E9.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u23E9.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u23E9.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F3A6",
+        "name": "cinema"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F3A6.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F3A6.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F3A6.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5DC",
+        "name": "compression"
+      },
+      "layers": [
+        {
+          "color": "AF773F",
+          "name": "u1F5DC.layer1",
+          "order": 1
+        },
+        {
+          "color": "332A23",
+          "name": "u1F5DC.layer2",
+          "order": 2
+        },
+        {
+          "color": "E5AA6E",
+          "name": "u1F5DC.layer3",
+          "order": 3
+        },
+        {
+          "color": "1C4C5A",
+          "name": "u1F5DC.layer4",
+          "order": 4
+        },
+        {
+          "color": "ADB8BC",
+          "name": "u1F5DC.layer5",
+          "order": 5
+        },
+        {
+          "color": "ADB8BC",
+          "name": "u1F5DC.layer6",
+          "order": 6
+        },
+        {
+          "color": "819096",
+          "name": "u1F5DC.layer7",
+          "order": 7
+        },
+        {
+          "color": "ADB8BC",
+          "name": "u1F5DC.layer8",
+          "order": 8
+        },
+        {
+          "color": "C5CFD1",
+          "name": "u1F5DC.layer9",
+          "order": 9
+        },
+        {
+          "color": "1C4C5A",
+          "name": "u1F5DC.layer10",
+          "order": 10
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25AB",
+        "name": "whitesmallsquare"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u25AB.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5DB",
+        "name": "decreasefontsize"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F5DB.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B3B47",
+          "name": "u1F5DB.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u23EB",
+        "name": "blackuppointingdoublearrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u23EB.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u23EB.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u23EB.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F237",
+        "name": "CJKunifiedideograph_h"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F237.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F237.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F237.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F237.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F237.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u23EA",
+        "name": "blackleftpointingdoublearrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u23EA.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u23EA.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u23EA.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F55D",
+        "name": "clock2thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F55D.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F55D.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F55D.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F55D.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F55E",
+        "name": "clock3thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F55E.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F55E.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F55E.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F55E.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F55F",
+        "name": "clock4thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F55F.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F55F.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F55F.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F55F.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F55B",
+        "name": "clock12oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F55B.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F55B.layer2",
+          "order": 2
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F55B.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F55C",
+        "name": "clock1thirty"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F55C.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F55C.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F55C.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F55C.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6BB",
+        "name": "restroom"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F6BB.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F6BB.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6BB.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6BC",
+        "name": "babysymbol"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F6BC.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F6BC.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6BC.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6BA",
+        "name": "womenssymbol"
+      },
+      "layers": [
+        {
+          "color": "FF5FD2",
+          "name": "u1F6BA.layer1",
+          "order": 1
+        },
+        {
+          "color": "EF2EC2",
+          "name": "u1F6BA.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6BA.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2B55",
+        "name": "heavylargecircle"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u2B55.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6BE",
+        "name": "watercloset"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F6BE.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F6BE.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6BE.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6BE.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2705",
+        "name": "whiteheavycheckmark"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u2705.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u2705.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2705.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u24C2",
+        "name": "circledlatincapitalletterM"
+      },
+      "layers": [
+        {
+          "color": "59CAFC",
+          "name": "u24C2.layer1",
+          "order": 1
+        },
+        {
+          "color": "00B1FF",
+          "name": "u24C2.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u24C2.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F545",
+        "name": "markschaptersymbol"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F545.layer1",
+          "order": 1
+        },
+        {
+          "color": "597B91",
+          "name": "u1F545.layer2",
+          "order": 2
+        },
+        {
+          "color": "597B91",
+          "name": "u1F545.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F544",
+        "name": "notchedrightsemi3dot"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F544.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6C3",
+        "name": "customs"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F6C3.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F6C3.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C3.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C3.layer4",
+          "order": 4
+        },
+        {
+          "color": "597B91",
+          "name": "u1F6C3.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C3.layer6",
+          "order": 6
+        },
+        {
+          "color": "597B91",
+          "name": "u1F6C3.layer7",
+          "order": 7
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C3.layer8",
+          "order": 8
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C3.layer9",
+          "order": 9
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6C2",
+        "name": "passportcontrol"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F6C2.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F6C2.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C2.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C2.layer4",
+          "order": 4
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C2.layer5",
+          "order": 5
+        },
+        {
+          "color": "597B91",
+          "name": "u1F6C2.layer6",
+          "order": 6
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C2.layer7",
+          "order": 7
+        },
+        {
+          "color": "597B91",
+          "name": "u1F6C2.layer8",
+          "order": 8
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C2.layer9",
+          "order": 9
+        },
+        {
+          "color": "597B91",
+          "name": "u1F6C2.layer10",
+          "order": 10
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6C5",
+        "name": "leftluggage"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F6C5.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F6C5.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C5.layer3",
+          "order": 3
+        },
+        {
+          "color": "00B1FF",
+          "name": "u1F6C5.layer4",
+          "order": 4
+        },
+        {
+          "color": "00B1FF",
+          "name": "u1F6C5.layer5",
+          "order": 5
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C5.layer6",
+          "order": 6
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C5.layer7",
+          "order": 7
+        },
+        {
+          "color": "00B1FF",
+          "name": "u1F6C5.layer8",
+          "order": 8
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6C4",
+        "name": "baggageclaim"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F6C4.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F6C4.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C4.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6C4.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25FE",
+        "name": "blackmediumsmallsquare"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u25FE.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25FD",
+        "name": "whitemediumsmallsquare"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u25FD.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264B",
+        "name": "cancer"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264B.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264B.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264B.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264B.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264C",
+        "name": "leo"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264C.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264C.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264C.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264D",
+        "name": "virgo"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264D.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264D.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264D.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u264E",
+        "name": "libra"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u264E.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u264E.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264E.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u264E.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25FC",
+        "name": "blackmediumsquare"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u25FC.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25FB",
+        "name": "whitemediumsquare"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u25FB.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u3030",
+        "name": "wavydash"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u3030.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F23A",
+        "name": "CJKunifiedideograph_b"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F23A.layer1",
+          "order": 1
+        },
+        {
+          "color": "ED9B43",
+          "name": "u1F23A.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F23A.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F23A.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u23F0",
+        "name": "alarmclock"
+      },
+      "layers": [
+        {
+          "color": "6B8DA1",
+          "name": "u23F0.layer1",
+          "order": 1
+        },
+        {
+          "color": "FFB636",
+          "name": "u23F0.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFD469",
+          "name": "u23F0.layer3",
+          "order": 3
+        },
+        {
+          "color": "FB5046",
+          "name": "u23F0.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F8",
+          "name": "u23F0.layer5",
+          "order": 5
+        },
+        {
+          "color": "6B8DA1",
+          "name": "u23F0.layer6",
+          "order": 6
+        },
+        {
+          "color": "6B8DA1",
+          "name": "u23F0.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F52F",
+        "name": "sixpointedstarwithdot"
+      },
+      "layers": [
+        {
+          "color": "A97DFF",
+          "name": "u1F52F.layer1",
+          "order": 1
+        },
+        {
+          "color": "7F4AFF",
+          "name": "u1F52F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F52F.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F52F.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u25AA",
+        "name": "blacksmallsquare"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u25AA.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2198",
+        "name": "southeastarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2198.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2198.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2198.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2748",
+        "name": "sparkle"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u2748.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u2748.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u2748.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2716",
+        "name": "heavymultiplicationsymbol"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2716.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2660",
+        "name": "blackspadesuit"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2660.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6AB",
+        "name": "noentrysign"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F6AB.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u3297",
+        "name": "circledideographcongratulation"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u3297.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u3297.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u3297.layer3",
+          "order": 3
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u3297.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6AF",
+        "name": "donotlittersymbol"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u1F6AF.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F6AF.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6AE",
+        "name": "putlitterinitsplacesymbol"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F6AE.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F6AE.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6AE.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F6AD",
+        "name": "nosmokingsymbol"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F6AD.layer1",
+          "order": 1
+        },
+        {
+          "color": "0096D1",
+          "name": "u1F6AD.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F6AD.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F555",
+        "name": "clock6oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F555.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F555.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F555.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F555.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F536",
+        "name": "largeorangediamond"
+      },
+      "layers": [
+        {
+          "color": "FF8E39",
+          "name": "u1F536.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F537",
+        "name": "largebluediamond"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F537.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F534",
+        "name": "largeredcircle"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F534.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F535",
+        "name": "largebluecircle"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F535.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F532",
+        "name": "blacksquarebutton"
+      },
+      "layers": [
+        {
+          "color": "132028",
+          "name": "u1F532.layer1",
+          "order": 1
+        },
+        {
+          "color": "D9DDE8",
+          "name": "u1F532.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F533",
+        "name": "whitesquarebutton"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u1F533.layer1",
+          "order": 1
+        },
+        {
+          "color": "132028",
+          "name": "u1F533.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F531",
+        "name": "tridentemblem"
+      },
+      "layers": [
+        {
+          "color": "FFB636",
+          "name": "u1F531.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u26D4",
+        "name": "noentry"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u26D4.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u26D4.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u26D4.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2665",
+        "name": "blackheartsuit"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u2665.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F538",
+        "name": "smallorangediamond"
+      },
+      "layers": [
+        {
+          "color": "FF8E39",
+          "name": "u1F538.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F539",
+        "name": "smallbluediamond"
+      },
+      "layers": [
+        {
+          "color": "00B1FF",
+          "name": "u1F539.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53F",
+        "name": "upperrightwhitecircle"
+      },
+      "layers": [
+        {
+          "color": "BCBCBC",
+          "name": "u1F53F.layer1",
+          "order": 1
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F53F.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53D",
+        "name": "downpointingsmallredtrisngle"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F53D.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F53D.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F53D.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53E",
+        "name": "lowerrightwhitecircle"
+      },
+      "layers": [
+        {
+          "color": "BCBCBC",
+          "name": "u1F53E.layer1",
+          "order": 1
+        },
+        {
+          "color": "E0E0E0",
+          "name": "u1F53E.layer2",
+          "order": 2
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53B",
+        "name": "downpointingredtriangle"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F53B.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53C",
+        "name": "uppointingsmallredtrisngle"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F53C.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F53C.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F53C.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F53A",
+        "name": "uppointingredtriangle"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F53A.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F556",
+        "name": "clock7oclock"
+      },
+      "layers": [
+        {
+          "color": "E5E4DF",
+          "name": "u1F556.layer1",
+          "order": 1
+        },
+        {
+          "color": "FF473E",
+          "name": "u1F556.layer2",
+          "order": 2
+        },
+        {
+          "color": "3A5D66",
+          "name": "u1F556.layer3",
+          "order": 3
+        },
+        {
+          "color": "183F4C",
+          "name": "u1F556.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u23EC",
+        "name": "blackdownpointingdoublearrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u23EC.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u23EC.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u23EC.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2611",
+        "name": "ballotboxwithcheck"
+      },
+      "layers": [
+        {
+          "color": "646768",
+          "name": "u2611.layer1",
+          "order": 1
+        },
+        {
+          "color": "464A4C",
+          "name": "u2611.layer2",
+          "order": 2
+        },
+        {
+          "color": "616566",
+          "name": "u2611.layer3",
+          "order": 3
+        },
+        {
+          "color": "F4F3EF",
+          "name": "u2611.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2753",
+        "name": "blackquestionmark"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2753.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2757",
+        "name": "heavyexclaimationmarksymbol"
+      },
+      "layers": [
+        {
+          "color": "2B3B47",
+          "name": "u2757.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2754",
+        "name": "whitequestionmark"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u2754.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2755",
+        "name": "whiteexclaimationmark"
+      },
+      "layers": [
+        {
+          "color": "D9DDE8",
+          "name": "u2755.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2194",
+        "name": "leftrightarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2194.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2194.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2194.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2194.layer4",
+          "order": 4
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2195",
+        "name": "updownarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2195.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2195.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2195.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2196",
+        "name": "northwestarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2196.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2196.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2196.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u2197",
+        "name": "northeastarrow"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u2197.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u2197.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u2197.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u274C",
+        "name": "crossmark"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u274C.layer1",
+          "order": 1
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u274E",
+        "name": "negativesquaredcrossmark"
+      },
+      "layers": [
+        {
+          "color": "00B89C",
+          "name": "u274E.layer1",
+          "order": 1
+        },
+        {
+          "color": "009E83",
+          "name": "u274E.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u274E.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5E6",
+        "name": "threeraysleft"
+      },
+      "layers": [
+        {
+          "color": "16AFE4",
+          "name": "u1F5E6.layer1",
+          "order": 1
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E6.layer2",
+          "order": 2
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E6.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F524",
+        "name": "inputsymbolforlatinletters"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F524.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F524.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F524.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F524.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F524.layer5",
+          "order": 5
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F5E7",
+        "name": "threeraysright"
+      },
+      "layers": [
+        {
+          "color": "16AFE4",
+          "name": "u1F5E7.layer1",
+          "order": 1
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E7.layer2",
+          "order": 2
+        },
+        {
+          "color": "16AFE4",
+          "name": "u1F5E7.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F521",
+        "name": "inputsymbolforlatinsmallletters"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F521.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F521.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F521.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F521.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F521.layer5",
+          "order": 5
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F521.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F520",
+        "name": "inputsymbolforlatincapitalletters"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F520.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F520.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F520.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F520.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F520.layer5",
+          "order": 5
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F520.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F523",
+        "name": "inputsymbolforsymbols"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F523.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F523.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F523.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F523.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F523.layer5",
+          "order": 5
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F523.layer6",
+          "order": 6
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F523.layer7",
+          "order": 7
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F522",
+        "name": "inputsymbolfornumbers"
+      },
+      "layers": [
+        {
+          "color": "597B91",
+          "name": "u1F522.layer1",
+          "order": 1
+        },
+        {
+          "color": "2B5770",
+          "name": "u1F522.layer2",
+          "order": 2
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F522.layer3",
+          "order": 3
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F522.layer4",
+          "order": 4
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F522.layer5",
+          "order": 5
+        },
+        {
+          "color": "F9F9F7",
+          "name": "u1F522.layer6",
+          "order": 6
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F49F",
+        "name": "heartdecoration"
+      },
+      "layers": [
+        {
+          "color": "FF5FD2",
+          "name": "u1F49F.layer1",
+          "order": 1
+        },
+        {
+          "color": "EF2EC2",
+          "name": "u1F49F.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F49F.layer3",
+          "order": 3
+        }
+      ]
+    }
+  },
+  {
+    "icon": {
+      "glyph": {
+        "code": "u1F232",
+        "name": "CJKunifiedideograph_c"
+      },
+      "layers": [
+        {
+          "color": "FF473E",
+          "name": "u1F232.layer1",
+          "order": 1
+        },
+        {
+          "color": "D32A2A",
+          "name": "u1F232.layer2",
+          "order": 2
+        },
+        {
+          "color": "FFFFFF",
+          "name": "u1F232.layer3",
+          "order": 3
+        }
+      ]
+    }
+  }
+]

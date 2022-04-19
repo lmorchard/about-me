@@ -18,6 +18,8 @@ a {
   background: #222;
   color: #eee;
   line-height: 1.5em; }
+  .card img {
+    max-width: 100%; }
   .card > h3 {
     position: absolute;
     top: 0;
@@ -44,6 +46,8 @@ a {
   .card > section {
     overflow-x: hidden;
     overflow-y: auto; }
+    .card > section > p {
+      margin: 1em 2em; }
   .card.has-h3 > section {
     height: calc(100% - 3em);
     margin-top: 3em; }
@@ -176,7 +180,7 @@ a {
 
 @font-face {
   font-family: "fxemoji-symbols";
-  src: url("../node_modules/fxemoji/dist/symbols/symbols.ttf") format("truetype");
+  src: url("./assets/fxemoji-symbols/symbols.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -288,6 +292,19 @@ header {
         padding: 0.5em;
         background-color: rgba(11, 11, 11, 0.8); }
 
+.card.colophon section {
+  margin-left: 1em;
+  margin-right: 1em; }
+  .card.colophon section dl {
+    margin: 1em; }
+  .card.colophon section dd {
+    margin-left: 1em;
+    margin-bottom: 0.75em; }
+  .card.colophon section p {
+    margin: 1em; }
+  .card.colophon section a {
+    font-weight: bold; }
+
 .card.feed h3 .feedIcon {
   width: 0.75em;
   height: 0.75em;
@@ -308,7 +325,7 @@ header {
       font-style: normal;
       font-weight: normal;
       font-family: "fxemoji-symbols";
-      content: "\1F501"; }
+      content: "\1F517"; }
     .card.feed ul li a {
       font-weight: bold; }
     .card.feed ul li .createdAt {
@@ -423,6 +440,21 @@ header {
     flex-direction: column; }
     .card.goodreads ul li img {
       width: 98px; }
+
+.card.note section {
+  margin-left: 1em;
+  margin-right: 1em; }
+  .card.note section p {
+    margin: 1em; }
+
+.card.note ul {
+  margin-top: 0.75em;
+  padding-left: 2em;
+  padding-right: 1em; }
+  .card.note ul li {
+    margin-bottom: 0.75em; }
+  .card.note ul a {
+    font-weight: bold; }
 
 .card.pocket ul {
   list-style: none;
