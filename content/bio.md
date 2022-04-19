@@ -1,4 +1,4 @@
-**TL;DR**: _Tinkerer; maker of things; webdev; crazy cat gentleman; [serial enthusiast]; Mozillian. He / him._
+**TL;DR**: _he / him; old adhd cat dad; tinkerer; [serial enthusiast]; editor-at-large for lmorchard.com_
 
 [serial enthusiast]: https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/
 

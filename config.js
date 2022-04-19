@@ -5,11 +5,6 @@ const {
   YOUTUBE_CHANNEL_ID,
   YOUTUBE_KEY,
 
-  TWITCH_USERNAME,
-  TWITCH_USERID,
-  TWITCH_CLIENTID,
-  TWITCH_ACCESSTOKEN,
-
   TWITTER_USERNAME,
   TWITTER_CONSUMER_KEY,
   TWITTER_CONSUMER_SECRET,
@@ -21,11 +16,6 @@ const {
   SPOTIFY_CLIENTSECRET,
   SPOTIFY_ACCESS_TOKEN,
   SPOTIFY_REFRESH_TOKEN,
-
-  GOODREADS_USER_ID,
-  GOODREADS_USER_NAME,
-  GOODREADS_KEY,
-  GOODREADS_SECRET,
 } = process.env;
 
 module.exports = {
@@ -33,23 +23,10 @@ module.exports = {
   buildPath: "./build",
   fetch: {
     Colophon: {},
-    RecentNotes: {
-      component: "Note",
-      baseUrl: "https://notes.lmorchard.com/",
-      url: "https://notes.lmorchard.com/RecentChanges.html",
-    },
-    TodaysNote: {
-      component: "Note",
-      baseUrl: "https://notes.lmorchard.com/",
-      url: "https://notes.lmorchard.com/today.html",
-    },
     Blog: {
       siteTitle: "blog.lmorchard.com",
       baseURL: "https://blog.lmorchard.com",
       indexURL: "https://blog.lmorchard.com/index.json",
-    },
-    Glitch: {
-      login: "lmorchard",
     },
     Github: {
       username: "lmorchard",
@@ -62,12 +39,6 @@ module.exports = {
       username: YOUTUBE_USER_ID,
       channelId: YOUTUBE_CHANNEL_ID,
       key: YOUTUBE_KEY,
-    },
-    Twitch: {
-      username: TWITCH_USERNAME,
-      userId: TWITCH_USERID,
-      clientId: TWITCH_CLIENTID,
-      accessToken: TWITCH_ACCESSTOKEN,
     },
     Twitter: {
       username: TWITTER_USERNAME,
@@ -85,26 +56,6 @@ module.exports = {
       token_type: "Bearer",
       expires_in: 3600,
       scope: "user-read-currently-playing user-read-recently-played",
-    },
-    /*
-    Goodreads: {
-      user_id: GOODREADS_USER_ID,
-      user_name: GOODREADS_USER_NAME,
-      key: GOODREADS_KEY,
-      secret: GOODREADS_SECRET,
-    },
-    Toots: {
-      component: "ActivityPub",
-      username: "lmorchard",
-      baseUrl: "https://toot.cafe",
-      profileUrl: "https://toot.cafe/@lmorchard",
-      outboxUrl: "https://toot.cafe/users/lmorchard/outbox?page=true",
-    },
-    */
-   Typing: {
-      component: "Feed",
-      title: "Typing (typing.lmorchard.com)",
-      feedUrls: ["https://typing.lmorchard.com/feed/index.xml"],
     },
     Pinboard: {
       component: "Feed",
