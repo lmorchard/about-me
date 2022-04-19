@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js 14.2.0
+    - name: Use Node.js 17.8.0
       uses: actions/setup-node@v1
       with:
-        node-version: 14.2.0
+        node-version: 17.8.0
     - name: Set git identity
       run: |
         git config --global user.email "me@lmorchard.com"

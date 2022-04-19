@@ -27,6 +27,7 @@ module.exports = ({ config, data }) => html`
       <meta name="viewport" content="initial-scale=1" />
       <title>${config.siteTitle}</title>
       <link href="./index.css" rel="stylesheet" />
+      <link rel="shortcut icon" href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16" />
     </head>
     <body>
       <div id="root">
@@ -39,29 +40,7 @@ module.exports = ({ config, data }) => html`
               title: "About Me",
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
-            ${Note({
-              theme: theme(),
-              title: "Today (notes.lmorchard.com)",
-              link: "https://notes.lmorchard.com/",
-              ...data.TodaysNote,
-            })}
-            ${Note({
-              theme: theme(),
-              title: "Changes (notes.lmorchard.com)",
-              link: "https://notes.lmorchard.com/",
-              ...data.RecentNotes,
-            })}
-            ${Project({
-              theme: theme(),
-              title: "Firefox Accounts",
-              link: "https://accounts.firefox.com/",
-              thumbnail:
-                "https://accounts-static.cdn.mozilla.net/images/16821f55.firefox-logo.svg",
-              src: fs.readFileSync("./content/fxa.md", "utf-8"),
-            })}
             ${Blog({ theme: theme(), ...data.Blog })}
-            ${false && Twitch({ theme: theme(), maxItems: 12, ...data.Twitch })}
-            ${Glitch({ theme: theme(), ...data.Glitch })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter })}
             ${false && ActivityPub({
@@ -72,14 +51,7 @@ module.exports = ({ config, data }) => html`
             })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
-            ${Feed({
-              theme: theme(),
-              link: "https://typing.lmorchard.com",
-              maxItems: 12,
-              ...data.Typing,
-            })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
-            ${false && Goodreads({ theme: theme(), ...data.Goodreads })}
             ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
         </article>
