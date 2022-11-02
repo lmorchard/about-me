@@ -3,13 +3,13 @@
 [serial enthusiast]: https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/
 
 This page collects a bunch of the stuff I do online. If you feel like it, drop me [an email](mailto:me@lmorchard.com) or
-[a tweet](https://twitter.com/lmorchard) or [a toot](https://toot.cafe/@lmorchard) &mdash; or find me in one of
+[a tweet](https://twitter.com/lmorchard) or [a toot](https://hackers.town/@lmorchard) &mdash; or find me in one of
 the other usual places below.
 
-- [🧾 Blog](https://blog.lmorchard.com)
-- [🐘 Fediverse](https://hackers.town/@lmorchard)
-- [🐥 Twitter](https://twitter.com/lmorchard)
-- [🐙 Github](https://github.com/lmorchard)
-- [🐟 Glitch](https://glitch.com/@lmorchard)
-- [📺 Twitch](https://twitch.tv/lmorchard)
-- [💬 Discord](https://discord.com/invite/UXeuPNv)
+- <a rel="me" href="https://blog.lmorchard.com">🧾 Blog</a>
+- <a rel="me" href="https://hackers.town/@lmorchard">🐘 Fediverse</a>
+- <a rel="me" href="https://twitter.com/lmorchard">🐥 Twitter</a>
+- <a rel="me" href="https://github.com/lmorchard">🐙 Github</a>
+- <a rel="me" href="https://glitch.com/@lmorchard">🐟 Glitch</a>
+- <a rel="me" href="https://twitch.tv/lmorchard">📺 Twitch</a>
+- <a rel="me" href="https://discord.com/invite/UXeuPNv">💬 Discord</a>
