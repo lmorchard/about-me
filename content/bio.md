@@ -7,8 +7,9 @@ This page collects a bunch of the stuff I do online. If you feel like it, drop m
 the other usual places below.
 
 - <a rel="me" href="https://blog.lmorchard.com">🧾 Blog</a>
-- <a rel="me" href="https://hackers.town/@lmorchard">🐘 Fediverse (hackers.town)</a>
-- <a rel="me" href="https://pdx.social/@lmorchard">🐘 Fediverse (pdx.social)</a>
+- <a rel="me" href="https://hackers.town/@lmorchard">🐘 Fediverse 🌐 (hackers.town)</a>
+- <a rel="me" href="https://pdx.social/@lmorchard">🐘 Fediverse 🏠 (pdx.social)</a>
+- <a rel="me" href="https://toot.lmorchard.com/@lmorchard">🐘 Fediverse 🔬 (toot.lmorchard.com)</a>
 - <a rel="me" href="https://twitter.com/lmorchard">🐥 Twitter</a>
 - <a rel="me" href="https://github.com/lmorchard">🐙 Github</a>
 - <a rel="me" href="https://glitch.com/@lmorchard">🐟 Glitch</a>
