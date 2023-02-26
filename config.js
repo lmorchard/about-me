@@ -5,11 +5,10 @@ const {
   YOUTUBE_CHANNEL_ID,
   YOUTUBE_KEY,
 
-  TWITTER_USERNAME,
-  TWITTER_CONSUMER_KEY,
-  TWITTER_CONSUMER_SECRET,
-  TWITTER_ACCESS_TOKEN_KEY,
-  TWITTER_ACCESS_TOKEN_SECRET,
+  ACTIVITYPUB_USERNAME,
+  ACTIVITYPUB_BASE_URL,
+  ACTIVITYPUB_PROFILE_URL,
+  ACTIVITYPUB_OUTBOX_URL,
 
   SPOTIFY_USERNAME,
   SPOTIFY_CLIENTID,
@@ -40,12 +39,11 @@ module.exports = {
       channelId: YOUTUBE_CHANNEL_ID,
       key: YOUTUBE_KEY,
     },
-    Twitter: {
-      username: TWITTER_USERNAME,
-      consumer_key: TWITTER_CONSUMER_KEY,
-      consumer_secret: TWITTER_CONSUMER_SECRET,
-      access_token_key: TWITTER_ACCESS_TOKEN_KEY,
-      access_token_secret: TWITTER_ACCESS_TOKEN_SECRET,
+    ActivityPub: {
+      username: ACTIVITYPUB_USERNAME,
+      baseUrl: ACTIVITYPUB_BASE_URL,
+      profileUrl: ACTIVITYPUB_PROFILE_URL,
+      outboxUrl: ACTIVITYPUB_OUTBOX_URL,
     },
     Spotify: {
       username: SPOTIFY_USERNAME,

@@ -42,12 +42,11 @@ module.exports = ({ config, data }) => html`
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
-            ${Twitter({ theme: theme(), maxItems: 7, ...data.Twitter })}
-            ${false && ActivityPub({
+            ${ActivityPub({
               theme: theme(),
               maxItems: 7,
-              name: "Toots",
-              ...data.Toots,
+              ...data.ActivityPub,
+              name: "hackers.town",              
             })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
