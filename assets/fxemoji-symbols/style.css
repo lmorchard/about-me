@@ -1,0 +1,702 @@
+@font-face {
+  font-family: "symbols";
+  src: url('symbols.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+body > h1 { color: #777; padding: 2rem 0;margin: 0;}
+
+.glyphs {
+  display: flex;
+  max-width: 160rem;
+  flex-wrap: wrap;
+  margin: 0 auto 3rem;
+  padding: 0;
+  list-style: none;
+}
+.glyphs > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1.5rem 1rem 1rem;
+  width: 12rem;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.glyphs .icon {
+  display: block;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "symbols";
+  font-size: 10rem;
+}
+.glyphs .icon:hover {
+  cursor: pointer;
+  line-height: 1.333em;
+  font-family: sans-serif !important;
+}
+
+.glyph-name {
+  margin-top: 1rem;
+  max-width: 90%;
+  color: #666;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.glyph-codepoint {
+  margin-top: 1rem;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.icon-symbols-negativesquaredlatincaptialA:before {
+  content: "\1F170"
+}
+.icon-symbols-negativesquaredlatincaptialB:before {
+  content: "\1F171"
+}
+.icon-symbols-negativesquaredlatincaptialO:before {
+  content: "\1F17E"
+}
+.icon-symbols-negativesquaredlatincapitalletterP:before {
+  content: "\1F17F"
+}
+.icon-symbols-negativesquaredAB:before {
+  content: "\1F18E"
+}
+.icon-symbols-squaredCL:before {
+  content: "\1F191"
+}
+.icon-symbols-squaredcool:before {
+  content: "\1F192"
+}
+.icon-symbols-squaredfree:before {
+  content: "\1F193"
+}
+.icon-symbols-squaredid:before {
+  content: "\1F194"
+}
+.icon-symbols-squarednew:before {
+  content: "\1F195"
+}
+.icon-symbols-squaredng:before {
+  content: "\1F196"
+}
+.icon-symbols-squaredok:before {
+  content: "\1F197"
+}
+.icon-symbols-squaredsos:before {
+  content: "\1F198"
+}
+.icon-symbols-squaredup:before {
+  content: "\1F199"
+}
+.icon-symbols-squaredvs:before {
+  content: "\1F19A"
+}
+.icon-symbols-squaredkatakanakoko:before {
+  content: "\1F201"
+}
+.icon-symbols-squaredkatakanasa:before {
+  content: "\1F202"
+}
+.icon-symbols-CJKunifiedideograph_i:before {
+  content: "\1F21A"
+}
+.icon-symbols-CJKunifiedideograph_a:before {
+  content: "\1F22F"
+}
+.icon-symbols-CJKunifiedideograph_c:before {
+  content: "\1F232"
+}
+.icon-symbols-CJKunifiedideograph_d:before {
+  content: "\1F233"
+}
+.icon-symbols-CJKunifiedideograph_e:before {
+  content: "\1F234"
+}
+.icon-symbols-CJKunifiedideograph_f:before {
+  content: "\1F235"
+}
+.icon-symbols-CJKunifiedideograph_g:before {
+  content: "\1F236"
+}
+.icon-symbols-CJKunifiedideograph_h:before {
+  content: "\1F237"
+}
+.icon-symbols-CJKunifiedideograph_j:before {
+  content: "\1F238"
+}
+.icon-symbols-CJKunifiedideograph_k:before {
+  content: "\1F239"
+}
+.icon-symbols-CJKunifiedideograph_b:before {
+  content: "\1F23A"
+}
+.icon-symbols-circledideographadvantage:before {
+  content: "\1F250"
+}
+.icon-symbols-circledideographaccept:before {
+  content: "\1F251"
+}
+.icon-symbols-cinema:before {
+  content: "\1F3A6"
+}
+.icon-symbols-automatedtellermachine:before {
+  content: "\1F3E7"
+}
+.icon-symbols-heartdecoration:before {
+  content: "\1F49F"
+}
+.icon-symbols-diamondshapewithdotinside:before {
+  content: "\1F4A0"
+}
+.icon-symbols-whiteflower:before {
+  content: "\1F4AE"
+}
+.icon-symbols-hundredpointssymbol:before {
+  content: "\1F4AF"
+}
+.icon-symbols-currencyexchange:before {
+  content: "\1F4B1"
+}
+.icon-symbols-heavydollarsign:before {
+  content: "\1F4B2"
+}
+.icon-symbols-chartupwardstrendyen:before {
+  content: "\1F4B9"
+}
+.icon-symbols-vibrationmode:before {
+  content: "\1F4F3"
+}
+.icon-symbols-mobilephoneoff:before {
+  content: "\1F4F4"
+}
+.icon-symbols-nomobilephones:before {
+  content: "\1F4F5"
+}
+.icon-symbols-antennawithbars:before {
+  content: "\1F4F6"
+}
+.icon-symbols-twistedrightwardsarrows:before {
+  content: "\1F500"
+}
+.icon-symbols-clockwiserightwardsleftwardscirclearrows:before {
+  content: "\1F501"
+}
+.icon-symbols-clockwiserightwardsleftwardscirclearrowsone:before {
+  content: "\1F502"
+}
+.icon-symbols-clockwisedownupcircledarrows:before {
+  content: "\1F503"
+}
+.icon-symbols-anticlockwiseupwardsanddownwardsarrows:before {
+  content: "\1F504"
+}
+.icon-symbols-linksymbol:before {
+  content: "\1F517"
+}
+.icon-symbols-radiobutton:before {
+  content: "\1F518"
+}
+.icon-symbols-backwithleftwardsarrow:before {
+  content: "\1F519"
+}
+.icon-symbols-endwithleftwardsarrow:before {
+  content: "\1F51A"
+}
+.icon-symbols-onarrowleftright:before {
+  content: "\1F51B"
+}
+.icon-symbols-soonwithrightarrow:before {
+  content: "\1F51C"
+}
+.icon-symbols-topwithupwardsarrow:before {
+  content: "\1F51D"
+}
+.icon-symbols-nooneunder18symbol:before {
+  content: "\1F51E"
+}
+.icon-symbols-ten:before {
+  content: "\1F51F"
+}
+.icon-symbols-inputsymbolforlatincapitalletters:before {
+  content: "\1F520"
+}
+.icon-symbols-inputsymbolforlatinsmallletters:before {
+  content: "\1F521"
+}
+.icon-symbols-inputsymbolfornumbers:before {
+  content: "\1F522"
+}
+.icon-symbols-inputsymbolforsymbols:before {
+  content: "\1F523"
+}
+.icon-symbols-inputsymbolforlatinletters:before {
+  content: "\1F524"
+}
+.icon-symbols-sixpointedstarwithdot:before {
+  content: "\1F52F"
+}
+.icon-symbols-tridentemblem:before {
+  content: "\1F531"
+}
+.icon-symbols-blacksquarebutton:before {
+  content: "\1F532"
+}
+.icon-symbols-whitesquarebutton:before {
+  content: "\1F533"
+}
+.icon-symbols-largeredcircle:before {
+  content: "\1F534"
+}
+.icon-symbols-largebluecircle:before {
+  content: "\1F535"
+}
+.icon-symbols-largeorangediamond:before {
+  content: "\1F536"
+}
+.icon-symbols-largebluediamond:before {
+  content: "\1F537"
+}
+.icon-symbols-smallorangediamond:before {
+  content: "\1F538"
+}
+.icon-symbols-smallbluediamond:before {
+  content: "\1F539"
+}
+.icon-symbols-uppointingredtriangle:before {
+  content: "\1F53A"
+}
+.icon-symbols-downpointingredtriangle:before {
+  content: "\1F53B"
+}
+.icon-symbols-uppointingsmallredtrisngle:before {
+  content: "\1F53C"
+}
+.icon-symbols-downpointingsmallredtrisngle:before {
+  content: "\1F53D"
+}
+.icon-symbols-lowerrightwhitecircle:before {
+  content: "\1F53E"
+}
+.icon-symbols-upperrightwhitecircle:before {
+  content: "\1F53F"
+}
+.icon-symbols-notchedrightsemi3dot:before {
+  content: "\1F544"
+}
+.icon-symbols-markschaptersymbol:before {
+  content: "\1F545"
+}
+.icon-symbols-omsymbol:before {
+  content: "\1F549"
+}
+.icon-symbols-clock1oclock:before {
+  content: "\1F550"
+}
+.icon-symbols-clock2oclock:before {
+  content: "\1F551"
+}
+.icon-symbols-clock3oclock:before {
+  content: "\1F552"
+}
+.icon-symbols-clock4oclock:before {
+  content: "\1F553"
+}
+.icon-symbols-clock6oclock:before {
+  content: "\1F555"
+}
+.icon-symbols-clock7oclock:before {
+  content: "\1F556"
+}
+.icon-symbols-clock12oclock:before {
+  content: "\1F55B"
+}
+.icon-symbols-clock1thirty:before {
+  content: "\1F55C"
+}
+.icon-symbols-clock2thirty:before {
+  content: "\1F55D"
+}
+.icon-symbols-clock3thirty:before {
+  content: "\1F55E"
+}
+.icon-symbols-clock4thirty:before {
+  content: "\1F55F"
+}
+.icon-symbols-clock5thirty:before {
+  content: "\1F560"
+}
+.icon-symbols-clock6thirty:before {
+  content: "\1F561"
+}
+.icon-symbols-clock12thirty:before {
+  content: "\1F567"
+}
+.icon-symbols-rightspeaker:before {
+  content: "\1F568"
+}
+.icon-symbols-speakerwith1soundwave:before {
+  content: "\1F569"
+}
+.icon-symbols-rightspeaker3soundwaves:before {
+  content: "\1F56A"
+}
+.icon-symbols-nopiracy:before {
+  content: "\1F572"
+}
+.icon-symbols-lefthandphone:before {
+  content: "\1F57B"
+}
+.icon-symbols-phonewithpage:before {
+  content: "\1F57C"
+}
+.icon-symbols-righthandphone:before {
+  content: "\1F57D"
+}
+.icon-symbols-window:before {
+  content: "\1F5D4"
+}
+.icon-symbols-minimize:before {
+  content: "\1F5D5"
+}
+.icon-symbols-maximize:before {
+  content: "\1F5D6"
+}
+.icon-symbols-overlap:before {
+  content: "\1F5D7"
+}
+.icon-symbols-clockwiseleftrightarrows:before {
+  content: "\1F5D8"
+}
+.icon-symbols-cancellationx:before {
+  content: "\1F5D9"
+}
+.icon-symbols-increasefontsize:before {
+  content: "\1F5DA"
+}
+.icon-symbols-decreasefontsize:before {
+  content: "\1F5DB"
+}
+.icon-symbols-compression:before {
+  content: "\1F5DC"
+}
+.icon-symbols-oldkey:before {
+  content: "\1F5DD"
+}
+.icon-symbols-speakingheadinsilhouette:before {
+  content: "\1F5E3"
+}
+.icon-symbols-threeraysabove:before {
+  content: "\1F5E4"
+}
+.icon-symbols-threeraysbelow:before {
+  content: "\1F5E5"
+}
+.icon-symbols-threeraysleft:before {
+  content: "\1F5E6"
+}
+.icon-symbols-threeraysright:before {
+  content: "\1F5E7"
+}
+.icon-symbols-noentrysign:before {
+  content: "\1F6AB"
+}
+.icon-symbols-nosmokingsymbol:before {
+  content: "\1F6AD"
+}
+.icon-symbols-putlitterinitsplacesymbol:before {
+  content: "\1F6AE"
+}
+.icon-symbols-donotlittersymbol:before {
+  content: "\1F6AF"
+}
+.icon-symbols-potablewatersystem:before {
+  content: "\1F6B0"
+}
+.icon-symbols-nonpotablewatersymbol:before {
+  content: "\1F6B1"
+}
+.icon-symbols-nobicycles:before {
+  content: "\1F6B3"
+}
+.icon-symbols-nopedestrians:before {
+  content: "\1F6B7"
+}
+.icon-symbols-childrencrossing:before {
+  content: "\1F6B8"
+}
+.icon-symbols-menssymbol:before {
+  content: "\1F6B9"
+}
+.icon-symbols-womenssymbol:before {
+  content: "\1F6BA"
+}
+.icon-symbols-restroom:before {
+  content: "\1F6BB"
+}
+.icon-symbols-babysymbol:before {
+  content: "\1F6BC"
+}
+.icon-symbols-watercloset:before {
+  content: "\1F6BE"
+}
+.icon-symbols-passportcontrol:before {
+  content: "\1F6C2"
+}
+.icon-symbols-customs:before {
+  content: "\1F6C3"
+}
+.icon-symbols-baggageclaim:before {
+  content: "\1F6C4"
+}
+.icon-symbols-leftluggage:before {
+  content: "\1F6C5"
+}
+.icon-symbols-doubleexclaimationmark:before {
+  content: "\203C"
+}
+.icon-symbols-exclaimationquestionmark:before {
+  content: "\2049"
+}
+.icon-symbols-informationsource:before {
+  content: "\2139"
+}
+.icon-symbols-leftrightarrow:before {
+  content: "\2194"
+}
+.icon-symbols-updownarrow:before {
+  content: "\2195"
+}
+.icon-symbols-northwestarrow:before {
+  content: "\2196"
+}
+.icon-symbols-northeastarrow:before {
+  content: "\2197"
+}
+.icon-symbols-southeastarrow:before {
+  content: "\2198"
+}
+.icon-symbols-leftwardsarrowwithhook:before {
+  content: "\21A9"
+}
+.icon-symbols-rightwardsarrowwithhook:before {
+  content: "\21AA"
+}
+.icon-symbols-blackrightpointingdoublearrow:before {
+  content: "\23E9"
+}
+.icon-symbols-blackleftpointingdoublearrow:before {
+  content: "\23EA"
+}
+.icon-symbols-blackuppointingdoublearrow:before {
+  content: "\23EB"
+}
+.icon-symbols-blackdownpointingdoublearrow:before {
+  content: "\23EC"
+}
+.icon-symbols-alarmclock:before {
+  content: "\23F0"
+}
+.icon-symbols-circledlatincapitalletterM:before {
+  content: "\24C2"
+}
+.icon-symbols-blacksmallsquare:before {
+  content: "\25AA"
+}
+.icon-symbols-whitesmallsquare:before {
+  content: "\25AB"
+}
+.icon-symbols-blackrightpointingarrow:before {
+  content: "\25B6"
+}
+.icon-symbols-blackleftpointingarrow:before {
+  content: "\25C0"
+}
+.icon-symbols-whitemediumsquare:before {
+  content: "\25FB"
+}
+.icon-symbols-blackmediumsquare:before {
+  content: "\25FC"
+}
+.icon-symbols-whitemediumsmallsquare:before {
+  content: "\25FD"
+}
+.icon-symbols-blackmediumsmallsquare:before {
+  content: "\25FE"
+}
+.icon-symbols-ballotboxwithcheck:before {
+  content: "\2611"
+}
+.icon-symbols-aries:before {
+  content: "\2648"
+}
+.icon-symbols-taurus:before {
+  content: "\2649"
+}
+.icon-symbols-gemini:before {
+  content: "\264A"
+}
+.icon-symbols-cancer:before {
+  content: "\264B"
+}
+.icon-symbols-leo:before {
+  content: "\264C"
+}
+.icon-symbols-virgo:before {
+  content: "\264D"
+}
+.icon-symbols-libra:before {
+  content: "\264E"
+}
+.icon-symbols-scorpius:before {
+  content: "\264F"
+}
+.icon-symbols-saggitarius:before {
+  content: "\2650"
+}
+.icon-symbols-capricorn:before {
+  content: "\2651"
+}
+.icon-symbols-aquarius:before {
+  content: "\2652"
+}
+.icon-symbols-pisces:before {
+  content: "\2653"
+}
+.icon-symbols-blackspadesuit:before {
+  content: "\2660"
+}
+.icon-symbols-blackclubsuit:before {
+  content: "\2663"
+}
+.icon-symbols-blackheartsuit:before {
+  content: "\2665"
+}
+.icon-symbols-blackdiamondsuit:before {
+  content: "\2666"
+}
+.icon-symbols-blackuniversalrecyclingsymbol:before {
+  content: "\267B"
+}
+.icon-symbols-wheelchairsymbol:before {
+  content: "\267F"
+}
+.icon-symbols-mediumwhitecircle:before {
+  content: "\26AA"
+}
+.icon-symbols-mediumblackcircle:before {
+  content: "\26AB"
+}
+.icon-symbols-ophiuchus:before {
+  content: "\26CE"
+}
+.icon-symbols-noentry:before {
+  content: "\26D4"
+}
+.icon-symbols-whiteheavycheckmark:before {
+  content: "\2705"
+}
+.icon-symbols-heavycheckmark:before {
+  content: "\2714"
+}
+.icon-symbols-heavymultiplicationsymbol:before {
+  content: "\2716"
+}
+.icon-symbols-eightspokedasterix:before {
+  content: "\2733"
+}
+.icon-symbols-eightpointedblackstar:before {
+  content: "\2734"
+}
+.icon-symbols-sparkle:before {
+  content: "\2748"
+}
+.icon-symbols-crossmark:before {
+  content: "\274C"
+}
+.icon-symbols-negativesquaredcrossmark:before {
+  content: "\274E"
+}
+.icon-symbols-blackquestionmark:before {
+  content: "\2753"
+}
+.icon-symbols-whitequestionmark:before {
+  content: "\2754"
+}
+.icon-symbols-whiteexclaimationmark:before {
+  content: "\2755"
+}
+.icon-symbols-heavyexclaimationmarksymbol:before {
+  content: "\2757"
+}
+.icon-symbols-heavyplussign:before {
+  content: "\2795"
+}
+.icon-symbols-heavyminussign:before {
+  content: "\2796"
+}
+.icon-symbols-heavydivisionsign:before {
+  content: "\2797"
+}
+.icon-symbols-blackrightwardsarrow:before {
+  content: "\27A1"
+}
+.icon-symbols-curlyloop:before {
+  content: "\27B0"
+}
+.icon-symbols-doublecurlyloop:before {
+  content: "\27BF"
+}
+.icon-symbols-arrowrightwardsupwards:before {
+  content: "\2934"
+}
+.icon-symbols-arrowrightwardsdownwards:before {
+  content: "\2935"
+}
+.icon-symbols-leftwardsblackarrow:before {
+  content: "\2B05"
+}
+.icon-symbols-blacklargesquare:before {
+  content: "\2B1B"
+}
+.icon-symbols-whitelargesquare:before {
+  content: "\2B1C"
+}
+.icon-symbols-heavylargecircle:before {
+  content: "\2B55"
+}
+.icon-symbols-wavydash:before {
+  content: "\3030"
+}
+.icon-symbols-partalternationmark:before {
+  content: "\303D"
+}
+.icon-symbols-circledideographcongratulation:before {
+  content: "\3297"
+}
+.icon-symbols-circledideographsecret:before {
+  content: "\3299"
+}

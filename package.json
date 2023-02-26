@@ -23,7 +23,6 @@
     "dotenv": "^8.2.0",
     "escape-html": "^1.0.3",
     "feedparser": "^2.2.10",
-    "fxemoji": "https://github.com/mozilla/fxemoji.git",
     "gh-pages": "^3.0.0",
     "globby": "^11.0.1",
     "http-server": "^14.1.0",
