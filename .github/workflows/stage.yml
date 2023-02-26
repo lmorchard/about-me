@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js 17.8.0
+    - name: Use Node.js 18.13.0
       uses: actions/setup-node@v1
       with:
-        node-version: 17.8.0
+        node-version: 18.13.0
     - name: Set git identity
       run: |
         git config --global user.email "me@lmorchard.com"
@@ -32,6 +32,10 @@ jobs:
         TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
         TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
         TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+        ACTIVITYPUB_USERNAME: ${{ secrets.ACTIVITYPUB_USERNAME }}
+        ACTIVITYPUB_BASE_URL: ${{ secrets.ACTIVITYPUB_BASE_URL }}
+        ACTIVITYPUB_PROFILE_URL: ${{ secrets.ACTIVITYPUB_PROFILE_URL }}
+        ACTIVITYPUB_OUTBOX_URL: ${{ secrets.ACTIVITYPUB_OUTBOX_URL }}
         SPOTIFY_USERNAME: ${{ secrets.SPOTIFY_USERNAME }}
         SPOTIFY_CLIENTID: ${{ secrets.SPOTIFY_CLIENTID }}
         SPOTIFY_CLIENTSECRET: ${{ secrets.SPOTIFY_CLIENTSECRET }}
