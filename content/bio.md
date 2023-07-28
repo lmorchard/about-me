@@ -3,7 +3,7 @@
 [serial enthusiast]: https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/
 
 This page collects a bunch of the stuff I do online. If you feel like it, drop me [an email](mailto:me@lmorchard.com) or
-[a tweet](https://twitter.com/lmorchard) or [a toot](https://hackers.town/@lmorchard) &mdash; or find me in one of
+[a toot](https://hackers.town/@lmorchard) &mdash; or find me in one of
 the other usual places below.
 
 - <a rel="me" href="https://blog.lmorchard.com">🧾 Blog</a>

@@ -42,12 +42,6 @@ module.exports = ({ config, data }) => html`
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
-            ${ActivityPub({
-              theme: theme(),
-              maxItems: 7,
-              ...data.ActivityPub,
-              name: "hackers.town",              
-            })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Pinboard })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}

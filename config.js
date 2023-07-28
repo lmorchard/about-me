@@ -39,12 +39,14 @@ module.exports = {
       channelId: YOUTUBE_CHANNEL_ID,
       key: YOUTUBE_KEY,
     },
+    /*
     ActivityPub: {
       username: ACTIVITYPUB_USERNAME,
       baseUrl: ACTIVITYPUB_BASE_URL,
       profileUrl: ACTIVITYPUB_PROFILE_URL,
       outboxUrl: ACTIVITYPUB_OUTBOX_URL,
     },
+    */
     Spotify: {
       username: SPOTIFY_USERNAME,
       clientId: SPOTIFY_CLIENTID,
