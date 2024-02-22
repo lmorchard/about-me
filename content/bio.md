@@ -14,4 +14,5 @@ the other usual places below.
 - <a rel="me" href="https://github.com/lmorchard">🐙 Github</a>
 - <a rel="me" href="https://glitch.com/@lmorchard">🐟 Glitch</a>
 - <a rel="me" href="https://twitch.tv/lmorchard">📺 Twitch</a>
+- <a rel="me" href="https://www.youtube.com/@LesOrchard">📺 YouTube</a>
 - <a rel="me" href="https://discord.com/invite/UXeuPNv">💬 Discord</a>
