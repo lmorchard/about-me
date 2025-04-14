@@ -8,7 +8,6 @@ the other usual places below.
 
 - <a rel="me" href="https://blog.lmorchard.com">🧾 Blog</a>
 - <a rel="me" href="https://masto.hackers.town/@lmorchard">🐘 Fediverse 🌐 (masto.hackers.town)</a>
-- <a rel="me" href="https://mozilla.social/@lmorchard">🐘 Fediverse 🦎 (mozilla.social)</a>
 - <a rel="me" href="https://pdx.social/@lmorchard">🐘 Fediverse 🏠 (pdx.social)</a>
 - <a rel="me" href="https://toot.lmorchard.com/@lmorchard">🐘 Fediverse 🔬 (toot.lmorchard.com)</a>
 - <a rel="me" href="https://github.com/lmorchard">🐙 Github</a>
