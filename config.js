@@ -61,7 +61,7 @@ module.exports = {
       component: "Feed",
       title: "Pebbling Club (u/lmorchard)",
       link: "https://pebbl.ing/u/lmorchard/",
-      feedUrls: ["https://pebbl.ing/u/lmorchard/feed.rss"],
+      feedUrls: ["https://pebbl.ing/u/lmorchard/feed.atom"],
     },
     /*
     Pinboard: {
