@@ -57,11 +57,19 @@ module.exports = {
       expires_in: 3600,
       scope: "user-read-currently-playing user-read-recently-played",
     },
+    Pebbling: {
+      component: "Feed",
+      title: "Pebbling Club (u/lmorchard)",
+      link: "https://pebbl.ing/u/lmorchard/",
+      feedUrls: ["https://pebbl.ing/u/lmorchard/feed.rss"],
+    },
+    /*
     Pinboard: {
       component: "Feed",
       title: "Pinboard (u:deusx)",
       link: "https://pinboard.in/u:deusx",
       feedUrls: ["https://feeds.pinboard.in/rss/u:deusx/"],
     },
+    */
   },
 };
