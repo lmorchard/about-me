@@ -42,4 +42,7 @@ async function cleanBuild() {
   await mkdirp(config.buildPath);
 }
 
-main().catch((err) => console.error(err));
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
