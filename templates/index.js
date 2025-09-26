@@ -41,10 +41,10 @@ module.exports = ({ config, data }) => html`
               src: fs.readFileSync("./content/bio.md", "utf-8"),
             })}
             ${Blog({ theme: theme(), ...data.Blog })}
-            ${Feed({ theme: theme(), maxItems: 12, ...data.Links })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Fediverse })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
+            ${Feed({ theme: theme(), maxItems: 12, ...data.Links })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
