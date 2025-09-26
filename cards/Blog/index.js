@@ -26,7 +26,7 @@ function renderPost({ title, summary, thumbnail, date, url }, baseURL, idx) {
     ? thumbnail.indexOf("http") === 0
       ? thumbnail
       : `${baseURL}${thumbnail}`
-    : "https://blog.lmorchard.com/favicon.ico";
+    : "https://blog.lmorchard.com/img/bullet-espresso.gif";
   return html`
     <li key="${idx}" class="post">
       <a href="${url}">
