@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const FeedParser = require('feedparser');
 
 module.exports = async function fetchData(config, name) {

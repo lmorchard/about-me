@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const { fetchJson } = require('../../lib/utils');
 
 const BASE_URL = "https://api.glitch.com";

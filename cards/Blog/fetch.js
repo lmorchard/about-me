@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 
 const cmp = (a, b) => a.localeCompare(b);
 

@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const { fetchJson } = require('../../lib/utils');
 
 module.exports = async function fetchData(config, name) {

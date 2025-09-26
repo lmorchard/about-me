@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import { pluck, params } from '../../lib/utils';
 
 export default async function fetchData(config) {

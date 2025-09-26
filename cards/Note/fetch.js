@@ -1,5 +1,4 @@
 const url = require("url");
-const fetch = require("node-fetch");
 const cheerio = require("cheerio");
 
 module.exports = async function fetchData(config) {

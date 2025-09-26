@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 
 module.exports = async function fetchData(config) {
   const { username, userId, clientId, accessToken } = config;
