@@ -1,4 +1,5 @@
 const FeedParser = require('feedparser');
+const { Readable } = require('stream');
 
 module.exports = async function fetchData(config, name) {
   const { title, link, feedUrls } = config;
@@ -8,7 +9,11 @@ module.exports = async function fetchData(config, name) {
       const res = await fetch(feedUrl);
       return new Promise((resolve, reject) => {
         const feed = { name, title, meta: {}, items: [] };
-        res.body
+
+        // Convert Web ReadableStream to Node.js stream
+        const nodeStream = Readable.fromWeb(res.body);
+
+        nodeStream
           .on('error', error => reject(error))
           .pipe(new FeedParser())
           .on('error', error => reject(error))
