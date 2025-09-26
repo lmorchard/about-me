@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const path = require("path");
-const mkdirp = require("mkdirp");
+const { mkdirp } = require("mkdirp");
 const { rimraf } = require("rimraf");
 const { fs } = require("./lib/files");
 const { fetchAll } = require("./lib/fetch");
