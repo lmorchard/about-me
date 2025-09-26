@@ -9,7 +9,7 @@
     "clean": "./index.js clean",
     "build": "./index.js build",
     "fetch": "./index.js fetch",
-    "full-build": "npm-run-all --serial clean fetch build",
+    "full-build": "npm run clean && npm run fetch && npm run build",
     "build:production": "npm run full-build",
     "build:stage": "npm run full-build"
   },
@@ -36,7 +36,6 @@
     "reload": "^3.0.5",
     "rimraf": "^3.0.2",
     "sass": "^1.58.3",
-    "snowpack": "^2.3.1",
     "spotify-web-api-node": "^4.0.0",
     "timeago.js": "^4.0.2",
     "twitter": "^1.7.1",
