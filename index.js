@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-const util = require("util");
 const path = require("path");
 const mkdirp = require("mkdirp");
-const rimraf = util.promisify(require("rimraf"));
+const { rimraf } = require("rimraf");
 const { fs } = require("./lib/files");
 const { fetchAll } = require("./lib/fetch");
 const { buildStyles } = require("./lib/styles");

@@ -7,6 +7,10 @@ module.exports = (props) => {
   const { username, user, tracks } = props;
   const maxItems = props.maxItems || 10;
 
+  if (!user || !tracks) {
+    return "";
+  }
+
   return Card(
     { ...props, className: "spotify" },
     html`
