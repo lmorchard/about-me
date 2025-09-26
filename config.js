@@ -27,11 +27,24 @@ module.exports = {
       baseURL: "https://blog.lmorchard.com",
       indexURL: "https://blog.lmorchard.com/index.json",
     },
+    Links: {
+      component: "Feed",
+      title: "Links",
+      link: "https://links.lmorchard.com/bookmarks/shared",
+      feedUrls: ["https://links.lmorchard.com/feeds/shared"],
+    },
+    Fediverse: {
+      component: "Feed",
+      title: "@lmorchard@masto.hackers.town",
+      link: "https://masto.hackers.town/@lmorchard",
+      feedUrls: ["https://masto.hackers.town/@lmorchard.rss"],
+    },
     Github: {
       username: "lmorchard",
       ignoreRepos: [
         "lmorchard/notes",
         "mozilla/FirefoxColor",
+        "lmorchard/blog.lmorchard.com",
       ]
     },
     YouTube: {
@@ -39,14 +52,6 @@ module.exports = {
       channelId: YOUTUBE_CHANNEL_ID,
       key: YOUTUBE_KEY,
     },
-    /*
-    ActivityPub: {
-      username: ACTIVITYPUB_USERNAME,
-      baseUrl: ACTIVITYPUB_BASE_URL,
-      profileUrl: ACTIVITYPUB_PROFILE_URL,
-      outboxUrl: ACTIVITYPUB_OUTBOX_URL,
-    },
-    */
     Spotify: {
       username: SPOTIFY_USERNAME,
       clientId: SPOTIFY_CLIENTID,
@@ -56,20 +61,6 @@ module.exports = {
       token_type: "Bearer",
       expires_in: 3600,
       scope: "user-read-currently-playing user-read-recently-played",
-    },
-    /*
-    Pebbling: {
-      component: "Feed",
-      title: "Pebbling Club (u/lmorchard)",
-      link: "https://pebbl.ing/u/lmorchard/",
-      feedUrls: ["https://pebbl.ing/u/lmorchard/feed.atom"],
-    },
-    */
-    Pinboard: {
-      component: "Feed",
-      title: "Pinboard (u:deusx)",
-      link: "https://pinboard.in/u:deusx",
-      feedUrls: ["https://feeds.pinboard.in/rss/u:deusx/"],
     },
   },
 };
