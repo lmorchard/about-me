@@ -10,7 +10,7 @@ const {
   ACTIVITYPUB_PROFILE_URL,
   ACTIVITYPUB_OUTBOX_URL,
 
-  GITHUB_TOKEN,
+  GH_API_TOKEN,
 
   SPOTIFY_USERNAME,
   SPOTIFY_CLIENTID,
@@ -43,7 +43,7 @@ module.exports = {
     },
     Github: {
       username: "lmorchard",
-      token: GITHUB_TOKEN,
+      token: GH_API_TOKEN,
       ignoreRepos: [
         "lmorchard/notes",
         "mozilla/FirefoxColor",
