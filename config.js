@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ quiet: true });
 
 const {
   YOUTUBE_USER_ID,
@@ -9,6 +9,8 @@ const {
   ACTIVITYPUB_BASE_URL,
   ACTIVITYPUB_PROFILE_URL,
   ACTIVITYPUB_OUTBOX_URL,
+
+  GITHUB_TOKEN,
 
   SPOTIFY_USERNAME,
   SPOTIFY_CLIENTID,
@@ -41,6 +43,7 @@ module.exports = {
     },
     Github: {
       username: "lmorchard",
+      token: GITHUB_TOKEN,
       ignoreRepos: [
         "lmorchard/notes",
         "mozilla/FirefoxColor",

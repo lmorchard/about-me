@@ -47,13 +47,19 @@ const eventTemplates = {
     </span>
   `,
 
-  PushEvent: (event) => html`
-    <span>
-      ${renderActor(event)} pushed ${renderCommit(event)} to
-      ${renderRepo(event)} (${renderBranch(event)}):
-      ${renderCommitMessage(event)}
-    </span>
-  `,
+  PushEvent: (event) => {
+    // Skip if no commits in payload
+    if (!event.payload.commits || event.payload.commits.length === 0) {
+      return null;
+    }
+    return html`
+      <span>
+        ${renderActor(event)} pushed ${renderCommit(event)} to
+        ${renderRepo(event)} (${renderBranch(event)}):
+        ${renderCommitMessage(event)}
+      </span>
+    `;
+  },
 
   CreateEvent: function renderCreateEvent(event) {
     const { ref_type } = event.payload;
@@ -177,7 +183,9 @@ function renderCommit(event) {
 }
 
 function renderCommitMessage(event) {
-  const { message } = event.payload.commits[0];
+  // Handle both old API format (commits[0].message) and new format (commits[0].commit.message)
+  const commit = event.payload.commits[0];
+  const message = commit.message || commit.commit?.message || '';
   const summary = message.split(/\n/)[0];
   return html`<span class="commitMessage">${summary}</span>`;
 }
