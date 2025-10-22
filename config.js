@@ -12,6 +12,9 @@ const {
 
   GH_API_TOKEN,
 
+  POCKETCASTS_EMAIL,
+  POCKETCASTS_PASSWORD,
+
   SPOTIFY_USERNAME,
   SPOTIFY_CLIENTID,
   SPOTIFY_CLIENTSECRET,
@@ -49,6 +52,16 @@ module.exports = {
         "mozilla/FirefoxColor",
         "lmorchard/blog.lmorchard.com",
       ]
+    },
+    PocketCasts: {
+      email: POCKETCASTS_EMAIL,
+      password: POCKETCASTS_PASSWORD,
+      // URL patterns for private/paid podcasts - remove URLs but keep episodes
+      excludeUrlPatterns: [
+        'supportingcast.fm',
+        'patreon.com',
+        'patreonusercontent.com',
+      ],
     },
     YouTube: {
       username: YOUTUBE_USER_ID,

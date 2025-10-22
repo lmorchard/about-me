@@ -14,6 +14,7 @@ const Project = require("../cards/Project");
 const Github = require("../cards/Github");
 const Glitch = require("../cards/Glitch");
 const Goodreads = require("../cards/Goodreads");
+const PocketCasts = require("../cards/PocketCasts");
 const Spotify = require("../cards/Spotify");
 const Twitter = require("../cards/Twitter");
 const Twitch = require("../cards/Twitch");
@@ -45,6 +46,7 @@ module.exports = ({ config, data }) => html`
             ${Blog({ theme: theme(), ...data.Blog })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
+            ${PocketCasts({ theme: theme(), maxItems: 12, ...data.PocketCasts })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
