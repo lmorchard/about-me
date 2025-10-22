@@ -1,6 +1,8 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -57,6 +59,8 @@ a {
   >section {
     overflow-x: hidden;
     overflow-y: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
     >p {
       margin: 1em 2em;

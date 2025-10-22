@@ -12,6 +12,8 @@
       clear: both;
       margin-bottom: 1.5em;
       padding-left: 1.75em;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
       &::before {
         float: left;
         width: 1.75em;
@@ -23,6 +25,7 @@
       }
       a {
         font-weight: bold;
+        word-break: break-word;
       }
       .createdAt {
         float: right;
