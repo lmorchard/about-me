@@ -29,7 +29,12 @@ module.exports = (props) => {
       seenUrls.add(link);
       return !seen;
     })
-    .sort((a, b) => b.date.localeCompare(a.date));
+    .sort((a, b) => {
+      // rss-parser uses isoDate, fallback to pubDate or date
+      const dateA = a.isoDate || a.pubDate || a.date || '';
+      const dateB = b.isoDate || b.pubDate || b.date || '';
+      return dateB.localeCompare(dateA);
+    });
 
   return Card(
     { ...props, className: classnames('feed', name) },
@@ -56,7 +61,13 @@ module.exports = (props) => {
 };
 
 function renderItem(item, baseLink, idx) {
-  const { title, summary, link, date } = item;
+  // rss-parser uses different field names than feedparser
+  const title = item.title || '';
+  const link = item.link || '';
+  const date = item.isoDate || item.pubDate || item.date || '';
+  const summary =
+    item.contentSnippet || item.summary || item.content || item.description;
+
   const absLink = url.resolve(baseLink, link);
   return html`
     <li key=${idx} class="item">

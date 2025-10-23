@@ -94,33 +94,33 @@ This document tracks the modernization efforts for the about-me project.
 
 ---
 
-## Phase 3: Modernization (Planned)
+## Phase 3: Modernization (In Progress)
 
-### Planned Items:
+### Completed Items:
 
-1. **Migrate to ESM**
+1. **✅ Removed Unused moment Package**
+   - moment was listed in dependencies but never imported/used
+   - Removed package (saved 290KB)
+   - **Impact**: Reduced bundle size and dependencies
+
+2. **✅ Replaced feedparser with rss-parser**
+   - feedparser last updated 7 years ago (2017)
+   - Installed modern rss-parser (actively maintained)
+   - Updated `cards/Feed/fetch.js` to use promise-based API instead of streams
+   - Updated `cards/Feed/index.js` to handle rss-parser field names (isoDate, contentSnippet)
+   - Added error handling for individual feed failures
+   - Removed 13 packages from dependency tree
+   - **Impact**: Modern, maintained RSS parsing with cleaner async/await API
+
+### Remaining Items:
+
+3. **Migrate to ESM** (Planned)
    - Add `"type": "module"` to package.json
    - Convert all `require()` to `import`
    - Update all `module.exports` to `export`
    - Update globby to v15
 
-2. **Replace moment with date-fns**
-   ```bash
-   npm uninstall moment
-   npm install date-fns
-   ```
-   - Smaller bundle size (23x)
-   - Better tree-shaking
-   - Modern API
-
-3. **Replace feedparser**
-   - Package last updated 7 years ago
-   - Consider:
-     - `rss-parser` (modern, maintained)
-     - Native XML parsing with cheerio
-     - Direct fetch + parse
-
-4. **Add TypeScript (Optional)**
+4. **Add TypeScript (Optional)** (Planned)
    - Gradual migration using JSDoc first
    - Add `typescript` and `tsx`
    - Create `tsconfig.json`
