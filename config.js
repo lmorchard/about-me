@@ -1,5 +1,9 @@
 require('dotenv').config({ quiet: true });
 
+// Validate environment variables on load
+const { checkEnv } = require('./lib/env');
+checkEnv();
+
 const {
   YOUTUBE_USER_ID,
   YOUTUBE_CHANNEL_ID,
