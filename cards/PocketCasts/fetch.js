@@ -1,3 +1,5 @@
+// TODO: Replace with custom client - see lib/pocketcasts-client.js
+// The Pocket Casts web player API endpoints have changed and need more research
 const PocketCasts = require('pocketcasts');
 
 module.exports = async function fetchData(config) {

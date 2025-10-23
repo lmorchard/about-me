@@ -16,7 +16,6 @@ const Glitch = require("../cards/Glitch");
 const Goodreads = require("../cards/Goodreads");
 const PocketCasts = require("../cards/PocketCasts");
 const Spotify = require("../cards/Spotify");
-const Twitter = require("../cards/Twitter");
 const Twitch = require("../cards/Twitch");
 const ActivityPub = require("../cards/ActivityPub");
 const Colophon = require("../cards/Colophon");
