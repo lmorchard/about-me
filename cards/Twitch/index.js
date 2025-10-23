@@ -1,13 +1,13 @@
-const { html } = require("../../lib/html");
-const classnames = require("classnames");
-const Card = require("../../templates/Card");
+const { html } = require('../../lib/html');
+const classnames = require('classnames');
+const Card = require('../../templates/Card');
 
 module.exports = (props) => {
   const { username, clips, className } = props;
   const maxItems = props.maxItems || 12;
 
   return Card(
-    { ...props, className: "twitch" },
+    { ...props, className: 'twitch' },
     html`
       <h3>
         Twitch Clips (<a rel="me" href="${userUrl(username)}">${username}</a>)

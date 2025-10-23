@@ -1,9 +1,7 @@
-const { html } = require("../../lib/html");
+const { html } = require('../../lib/html');
 
 module.exports = (children) => html`
   <div class="centered">
-    <section class="cards">
-      ${children}
-    </section>
+    <section class="cards">${children}</section>
   </div>
 `;

@@ -11,7 +11,7 @@ module.exports = async function fetchData(config) {
   // Helper function to check if URL should be excluded
   const shouldExcludeUrl = (url) => {
     if (!url) return false;
-    return excludeUrlPatterns.some(pattern => url.includes(pattern));
+    return excludeUrlPatterns.some((pattern) => url.includes(pattern));
   };
 
   try {
@@ -34,7 +34,7 @@ module.exports = async function fetchData(config) {
     }
 
     // Transform the data to a format we can use
-    const episodes = episodesArray.map(item => {
+    const episodes = episodesArray.map((item) => {
       const episodeUrl = item.url || null;
       const filteredUrl = shouldExcludeUrl(episodeUrl) ? null : episodeUrl;
 

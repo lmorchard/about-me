@@ -1,6 +1,11 @@
-
 module.exports = async function fetchData(config) {
-  const { username, token, ignoreRepos = [], numPages = 3, perPage = 100 } = config;
+  const {
+    username,
+    token,
+    ignoreRepos = [],
+    numPages = 3,
+    perPage = 100,
+  } = config;
 
   // Set up headers for authentication if token is available
   const headers = {};
@@ -38,17 +43,25 @@ module.exports = async function fetchData(config) {
   }
 
   // Filter events by ignored repos
-  const filteredEvents = events.filter((event) => !ignoreRepos.includes(event.repo.name));
+  const filteredEvents = events.filter(
+    (event) => !ignoreRepos.includes(event.repo.name)
+  );
 
   // Fetch commit details for PushEvents
   for (const event of filteredEvents) {
-    if (event.type === 'PushEvent' && event.payload.before && event.payload.head) {
+    if (
+      event.type === 'PushEvent' &&
+      event.payload.before &&
+      event.payload.head
+    ) {
       try {
         const compareUrl = `https://api.github.com/repos/${event.repo.name}/compare/${event.payload.before}...${event.payload.head}`;
         const compareResp = await fetch(compareUrl, { headers });
 
         if (!compareResp.ok) {
-          console.error(`Failed to fetch commits for event ${event.id}: ${compareResp.status} ${compareResp.statusText}`);
+          console.error(
+            `Failed to fetch commits for event ${event.id}: ${compareResp.status} ${compareResp.statusText}`
+          );
           continue;
         }
 
@@ -59,7 +72,10 @@ module.exports = async function fetchData(config) {
           event.payload.commits = compareData.commits.slice(0, 20);
         }
       } catch (error) {
-        console.error(`Failed to fetch commits for event ${event.id}:`, error.message);
+        console.error(
+          `Failed to fetch commits for event ${event.id}:`,
+          error.message
+        );
         // Continue without commits data
       }
     }

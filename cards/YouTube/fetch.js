@@ -5,6 +5,8 @@ module.exports = async function fetchData(config, name) {
   return {
     username,
     channelId,
-    ...await fetchJson(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&order=date&type=video&maxResults=50&key=${key}`)
+    ...(await fetchJson(
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&order=date&type=video&maxResults=50&key=${key}`
+    )),
   };
-}
+};

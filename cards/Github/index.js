@@ -1,9 +1,9 @@
-const { html, unescaped } = require("../../lib/html");
-const classnames = require("classnames");
-const timeago = require("timeago.js");
-const Card = require("../../templates/Card");
+const { html, unescaped } = require('../../lib/html');
+const classnames = require('classnames');
+const timeago = require('timeago.js');
+const Card = require('../../templates/Card');
 
-const BASE_URL = "https://github.com";
+const BASE_URL = 'https://github.com';
 
 module.exports = (props) => {
   const { username, events, theme } = props;
@@ -34,7 +34,7 @@ function renderEvent(event, idx) {
     return null;
   }
   return html`
-    <li key="${idx}" class="${classnames("event", event.type)}">
+    <li key="${idx}" class="${classnames('event', event.type)}">
       ${renderCreatedAt(event)} ${children}
     </li>
   `;
@@ -42,9 +42,7 @@ function renderEvent(event, idx) {
 
 const eventTemplates = {
   WatchEvent: (event) => html`
-    <span>
-      ${renderActor(event)} watched ${renderRepo(event)}
-    </span>
+    <span> ${renderActor(event)} watched ${renderRepo(event)} </span>
   `,
 
   PushEvent: (event) => {
@@ -64,20 +62,20 @@ const eventTemplates = {
   CreateEvent: function renderCreateEvent(event) {
     const { ref_type } = event.payload;
     switch (ref_type) {
-      case "repository":
+      case 'repository':
         return html`
           <span>
             ${renderActor(event)} created repository ${renderRepo(event)}
           </span>
         `;
-      case "branch":
+      case 'branch':
         return html`
           <span>
             ${renderActor(event)} created branch ${renderBranch(event)} on
             ${renderRepo(event)}
           </span>
         `;
-      case "tag":
+      case 'tag':
         return html`
           <span>
             ${renderActor(event)} created tag ${renderTag(event)} on
@@ -89,7 +87,7 @@ const eventTemplates = {
     }
   },
 
-  IssuesEvent: (event) => "",
+  IssuesEvent: (event) => '',
 
   PullRequestEvent: (event) => html`
     <span>
@@ -129,28 +127,18 @@ function renderActor(event) {
   }
   const display_login = event.actor.display_login;
   return html`
-    <a class="actor" href="${BASE_URL}/${login}">
-      ${display_login}
-    </a>
+    <a class="actor" href="${BASE_URL}/${login}"> ${display_login} </a>
   `;
 }
 
 function renderRepo(event) {
   const repo = event.repo.name;
-  return html`
-    <a class="repo" href="${BASE_URL}/${repo}">
-      ${repo}
-    </a>
-  `;
+  return html` <a class="repo" href="${BASE_URL}/${repo}"> ${repo} </a> `;
 }
 
 function renderIssue(event) {
   const { html_url, number, title } = event.payload.issue;
-  return html`
-    <a class="issue" href="${html_url}">
-      Issue #${number}
-    </a>
-  `;
+  return html` <a class="issue" href="${html_url}"> Issue #${number} </a> `;
 }
 
 function renderIssueTitle(event) {
@@ -161,9 +149,7 @@ function renderIssueTitle(event) {
 function renderPullRequest(event) {
   const { number, html_url } = event.payload.pull_request;
   return html`
-    <a class="pullRequest" href="${html_url}">
-      Pull Request #${number}
-    </a>
+    <a class="pullRequest" href="${html_url}"> Pull Request #${number} </a>
   `;
 }
 
@@ -192,7 +178,7 @@ function renderCommitMessage(event) {
 
 function renderBranch(event) {
   const repo = event.repo.name;
-  const branch = event.payload.ref.replace("refs/heads/", "");
+  const branch = event.payload.ref.replace('refs/heads/', '');
   return html`
     <a class="commitBranch" href="${BASE_URL}/${repo}/tree/${branch}">
       ${branch}
@@ -202,11 +188,9 @@ function renderBranch(event) {
 
 function renderTag(event) {
   const repo = event.repo.name;
-  const tag = event.payload.ref.replace("refs/heads/", "");
+  const tag = event.payload.ref.replace('refs/heads/', '');
   return html`
-    <a class="committag" href="${BASE_URL}/${repo}/tree/${tag}">
-      ${tag}
-    </a>
+    <a class="committag" href="${BASE_URL}/${repo}/tree/${tag}"> ${tag} </a>
   `;
 }
 

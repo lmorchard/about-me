@@ -1,18 +1,18 @@
-const { html, unescaped } = require("../../lib/html");
-const classnames = require("classnames");
-const timeago = require("timeago.js");
-const Card = require("../../templates/Card");
+const { html, unescaped } = require('../../lib/html');
+const classnames = require('classnames');
+const timeago = require('timeago.js');
+const Card = require('../../templates/Card');
 
 module.exports = (props) => {
   const { username, user, tracks } = props;
   const maxItems = props.maxItems || 10;
 
   if (!user || !tracks) {
-    return "";
+    return '';
   }
 
   return Card(
-    { ...props, className: "spotify" },
+    { ...props, className: 'spotify' },
     html`
       <h3>
         Spotify (<a
@@ -42,7 +42,7 @@ function renderItem(item, username, idx) {
   return html`
     <li key=${idx} class="item">
       <a href="${track.external_urls.spotify}" class="cover">
-        ${image ? html`<img src=${image.url} />` : " "}
+        ${image ? html`<img src=${image.url} />` : ' '}
       </a>
       <span class="track">
         <a href="${track.external_urls.spotify}" class="name">
@@ -62,7 +62,7 @@ function renderItem(item, username, idx) {
             >
               ${artist.name}
             </a>
-            ${idx < artists.length - 1 ? ", " : ""}
+            ${idx < artists.length - 1 ? ', ' : ''}
           `
         )}
         <span class="playedAt" title="${played_at}" dateTime="${played_at}">

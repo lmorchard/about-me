@@ -1,7 +1,7 @@
-const { html, unescaped } = require("../../lib/html");
-const classnames = require("classnames");
-const timeago = require("timeago.js");
-const Card = require("../../templates/Card");
+const { html, unescaped } = require('../../lib/html');
+const classnames = require('classnames');
+const timeago = require('timeago.js');
+const Card = require('../../templates/Card');
 
 module.exports = (props) => {
   const { name, username, baseUrl, profileUrl, outbox } = props;
@@ -30,7 +30,7 @@ function renderItem(item, idx) {
   const { published, url } = object;
   if (type in itemTypeTemplates) {
     return html`
-      <li key="${idx}" class="${classnames("item", type)}">
+      <li key="${idx}" class="${classnames('item', type)}">
         <a
           class="createdAt"
           href="${url}"

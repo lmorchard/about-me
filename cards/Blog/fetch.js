@@ -1,4 +1,3 @@
-
 const cmp = (a, b) => a.localeCompare(b);
 
 module.exports = async function fetchData(config) {
@@ -21,4 +20,4 @@ module.exports = async function fetchData(config) {
         url: `${baseURL}/${path}`,
       })),
   };
-}
+};

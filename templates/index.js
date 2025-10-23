@@ -1,24 +1,24 @@
-const { html, unescaped } = require("../lib/html");
-const fs = require("fs");
+const { html, unescaped } = require('../lib/html');
+const fs = require('fs');
 
-const Header = require("./Header");
-const Layout = require("./Layout");
+const Header = require('./Header');
+const Layout = require('./Layout');
 
-const Avatar = require("../cards/Avatar");
-const Note = require("../cards/Note");
-const Bio = require("../cards/Bio");
-const YouTube = require("../cards/YouTube");
-const Feed = require("../cards/Feed");
-const Blog = require("../cards/Blog");
-const Project = require("../cards/Project");
-const Github = require("../cards/Github");
-const Glitch = require("../cards/Glitch");
-const Goodreads = require("../cards/Goodreads");
-const PocketCasts = require("../cards/PocketCasts");
-const Spotify = require("../cards/Spotify");
-const Twitch = require("../cards/Twitch");
-const ActivityPub = require("../cards/ActivityPub");
-const Colophon = require("../cards/Colophon");
+const Avatar = require('../cards/Avatar');
+const Note = require('../cards/Note');
+const Bio = require('../cards/Bio');
+const YouTube = require('../cards/YouTube');
+const Feed = require('../cards/Feed');
+const Blog = require('../cards/Blog');
+const Project = require('../cards/Project');
+const Github = require('../cards/Github');
+const Glitch = require('../cards/Glitch');
+const Goodreads = require('../cards/Goodreads');
+const PocketCasts = require('../cards/PocketCasts');
+const Spotify = require('../cards/Spotify');
+const Twitch = require('../cards/Twitch');
+const ActivityPub = require('../cards/ActivityPub');
+const Colophon = require('../cards/Colophon');
 
 module.exports = ({ config, data }) => html`
   <html lang="en">
@@ -27,25 +27,32 @@ module.exports = ({ config, data }) => html`
       <meta name="viewport" content="initial-scale=1" />
       <title>${config.siteTitle}</title>
       <link href="./index.css" rel="stylesheet" />
-      <link rel="shortcut icon" href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16" />
+      <link
+        rel="shortcut icon"
+        href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16"
+      />
     </head>
     <body>
       <div id="root">
         <article>
-          ${Header({ title: "Les Orchard <me@lmorchard.com>" })}
+          ${Header({ title: 'Les Orchard <me@lmorchard.com>' })}
           ${Layout(html`
             ${Avatar({ theme: theme(), title: "That's me!" })}
             ${Bio({
               theme: theme(),
-              title: "About Me",
-              src: fs.readFileSync("./content/bio.md", "utf-8"),
+              title: 'About Me',
+              src: fs.readFileSync('./content/bio.md', 'utf-8'),
             })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Fediverse })}
             ${Feed({ theme: theme(), maxItems: 12, ...data.Links })}
             ${Blog({ theme: theme(), ...data.Blog })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
-            ${PocketCasts({ theme: theme(), maxItems: 12, ...data.PocketCasts })}
+            ${PocketCasts({
+              theme: theme(),
+              maxItems: 12,
+              ...data.PocketCasts,
+            })}
             ${Spotify({ theme: theme(), maxItems: 7, ...data.Spotify })}
             ${Colophon({ theme: theme(), ...data.Colophon })}
           `)}
@@ -56,11 +63,11 @@ module.exports = ({ config, data }) => html`
 `;
 
 const themes = [
-  "default",
-  "primary",
-  "secondary-1",
-  "secondary-2",
-  "complement",
+  'default',
+  'primary',
+  'secondary-1',
+  'secondary-2',
+  'complement',
 ];
 let themeIdx = -1;
 function theme() {

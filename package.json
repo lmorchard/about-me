@@ -11,7 +11,11 @@
     "fetch": "./index.js fetch",
     "full-build": "npm run clean && npm run fetch && npm run build",
     "build:production": "npm run full-build",
-    "build:stage": "npm run full-build"
+    "build:stage": "npm run full-build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "author": "Les Orchard <me@lmorchard.com>",
   "license": "MIT",
@@ -40,6 +44,10 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "chokidar-cli": "^3.0.0"
+    "chokidar-cli": "^3.0.0",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
   }
 }

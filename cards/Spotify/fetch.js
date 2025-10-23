@@ -1,13 +1,8 @@
 const SpotifyWebApi = require('spotify-web-api-node');
 
 module.exports = function fetchData(config) {
-  const {
-    username,
-    clientId,
-    clientSecret,
-    access_token,
-    refresh_token
-  } = config;
+  const { username, clientId, clientSecret, access_token, refresh_token } =
+    config;
 
   const spotifyApi = new SpotifyWebApi({ clientId, clientSecret });
   spotifyApi.setRefreshToken(refresh_token);
@@ -17,16 +12,16 @@ module.exports = function fetchData(config) {
 
   return spotifyApi
     .refreshAccessToken()
-    .then(data => {
+    .then((data) => {
       spotifyApi.setAccessToken(data.body['access_token']);
       return spotifyApi.getMe();
     })
-    .then(data => {
+    .then((data) => {
       user = data.body;
       return spotifyApi.getMyRecentlyPlayedTracks();
     })
-    .then(data => {
+    .then((data) => {
       tracks = data.body.items;
       return { username, user, tracks };
     });
-}
+};

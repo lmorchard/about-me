@@ -1,15 +1,22 @@
-const { html, unescaped } = require("../../lib/html");
-const classnames = require("classnames");
+const { html, unescaped } = require('../../lib/html');
+const classnames = require('classnames');
 
-const timeago = require("timeago.js");
-const url = require("url");
+const timeago = require('timeago.js');
+const url = require('url');
 
-const Card = require("../../templates/Card");
+const Card = require('../../templates/Card');
 
 // import FeedIcon from './icon.svg';
 
 module.exports = (props) => {
-  const { name, title, feeds, link, feedUrls, feedIcon = "assets/feedicon.svg" } = props;
+  const {
+    name,
+    title,
+    feeds,
+    link,
+    feedUrls,
+    feedIcon = 'assets/feedicon.svg',
+  } = props;
   const maxItems = props.maxItems || 12;
   const seenUrls = new Set();
 
@@ -25,7 +32,7 @@ module.exports = (props) => {
     .sort((a, b) => b.date.localeCompare(a.date));
 
   return Card(
-    { ...props, className: classnames("feed", name) },
+    { ...props, className: classnames('feed', name) },
     html`
       <h3>
         ${link ? html`<a href="${link}">${title}</a>` : title}
@@ -39,7 +46,9 @@ module.exports = (props) => {
       </h3>
       <section>
         <ul>
-          ${items.slice(0, maxItems).map((item, idx) => renderItem(item, link, idx))}
+          ${items
+            .slice(0, maxItems)
+            .map((item, idx) => renderItem(item, link, idx))}
         </ul>
       </section>
     `

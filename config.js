@@ -23,35 +23,35 @@ const {
 } = process.env;
 
 module.exports = {
-  siteTitle: "lmorchard.com - about me",
-  buildPath: "./build",
+  siteTitle: 'lmorchard.com - about me',
+  buildPath: './build',
   fetch: {
     Colophon: {},
     Blog: {
-      siteTitle: "blog.lmorchard.com",
-      baseURL: "https://blog.lmorchard.com",
-      indexURL: "https://blog.lmorchard.com/index.json",
+      siteTitle: 'blog.lmorchard.com',
+      baseURL: 'https://blog.lmorchard.com',
+      indexURL: 'https://blog.lmorchard.com/index.json',
     },
     Links: {
-      component: "Feed",
-      title: "Links",
-      link: "https://links.lmorchard.com/bookmarks/shared",
-      feedUrls: ["https://links.lmorchard.com/feeds/shared"],
+      component: 'Feed',
+      title: 'Links',
+      link: 'https://links.lmorchard.com/bookmarks/shared',
+      feedUrls: ['https://links.lmorchard.com/feeds/shared'],
     },
     Fediverse: {
-      component: "Feed",
-      title: "@lmorchard@masto.hackers.town",
-      link: "https://masto.hackers.town/@lmorchard",
-      feedUrls: ["https://masto.hackers.town/@lmorchard.rss"],
+      component: 'Feed',
+      title: '@lmorchard@masto.hackers.town',
+      link: 'https://masto.hackers.town/@lmorchard',
+      feedUrls: ['https://masto.hackers.town/@lmorchard.rss'],
     },
     Github: {
-      username: "lmorchard",
+      username: 'lmorchard',
       token: GH_API_TOKEN,
       ignoreRepos: [
-        "lmorchard/notes",
-        "mozilla/FirefoxColor",
-        "lmorchard/blog.lmorchard.com",
-      ]
+        'lmorchard/notes',
+        'mozilla/FirefoxColor',
+        'lmorchard/blog.lmorchard.com',
+      ],
     },
     PocketCasts: {
       email: POCKETCASTS_EMAIL,
@@ -74,9 +74,9 @@ module.exports = {
       clientSecret: SPOTIFY_CLIENTSECRET,
       access_token: SPOTIFY_ACCESS_TOKEN,
       refresh_token: SPOTIFY_REFRESH_TOKEN,
-      token_type: "Bearer",
+      token_type: 'Bearer',
       expires_in: 3600,
-      scope: "user-read-currently-playing user-read-recently-played",
+      scope: 'user-read-currently-playing user-read-recently-played',
     },
   },
 };

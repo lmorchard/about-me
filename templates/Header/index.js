@@ -1,4 +1,4 @@
-const { html } = require("../../lib/html");
+const { html } = require('../../lib/html');
 
 module.exports = ({ title }) => html`
   <header>
