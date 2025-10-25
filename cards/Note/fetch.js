@@ -25,4 +25,4 @@ export default async function fetchData(config) {
     url: noteUrl,
     content: $(contentSelector).html(),
   };
-};
+}

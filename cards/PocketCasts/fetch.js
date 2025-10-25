@@ -69,4 +69,4 @@ export default async function fetchData(config) {
       error: error.message,
     };
   }
-};
+}

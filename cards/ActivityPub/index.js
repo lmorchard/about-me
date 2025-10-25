@@ -4,7 +4,7 @@ import timeago from 'timeago.js';
 import Card from '../../templates/Card.js';
 
 export default (props) => {
-  const { name, username, baseUrl, profileUrl, outbox } = props;
+  const { name, username, profileUrl, outbox } = props;
   const maxItems = props.maxItems || 12;
   const items = outbox.orderedItems;
 
@@ -27,7 +27,7 @@ export default (props) => {
 
 function renderItem(item, idx) {
   const { type, object } = item;
-  const { published, url } = object;
+  const { published, url } = object || {};
   if (type in itemTypeTemplates) {
     return html`
       <li key="${idx}" class="${classnames('item', type)}">
@@ -46,14 +46,14 @@ function renderItem(item, idx) {
 }
 
 const itemTypeTemplates = {
-  Create: function renderCreateItem(item, idx) {
-    const { type, object } = item;
-    const { published, url, content } = object;
+  Create: function renderCreateItem(item, _idx) {
+    const { object } = item;
+    const { content } = object;
     return html`<div class="content">${unescaped(content)}</div>`;
   },
-  Announce: function renderAnnounceItem(item, idx) {
-    const { type, object } = item;
-    const { published, url, content, attributedTo } = object;
+  Announce: function renderAnnounceItem(item, _idx) {
+    const { object } = item;
+    const { content, attributedTo } = object;
     return html`
       <span key="0" class="retooted">
         retooted <a href="${attributedTo}">${attributedTo}</a>

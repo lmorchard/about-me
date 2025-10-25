@@ -1,23 +1,17 @@
-import { html, unescaped } from '../lib/html.js';
+import { html } from '../lib/html.js';
 import fs from 'fs';
 
 import Header from './Header/index.js';
 import Layout from './Layout/index.js';
 
 import Avatar from '../cards/Avatar/index.js';
-import Note from '../cards/Note/index.js';
 import Bio from '../cards/Bio/index.js';
 import YouTube from '../cards/YouTube/index.js';
 import Feed from '../cards/Feed/index.js';
 import Blog from '../cards/Blog/index.js';
-import Project from '../cards/Project/index.js';
 import Github from '../cards/Github/index.js';
-import Glitch from '../cards/Glitch/index.js';
-import Goodreads from '../cards/Goodreads/index.js';
 import PocketCasts from '../cards/PocketCasts/index.js';
 import Spotify from '../cards/Spotify/index.js';
-import Twitch from '../cards/Twitch/index.js';
-import ActivityPub from '../cards/ActivityPub/index.js';
 import Colophon from '../cards/Colophon/index.js';
 
 export default ({ config, data }) => html`

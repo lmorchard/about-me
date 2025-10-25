@@ -1,9 +1,8 @@
 import { html } from '../../lib/html.js';
-import classnames from 'classnames';
 import Card from '../../templates/Card.js';
 
 export default (props) => {
-  const { username, channelId, items, className, error } = props;
+  const { username, items, error } = props;
   const maxItems = props.maxItems || 12;
 
   return Card(
@@ -33,7 +32,6 @@ const videoUrl = ({ id: { videoId } }) =>
 
 function renderItem(video, idx) {
   const {
-    id: { videoId },
     snippet: {
       title,
       thumbnails: { default: thumbnail },

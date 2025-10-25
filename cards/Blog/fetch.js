@@ -20,4 +20,4 @@ export default async function fetchData(config) {
         url: `${baseURL}/${path}`,
       })),
   };
-};
+}

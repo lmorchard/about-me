@@ -28,4 +28,4 @@ export default async function fetchData(config) {
       link: review.book[0].link[0],
     })),
   };
-};
+}

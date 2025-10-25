@@ -1,5 +1,4 @@
 import { html } from '../../lib/html.js';
-import classnames from 'classnames';
 import Card from '../../templates/Card.js';
 
 export default (props) => {
@@ -21,7 +20,7 @@ export default (props) => {
   );
 };
 
-function renderPost({ title, summary, thumbnail, date, url }, baseURL, idx) {
+function renderPost({ title, _summary, thumbnail, _date, url }, baseURL, idx) {
   const thumbnailUrl = !!thumbnail
     ? thumbnail.indexOf('http') === 0
       ? thumbnail

@@ -1,9 +1,8 @@
 import { html } from '../../lib/html.js';
-import classnames from 'classnames';
 import Card from '../../templates/Card.js';
 
 export default (props) => {
-  const { username, clips, className } = props;
+  const { username, clips } = props;
   const maxItems = props.maxItems || 12;
 
   return Card(

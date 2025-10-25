@@ -11,12 +11,12 @@ export default (props) => {
   return html`
     ${Card(
       { ...props, className: classnames('avatar', className) },
-    html`
-      ${title && html`<h3>${title}</h3>`}
-      <section>
-        <img class="avatar" src="${avatarImage}" />
-      </section>
-    `
-  )}
+      html`
+        ${title && html`<h3>${title}</h3>`}
+        <section>
+          <img class="avatar" src="${avatarImage}" />
+        </section>
+      `
+    )}
   `;
 };

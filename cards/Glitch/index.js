@@ -1,5 +1,4 @@
-import { html, unescaped } from '../../lib/html.js';
-import classnames from 'classnames';
+import { html } from '../../lib/html.js';
 
 import Card from '../../templates/Card.js';
 
@@ -9,8 +8,8 @@ const projectAvatar = ({ id }) => `${CDN_URL}/project-avatar/${id}.png`;
 const projectUrl = ({ domain }) => `https://glitch.com/~${domain}`;
 
 export default (props) => {
-  const { login, userId, user } = props;
-  const { pins, projects } = user;
+  const { login, user } = props;
+  const { projects } = user;
 
   return Card(
     { ...props, className: 'glitch' },
@@ -30,7 +29,7 @@ export default (props) => {
 };
 
 function renderProject(project, idx) {
-  const { id, description, domain } = project;
+  const { description, domain } = project;
   return html`
     <li key=${idx} class="post">
       <a href=${projectUrl(project)}>

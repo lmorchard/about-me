@@ -1,5 +1,5 @@
-export default async function fetchData(config) {
+export default async function fetchData(_config) {
   return {
     fetched: new Date(),
   };
-};
+}

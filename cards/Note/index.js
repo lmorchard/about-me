@@ -2,7 +2,7 @@ import { html, unescaped } from '../../lib/html.js';
 import classnames from 'classnames';
 import Card from '../../templates/Card.js';
 
-export default (props, children) => {
+export default (props, _children) => {
   const { url, link, title, content, className } = props;
 
   return Card(

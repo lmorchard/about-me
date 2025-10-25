@@ -1,10 +1,9 @@
 import { html } from '../../lib/html.js';
-import classnames from 'classnames';
 import timeago from 'timeago.js';
 import Card from '../../templates/Card.js';
 
 export default (props) => {
-  const { email, episodes } = props;
+  const { episodes } = props;
   const maxItems = props.maxItems || 10;
 
   if (!episodes || episodes.length === 0) {

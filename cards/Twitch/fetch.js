@@ -13,4 +13,4 @@ export default async function fetchData(config) {
     username,
     clips: data.data,
   };
-};
+}

@@ -33,4 +33,4 @@ export default async function fetchData(config, name) {
   );
 
   return { name, title, link, feedUrls, feeds };
-};
+}

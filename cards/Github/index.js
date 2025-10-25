@@ -1,4 +1,4 @@
-import { html, unescaped } from '../../lib/html.js';
+import { html } from '../../lib/html.js';
 import classnames from 'classnames';
 import timeago from 'timeago.js';
 import Card from '../../templates/Card.js';
@@ -6,7 +6,7 @@ import Card from '../../templates/Card.js';
 const BASE_URL = 'https://github.com';
 
 export default (props) => {
-  const { username, events, theme } = props;
+  const { username, events } = props;
   const maxItems = props.maxItems || 15;
 
   return Card(
@@ -28,7 +28,7 @@ export default (props) => {
 };
 
 function renderEvent(event, idx) {
-  const { type, created_at } = event;
+  const { type } = event;
   const children = type in eventTemplates ? eventTemplates[type](event) : null;
   if (!children) {
     return null;
@@ -87,7 +87,7 @@ const eventTemplates = {
     }
   },
 
-  IssuesEvent: (event) => '',
+  IssuesEvent: (_event) => '',
 
   PullRequestEvent: (event) => html`
     <span>
@@ -137,7 +137,7 @@ function renderRepo(event) {
 }
 
 function renderIssue(event) {
-  const { html_url, number, title } = event.payload.issue;
+  const { html_url, number } = event.payload.issue;
   return html` <a class="issue" href="${html_url}"> Issue #${number} </a> `;
 }
 

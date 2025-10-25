@@ -1,5 +1,4 @@
-import { html, unescaped } from '../../lib/html.js';
-import classnames from 'classnames';
+import { html } from '../../lib/html.js';
 import timeago from 'timeago.js';
 import Card from '../../templates/Card.js';
 

@@ -12,11 +12,11 @@ export default async function fetchData(config, name) {
         item.object = await fetchJson(item.object);
       }
       return { ...item };
-    } catch (e) {
+    } catch {
       /* no-op */
     }
   });
   outbox.orderedItems = items.filter((item) => !!item);
 
   return { name, username, baseUrl, profileUrl, outbox };
-};
+}

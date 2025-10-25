@@ -13,7 +13,9 @@ import { fileURLToPath } from 'url';
 import config from './config.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const pkgJson = JSON.parse(readFileSync(path.join(__dirname, 'package.json'), 'utf-8'));
+const pkgJson = JSON.parse(
+  readFileSync(path.join(__dirname, 'package.json'), 'utf-8')
+);
 
 const program = new Command();
 program.version(pkgJson.version);

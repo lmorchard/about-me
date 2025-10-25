@@ -85,4 +85,4 @@ export default async function fetchData(config) {
     username,
     events: filteredEvents,
   };
-};
+}

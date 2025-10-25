@@ -24,4 +24,4 @@ export default function fetchData(config) {
       tracks = data.body.items;
       return { username, user, tracks };
     });
-};
+}
