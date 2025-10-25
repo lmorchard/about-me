@@ -1,0 +1,27 @@
+.card.project section {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+.card.project section .thumbnail img,
+.card.project section .video video {
+  margin: 0.25em;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.card.project section .iframe iframe {
+  margin: 0.125em;
+  width: 80%;
+  height: 60%;
+}
+
+.card.project section a {
+  font-weight: bold;
+}
+
+.card.project section p {
+  text-align: left;
+  margin: 1em;
+}

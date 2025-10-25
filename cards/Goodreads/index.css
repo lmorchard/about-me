@@ -1,0 +1,20 @@
+.card.goodreads ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card.goodreads ul li {
+  text-align: center;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.goodreads ul li img {
+  width: 98px;
+}

@@ -1,0 +1,12 @@
+.card.bio section {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card.bio section p {
+  margin: 1em;
+}
+
+.card.bio section a {
+  font-weight: bold;
+}

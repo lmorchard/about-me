@@ -1,0 +1,54 @@
+.card.spotify ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+
+.card.spotify ul li {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card.spotify ul li .cover {
+  margin-top: 0.25em;
+  margin-right: 0.25em;
+  flex-grow: 0;
+}
+
+.card.spotify ul li .cover img {
+  width: 48px;
+  height: 48px;
+}
+
+.card.spotify ul li .track {
+  flex-grow: 3;
+  margin-left: 1.75em;
+  text-indent: -1em;
+}
+
+.card.spotify ul li .preview {
+  margin-left: 0.25em;
+}
+
+.card.spotify ul li audio {
+  width: 64px;
+}
+
+.card.spotify ul li .name,
+.card.spotify ul li .album,
+.card.spotify ul li .artist {
+  font-weight: bold;
+}
+
+.card.spotify ul li .playedAt {
+  white-space: nowrap;
+  padding-left: 0.5em;
+  font-size: 0.75em;
+  text-decoration: underline dotted;
+}

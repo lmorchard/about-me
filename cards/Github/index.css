@@ -1,0 +1,70 @@
+.card.github ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+
+.card.github ul li {
+  clear: both;
+  margin-bottom: 1em;
+  padding-left: 1.75em;
+  text-indent: -1.75em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card.github ul li::before {
+  float: left;
+  width: 1.75em;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "fxemoji-symbols";
+}
+
+.card.github ul li.WatchEvent::before {
+  content: "\1F49F";
+}
+
+.card.github ul li.PushEvent::before {
+  content: "\27A1";
+}
+
+.card.github ul li.PullRequestEvent::before {
+  content: "\1F5E4";
+}
+
+.card.github ul li.IssueCommentEvent::before {
+  content: "\1F5E3";
+}
+
+.card.github ul li.IssuesEvent::before {
+  content: "\203C";
+}
+
+.card.github ul li.CreateEvent::before {
+  content: "\2795";
+}
+
+.card.github ul li .actor,
+.card.github ul li .repo,
+.card.github ul li .issue,
+.card.github ul li .pullRequest,
+.card.github ul li .commitHash,
+.card.github ul li .commitBranch {
+  font-weight: bold;
+}
+
+.card.github ul li .commitMessage,
+.card.github ul li .issueTitle,
+.card.github ul li .pullRequestTitle {
+  font-style: italic;
+}
+
+.card.github ul li .createdAt {
+  float: right;
+  white-space: nowrap;
+  padding: 0 0 1em 1em;
+  text-indent: 0;
+  font-size: 0.75em;
+  text-decoration: underline dotted;
+}

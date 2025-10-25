@@ -1,0 +1,22 @@
+.card.note section {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card.note section p {
+  margin: 1em;
+}
+
+.card.note ul {
+  margin-top: 0.75em;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+.card.note ul li {
+  margin-bottom: 0.75em;
+}
+
+.card.note ul a {
+  font-weight: bold;
+}

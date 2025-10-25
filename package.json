@@ -41,7 +41,6 @@
     "reload": "^3.4.2",
     "rimraf": "^6.0.1",
     "rss-parser": "^3.13.0",
-    "sass": "^1.93.2",
     "spotify-web-api-node": "^5.0.2",
     "timeago.js": "^4.0.2",
     "xml2js": "^0.6.2",
@@ -49,6 +48,7 @@
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
+    "esbuild": "^0.25.11",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

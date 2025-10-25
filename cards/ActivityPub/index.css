@@ -1,0 +1,54 @@
+.card.activitypub ul {
+  list-style: none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+
+.card.activitypub ul li {
+  clear: both;
+  margin-bottom: 1.5em;
+  padding-left: 1.75em;
+}
+
+.card.activitypub ul li::before {
+  float: left;
+  width: 1.75em;
+  margin-left: -1.75em;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "fxemoji-symbols";
+  content: "\1F5E3";
+}
+
+.card.activitypub ul li a {
+  font-weight: bold;
+}
+
+.card.activitypub ul li .retooted {
+  display: block;
+  font-style: italic;
+  font-size: 0.85em;
+  margin-bottom: -0.75em;
+  text-decoration: underline dotted;
+}
+
+.card.activitypub ul li .createdAt {
+  float: right;
+  font-weight: normal;
+  white-space: nowrap;
+  padding: 0 0 1em 1em;
+  font-size: 0.75em;
+  text-decoration: underline dotted;
+}
+
+.card.activitypub ul li .invisible {
+  display: none;
+}
+
+.card.activitypub ul li .ellipsis:after {
+  content: "...";
+}
+
+.card.activitypub ul li.Announce::before {
+  content: '\1F501';
+}

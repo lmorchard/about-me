@@ -4,10 +4,11 @@ header {
   margin: .25em;
   background: #222;
   color: #eee;
-  h1 {
-    font-family: monospace;
-    text-align: center;
-    margin: 0;
-    padding: 0.5em;
-  }
+}
+
+header h1 {
+  font-family: monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
 }

@@ -1,0 +1,21 @@
+.card.colophon section {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card.colophon section dl {
+  margin: 1em;
+}
+
+.card.colophon section dd {
+  margin-left: 1em;
+  margin-bottom: 0.75em;
+}
+
+.card.colophon section p {
+  margin: 1em;
+}
+
+.card.colophon section a {
+  font-weight: bold;
+}

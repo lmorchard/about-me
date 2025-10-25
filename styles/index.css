@@ -1,0 +1,378 @@
+/* ==================== CSS Custom Properties (Variables) ==================== */
+
+:root {
+  /* Base color palette - whites */
+  --color-alabaster: #f1e9e9;
+  --color-wisteria: #c2addb;
+
+  /* Base color palette - blacks */
+  --color-licorice: #0e1116;
+  --color-rich-black: #020402;
+  --color-smoky-black: rgba(34, 9, 1, 1);
+
+  /* Base color palette - purples */
+  --color-lavender: #9c86b7;
+  --color-taupe: #715b64;
+  --color-wine: #6a3937;
+  --color-black-bean: #380000;
+  --color-gunmetal: #272838;
+  --color-deep-purple: #1a1423;
+
+  /* Base color palette - blues */
+  --color-cerulean: #9ac2d8;
+  --color-prussian: #0b3954;
+
+  /* Base color palette - reds */
+  --color-prune: #70231f;
+  --color-sienna: #3b0d11;
+  --color-puce: rgba(98, 23, 8, 1);
+  --color-coral: rgba(206, 106, 70, 1);
+  --color-tangerine: rgba(241, 135, 1, 1);
+
+  /* Base color palette - red browns */
+  --color-ruddy-brown: rgba(178, 94, 49, 1);
+  --color-rufous: rgba(148, 27, 12, 1);
+  --color-tenne: #c96b00;
+  --color-rust: #b82e16;
+  --color-carmine: #963030;
+  --color-burnt-umber: #822d2a;
+  --color-caput-mortuum: rgba(86, 35, 31, 1);
+  --color-chestnut: rgba(140, 65, 44, 1);
+
+  /* Theme palettes */
+  --color-primary-0: #2E1A25;
+  --color-primary-1: #DBDBDB;
+  --color-primary-2: #BCB5B9;
+  --color-primary-3: #280619;
+  --color-primary-4: #000000;
+
+  --color-secondary-1-0: #393620;
+  --color-secondary-1-1: #FFFFFF;
+  --color-secondary-1-2: #E8E7E0;
+  --color-secondary-1-3: #322D08;
+  --color-secondary-1-4: #000000;
+
+  --color-secondary-2-0: #1D1727;
+  --color-secondary-2-1: #C2C2C2;
+  --color-secondary-2-2: #9B999E;
+  --color-secondary-2-3: #120822;
+  --color-secondary-2-4: #000000;
+
+  --color-complement-0: #2D351E;
+  --color-complement-1: #F2F2F2;
+  --color-complement-2: #D5D8D0;
+  --color-complement-3: #212E07;
+  --color-complement-4: #000000;
+}
+
+/* ==================== Base Styles ==================== */
+
+@font-face {
+  font-family: "fxemoji-symbols";
+  src: url('./assets/fxemoji-symbols/symbols.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-rich-black);
+  color: #eeeeee;
+  font: 14px sans-serif;
+  text-align: inherit;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Layout - Cards Container ==================== */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==================== Card Base Styles ==================== */
+
+.card {
+  position: relative;
+  flex: 1 100%;
+  height: 400px;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin: .25em;
+  background: #222;
+  color: #eee;
+  line-height: 1.5em;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card > h3 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.25em;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 0.25em 0.25em 0 0;
+  background-color: #333;
+  padding: 0.5em 0;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.card > h4 {
+  font-size: 1.125em;
+  font-family: monospace;
+  position: absolute;
+  padding: 0.25em 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background: #333;
+  opacity: 0.8;
+}
+
+.card > section {
+  overflow-x: hidden;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card > section > p {
+  margin: 1em 2em;
+}
+
+.card.has-h3 > section {
+  height: calc(100% - 3em);
+  margin-top: 3em;
+}
+
+.card.has-h4 > section {
+  height: calc(100% - 2.5em);
+  margin-bottom: 2.5em;
+}
+
+.card.with-h3.with-h4 > section {
+  height: calc(100% - 5.5em);
+}
+
+.card button {
+  cursor: pointer;
+  margin: 0 0.5em;
+  padding: 0.25em 0.75em;
+  border: 1px solid;
+  border-radius: 0.5em;
+  opacity: 0.9;
+  box-shadow: 0px 0px 8px #111;
+}
+
+.card button:active {
+  box-shadow: 0px 0px 2px #111;
+}
+
+.card button:hover {
+  opacity: 1.0;
+}
+
+/* ==================== Card Themes ==================== */
+
+/* Primary theme */
+.card.theme-primary {
+  background: var(--color-primary-0);
+  color: var(--color-primary-2);
+}
+
+.card.theme-primary h3,
+.card.theme-primary h4 {
+  background-color: var(--color-primary-3);
+}
+
+.card.theme-primary a {
+  color: var(--color-primary-1);
+  text-decoration: none;
+}
+
+.card.theme-primary a:hover {
+  text-decoration: underline;
+}
+
+.card.theme-primary button {
+  border-color: var(--color-primary-3);
+  color: var(--color-primary-4);
+  background-color: var(--color-primary-2);
+  box-shadow: 0px 0px 8px var(--color-primary-4);
+}
+
+.card.theme-primary button:active {
+  box-shadow: 0px 0px 2px var(--color-primary-4);
+}
+
+/* Secondary-1 theme */
+.card.theme-secondary-1 {
+  background: var(--color-secondary-1-0);
+  color: var(--color-secondary-1-2);
+}
+
+.card.theme-secondary-1 h3,
+.card.theme-secondary-1 h4 {
+  background-color: var(--color-secondary-1-3);
+}
+
+.card.theme-secondary-1 a {
+  color: var(--color-secondary-1-1);
+  text-decoration: none;
+}
+
+.card.theme-secondary-1 a:hover {
+  text-decoration: underline;
+}
+
+.card.theme-secondary-1 button {
+  border-color: var(--color-secondary-1-3);
+  color: var(--color-secondary-1-4);
+  background-color: var(--color-secondary-1-2);
+  box-shadow: 0px 0px 8px var(--color-secondary-1-4);
+}
+
+.card.theme-secondary-1 button:active {
+  box-shadow: 0px 0px 2px var(--color-secondary-1-4);
+}
+
+/* Secondary-2 theme */
+.card.theme-secondary-2 {
+  background: var(--color-secondary-2-0);
+  color: var(--color-secondary-2-2);
+}
+
+.card.theme-secondary-2 h3,
+.card.theme-secondary-2 h4 {
+  background-color: var(--color-secondary-2-3);
+}
+
+.card.theme-secondary-2 a {
+  color: var(--color-secondary-2-1);
+  text-decoration: none;
+}
+
+.card.theme-secondary-2 a:hover {
+  text-decoration: underline;
+}
+
+.card.theme-secondary-2 button {
+  border-color: var(--color-secondary-2-3);
+  color: var(--color-secondary-2-4);
+  background-color: var(--color-secondary-2-2);
+  box-shadow: 0px 0px 8px var(--color-secondary-2-4);
+}
+
+.card.theme-secondary-2 button:active {
+  box-shadow: 0px 0px 2px var(--color-secondary-2-4);
+}
+
+/* Complement theme */
+.card.theme-complement {
+  background: var(--color-complement-0);
+  color: var(--color-complement-2);
+}
+
+.card.theme-complement h3,
+.card.theme-complement h4 {
+  background-color: var(--color-complement-3);
+}
+
+.card.theme-complement a {
+  color: var(--color-complement-1);
+  text-decoration: none;
+}
+
+.card.theme-complement a:hover {
+  text-decoration: underline;
+}
+
+.card.theme-complement button {
+  border-color: var(--color-complement-3);
+  color: var(--color-complement-4);
+  background-color: var(--color-complement-2);
+  box-shadow: 0px 0px 8px var(--color-complement-4);
+}
+
+.card.theme-complement button:active {
+  box-shadow: 0px 0px 2px var(--color-complement-4);
+}
+
+/* ==================== Responsive Design ==================== */
+
+@media screen and (max-width: 50em) {
+  .card.has-h3,
+  .card.has-h4,
+  .card.has-h3 section {
+    height: unset;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 0.5em);
+  }
+
+  .card.span-wide,
+  .card.span-full {
+    flex: 0 3 100%;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .card {
+    flex: 0 1 calc(33% - 0.3em);
+  }
+
+  .card.span-wide {
+    flex: 0 2 66%;
+  }
+
+  .card.span-full {
+    flex: 0 3 100%;
+  }
+}
+
+@media screen and (min-width: 110em) {
+  .card {
+    flex: 0 1 calc(25% - 0.5em);
+  }
+
+  .card.span-wide {
+    flex: 0 2 66%;
+  }
+
+  .card.span-full {
+    flex: 0 3 100%;
+  }
+}
