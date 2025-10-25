@@ -1,11 +1,11 @@
-const { html, unescaped } = require('../../lib/html');
-const classnames = require('classnames');
-const timeago = require('timeago.js');
-const Card = require('../../templates/Card');
+import { html, unescaped } from '../../lib/html.js';
+import classnames from 'classnames';
+import timeago from 'timeago.js';
+import Card from '../../templates/Card.js';
 
 const BASE_URL = 'https://github.com';
 
-module.exports = (props) => {
+export default (props) => {
   const { username, events, theme } = props;
   const maxItems = props.maxItems || 15;
 

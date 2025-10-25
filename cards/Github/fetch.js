@@ -1,4 +1,4 @@
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const {
     username,
     token,

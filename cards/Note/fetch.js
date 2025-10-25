@@ -1,7 +1,7 @@
-const url = require('url');
-const cheerio = require('cheerio');
+import url from 'url';
+import cheerio from 'cheerio';
 
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const {
     url: noteUrl,
     title,

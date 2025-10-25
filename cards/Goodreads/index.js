@@ -1,8 +1,8 @@
-const { html, unescaped } = require('../../lib/html');
-const classnames = require('classnames');
-const Card = require('../../templates/Card');
+import { html, unescaped } from '../../lib/html.js';
+import classnames from 'classnames';
+import Card from '../../templates/Card.js';
 
-module.exports = (props) => {
+export default (props) => {
   const { username, link, reviews, className } = props;
   const maxItems = props.maxItems || 15;
 

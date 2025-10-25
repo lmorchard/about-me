@@ -1,7 +1,8 @@
-require('dotenv').config({ quiet: true });
+import dotenv from 'dotenv';
+dotenv.config({ quiet: true });
 
 // Validate environment variables on load
-const { checkEnv } = require('./lib/env');
+import { checkEnv } from './lib/env.js';
 checkEnv();
 
 const {
@@ -26,7 +27,7 @@ const {
   SPOTIFY_REFRESH_TOKEN,
 } = process.env;
 
-module.exports = {
+export default {
   siteTitle: 'lmorchard.com - about me',
   buildPath: './build',
   fetch: {

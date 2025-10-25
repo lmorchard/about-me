@@ -1,15 +1,14 @@
-const { html, unescaped } = require('../../lib/html');
-const classnames = require('classnames');
-const commonmark = require('commonmark');
+import { html, unescaped } from '../../lib/html.js';
+import classnames from 'classnames';
 
-const Card = require('../../templates/Card');
+import Card from '../../templates/Card.js';
 
 const CDN_URL = 'https://cdn.glitch.com';
 const userUrl = ({ login }) => `https://glitch.com/@${login}`;
 const projectAvatar = ({ id }) => `${CDN_URL}/project-avatar/${id}.png`;
 const projectUrl = ({ domain }) => `https://glitch.com/~${domain}`;
 
-module.exports = (props) => {
+export default (props) => {
   const { login, userId, user } = props;
   const { pins, projects } = user;
 

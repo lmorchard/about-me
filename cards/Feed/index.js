@@ -1,14 +1,14 @@
-const { html, unescaped } = require('../../lib/html');
-const classnames = require('classnames');
+import { html, unescaped } from '../../lib/html.js';
+import classnames from 'classnames';
 
-const timeago = require('timeago.js');
-const url = require('url');
+import timeago from 'timeago.js';
+import url from 'url';
 
-const Card = require('../../templates/Card');
+import Card from '../../templates/Card.js';
 
 // import FeedIcon from './icon.svg';
 
-module.exports = (props) => {
+export default (props) => {
   const {
     name,
     title,

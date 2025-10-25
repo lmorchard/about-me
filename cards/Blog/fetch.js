@@ -1,6 +1,6 @@
 const cmp = (a, b) => a.localeCompare(b);
 
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const { siteTitle, baseURL, indexURL } = config;
   const maxPosts = config.maxPosts || 15;
 

@@ -1,6 +1,6 @@
-const { html } = require('../../lib/html');
+import { html } from '../../lib/html.js';
 
-module.exports = (children) => html`
+export default (children) => html`
   <div class="centered">
     <section class="cards">${children}</section>
   </div>

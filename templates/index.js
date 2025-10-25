@@ -1,26 +1,26 @@
-const { html, unescaped } = require('../lib/html');
-const fs = require('fs');
+import { html, unescaped } from '../lib/html.js';
+import fs from 'fs';
 
-const Header = require('./Header');
-const Layout = require('./Layout');
+import Header from './Header/index.js';
+import Layout from './Layout/index.js';
 
-const Avatar = require('../cards/Avatar');
-const Note = require('../cards/Note');
-const Bio = require('../cards/Bio');
-const YouTube = require('../cards/YouTube');
-const Feed = require('../cards/Feed');
-const Blog = require('../cards/Blog');
-const Project = require('../cards/Project');
-const Github = require('../cards/Github');
-const Glitch = require('../cards/Glitch');
-const Goodreads = require('../cards/Goodreads');
-const PocketCasts = require('../cards/PocketCasts');
-const Spotify = require('../cards/Spotify');
-const Twitch = require('../cards/Twitch');
-const ActivityPub = require('../cards/ActivityPub');
-const Colophon = require('../cards/Colophon');
+import Avatar from '../cards/Avatar/index.js';
+import Note from '../cards/Note/index.js';
+import Bio from '../cards/Bio/index.js';
+import YouTube from '../cards/YouTube/index.js';
+import Feed from '../cards/Feed/index.js';
+import Blog from '../cards/Blog/index.js';
+import Project from '../cards/Project/index.js';
+import Github from '../cards/Github/index.js';
+import Glitch from '../cards/Glitch/index.js';
+import Goodreads from '../cards/Goodreads/index.js';
+import PocketCasts from '../cards/PocketCasts/index.js';
+import Spotify from '../cards/Spotify/index.js';
+import Twitch from '../cards/Twitch/index.js';
+import ActivityPub from '../cards/ActivityPub/index.js';
+import Colophon from '../cards/Colophon/index.js';
 
-module.exports = ({ config, data }) => html`
+export default ({ config, data }) => html`
   <html lang="en">
     <head>
       <meta charset="utf-8" />

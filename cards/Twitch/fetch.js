@@ -1,4 +1,4 @@
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const { username, userId, clientId, accessToken } = config;
 
   const url = `https://api.twitch.tv/helix/clips?broadcaster_id=${userId}`;

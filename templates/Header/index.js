@@ -1,6 +1,6 @@
-const { html } = require('../../lib/html');
+import { html } from '../../lib/html.js';
 
-module.exports = ({ title }) => html`
+export default ({ title }) => html`
   <header>
     <h1>${title}</h1>
   </header>

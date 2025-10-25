@@ -1,7 +1,7 @@
-const prettier = require('eslint-plugin-prettier');
-const prettierConfig = require('eslint-config-prettier');
+import prettier from 'eslint-plugin-prettier';
+import prettierConfig from 'eslint-config-prettier';
 
-module.exports = [
+export default [
   {
     ignores: ['node_modules/**', 'build/**', 'dist/**', '*.min.js'],
   },

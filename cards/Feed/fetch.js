@@ -1,6 +1,6 @@
-const Parser = require('rss-parser');
+import Parser from 'rss-parser';
 
-module.exports = async function fetchData(config, name) {
+export default async function fetchData(config, name) {
   const { title, link, feedUrls } = config;
   const parser = new Parser();
 

@@ -1,16 +1,19 @@
 #!/usr/bin/env node
-const path = require('path');
-const { mkdirp } = require('mkdirp');
-const { rimraf } = require('rimraf');
-const { fs } = require('./lib/files');
-const { fetchAll } = require('./lib/fetch');
-const { buildStyles } = require('./lib/styles');
-const { buildAssets } = require('./lib/assets');
-const indexTemplate = require('./templates');
+import path from 'path';
+import { mkdirp } from 'mkdirp';
+import { rimraf } from 'rimraf';
+import { fs } from './lib/files.js';
+import { fetchAll } from './lib/fetch.js';
+import { buildStyles } from './lib/styles.js';
+import { buildAssets } from './lib/assets.js';
+import indexTemplate from './templates/index.js';
+import { Command } from 'commander';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import config from './config.js';
 
-const { Command } = require('commander');
-const pkgJson = require('./package.json');
-const config = require('./config');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkgJson = JSON.parse(readFileSync(path.join(__dirname, 'package.json'), 'utf-8'));
 
 const program = new Command();
 program.version(pkgJson.version);

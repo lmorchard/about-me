@@ -1,6 +1,6 @@
-const { fetchJson } = require('../../lib/utils');
+import { fetchJson } from '../../lib/utils.js';
 
-module.exports = async function fetchData(config, name) {
+export default async function fetchData(config, name) {
   const { username, channelId, key } = config;
   return {
     username,

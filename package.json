@@ -1,6 +1,7 @@
 {
   "name": "about-me",
   "version": "2.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "npm run full-build && npm-run-all --parallel watch serve",
@@ -30,7 +31,7 @@
     "dotenv": "^17.2.3",
     "escape-html": "^1.0.3",
     "gh-pages": "^6.3.0",
-    "globby": "^11.1.0",
+    "globby": "^15.0.0",
     "http-server": "^14.1.1",
     "marked": "^16.4.1",
     "mkdirp": "^3.0.1",

@@ -1,6 +1,6 @@
-const SpotifyWebApi = require('spotify-web-api-node');
+import SpotifyWebApi from 'spotify-web-api-node';
 
-module.exports = function fetchData(config) {
+export default function fetchData(config) {
   const { username, clientId, clientSecret, access_token, refresh_token } =
     config;
 

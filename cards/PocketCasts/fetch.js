@@ -1,6 +1,6 @@
-const PocketCasts = require('../../lib/pocketcasts-client');
+import PocketCasts from '../../lib/pocketcasts-client.js';
 
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const { email, password, excludeUrlPatterns = [] } = config;
 
   if (!email || !password) {

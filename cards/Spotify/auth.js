@@ -1,4 +1,4 @@
-const SpotifyWebApi = require('spotify-web-api-node');
+import SpotifyWebApi from 'spotify-web-api-node';
 const config = require(__dirname + '/../../config').fetch.Spotify;
 
 const code = process.argv[2];

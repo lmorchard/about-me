@@ -1,8 +1,8 @@
-const { html, unescaped } = require('../../lib/html');
-const classnames = require('classnames');
-const Card = require('../../templates/Card');
+import { html, unescaped } from '../../lib/html.js';
+import classnames from 'classnames';
+import Card from '../../templates/Card.js';
 
-module.exports = (props, children) => {
+export default (props, children) => {
   const { url, link, title, content, className } = props;
 
   return Card(

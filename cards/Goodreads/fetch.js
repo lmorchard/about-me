@@ -1,10 +1,10 @@
-const xml2js = require('xml2js');
-const { promisify } = require('util');
-const { mapAll } = require('../../lib/utils');
+import xml2js from 'xml2js';
+import { promisify } from 'util';
+import { mapAll } from '../../lib/utils.js';
 
 const parseString = promisify(xml2js.parseString);
 
-module.exports = async function fetchData(config) {
+export default async function fetchData(config) {
   const { user_id, key } = config;
   const [user, reviews] = await mapAll(
     [

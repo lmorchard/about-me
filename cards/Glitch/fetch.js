@@ -1,10 +1,10 @@
-const { fetchJson } = require('../../lib/utils');
+import { fetchJson } from '../../lib/utils.js';
 
 const BASE_URL = 'https://api.glitch.com';
 
 const fetchAPI = (path) => fetchJson(`${BASE_URL}/${path}`);
 
-module.exports = async function fetchData(config, name) {
+export default async function fetchData(config, name) {
   const { login } = config;
 
   const userId = await fetchAPI(`userId/byLogin/${login}`);

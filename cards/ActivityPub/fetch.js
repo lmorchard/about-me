@@ -1,6 +1,6 @@
-const { mapAll, fetchJson } = require('../../lib/utils');
+import { mapAll, fetchJson } from '../../lib/utils.js';
 
-module.exports = async function fetchData(config, name) {
+export default async function fetchData(config, name) {
   const { username, baseUrl, profileUrl, outboxUrl } = config;
   const outbox = await fetchJson(outboxUrl);
 

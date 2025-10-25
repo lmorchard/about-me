@@ -1,9 +1,9 @@
-const { html } = require('../../lib/html');
-const classnames = require('classnames');
-const timeago = require('timeago.js');
-const Card = require('../../templates/Card');
+import { html } from '../../lib/html.js';
+import classnames from 'classnames';
+import timeago from 'timeago.js';
+import Card from '../../templates/Card.js';
 
-module.exports = (props) => {
+export default (props) => {
   const { email, episodes } = props;
   const maxItems = props.maxItems || 10;
 
