@@ -43,9 +43,9 @@ export default ({ config, data }) => html`
               title: 'About Me',
               src: fs.readFileSync('./content/bio.md', 'utf-8'),
             })}
-            ${Feed({ theme: theme(), maxItems: 12, ...data.Fediverse })}
-            ${Feed({ theme: theme(), maxItems: 12, ...data.Links })}
             ${Blog({ theme: theme(), ...data.Blog })}
+            ${Feed({ theme: theme(), maxItems: 12, ...data.Links })}
+            ${Feed({ theme: theme(), maxItems: 12, ...data.Fediverse })}
             ${Github({ theme: theme(), maxItems: 7, ...data.Github })}
             ${YouTube({ theme: theme(), maxItems: 12, ...data.YouTube })}
             ${PocketCasts({
