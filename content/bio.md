@@ -2,7 +2,8 @@
 
 [serial enthusiast]: https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/
 
-This page collects a bunch of the stuff I do online. If you feel like it, drop me [an email](mailto:me@lmorchard.com) or
+This page collects a bunch of the stuff I do online. If you feel like it, drop me
+<a rel="me" href="mailto:me@lmorchard.com">an email to <code>me@lmorchard.com</code></a> or
 [a toot](https://masto.hackers.town/@lmorchard) &mdash; or find me in one of
 the other usual places below.
 
