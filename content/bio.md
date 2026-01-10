@@ -9,6 +9,7 @@ the other usual places below:
 
 - <a rel="me" href="https://blog.lmorchard.com">🧾 Blog</a>
 - <a rel="me" href="https://masto.hackers.town/@lmorchard">🐘 Fediverse</a>
+- <a rel="me atproto" href="https://bsky.app/profile/lmorchard.com">🦋 Bluesky</a>
 - <a rel="me" href="https://github.com/lmorchard">🐙 Github</a>
 - <a rel="me" href="https://twitch.tv/lmorchard">📺 Twitch</a>
 - <a rel="me" href="https://www.youtube.com/@LesOrchard">📺 YouTube</a>
