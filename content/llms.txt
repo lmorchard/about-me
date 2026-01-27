@@ -1,0 +1,131 @@
+# Les Orchard
+
+> Software developer, writer, and author with 25+ years building on the web. Wrote books on RSS, feeds, and del.icio.us in the 2000s. Built developer tools at Mozilla for over a decade. Tinkering with personal projects around RSS feeds, IndieWeb practices, and tools for managing personal digital content. Active in open source and the decentralized web.
+
+## About
+
+I'm a web developer who has been building things on the internet since 1995. I describe myself as a "serial enthusiast" - my ADHD brain leads to bursts of intense focus on projects, then moving on to the next interesting challenge. I embrace this pattern rather than fighting it, which has led to exploring many different technologies and problem spaces over the years.
+
+I've worked at Mozilla, GitHub, and Yahoo, contributed to Firefox, del.icio.us, and MDN, and authored several technical books in the 2000s on RSS, feeds, and JavaScript frameworks.
+
+**Education**: B.S. Computer Science and Psychology, *cum laude*, Central Michigan University (1997)
+
+## Work History
+
+**Staff Engineer, New Products Team**, Mozilla Corporation (2023-Present)
+- Developing products and prototypes around machine learning, generative AI, and social media
+- Built APIs and service integrations for Tabstack.ai (web content transformation for AI)
+- Built agent evaluation infrastructure using LLM-as-Judge for browser automation
+- Built UX and integrations for Soloist.ai (AI-powered website builder)
+- Built web, mobile clients, and Discord integration for Didthis.app (hobby journaling)
+
+**Staff Engineer, Planning & Tracking**, GitHub (2022-2023)
+- Led efforts on hierarchical task tracking platform integrated with GitHub Issues and Projects
+- Full-stack engineering with TypeScript, Ruby, Go, and C# in microservices architecture
+- Built GitHub-Flavored Markdown parsing and React UI for hierarchical task relationships
+- Applied Azure CosmosDB graph database for managing task and issue relationships
+- Built GraphQL APIs exposing issue hierarchies to mobile and React-based web clients
+
+**Staff Engineer**, Mozilla Corporation (2008-2022)
+- **Firefox Experimenter** (2020-2022): Internal tool for experimentation and data science in Firefox features. React UI, GraphQL APIs in Python/Django, Remote Settings deployment.
+- **Firefox Accounts & Subscriptions** (2019-2020): Identity system using OAuth & OpenID Connect. React-based subscription management, Stripe Payments integration, Mozilla VPN APIs.
+- **Firefox Test Pilot** (2015-2019): Tech lead on testpilot.firefox.com distribution channel for experimental Firefox features. Built Firefox Color (browser theme creation with React/Redux and Firefox add-on). Hosted live streaming on Twitch/YouTube, mentored Outreachy intern.
+- **Web Application Engineering** (2014-2015): Node.js modules for Firefox and Firefox OS development/testing.
+- **Mozilla Developer Network** (2011-2014): Tech lead on Kuma, Django-based CMS for MDN. Built KumaScript (Node.js microservice for document scripts). Migrated 50,000 pages and 1,000 Lua macros to new platform.
+- **Web Developer** (2008-2011): Firefox ecosystem web apps (marketing, support, updates, sync, crashes). Implemented scalable "snippets" service for Firefox new tab page.
+
+**del.icio.us Engineer**, Yahoo! (2006-2008)
+- Implemented and documented del.icio.us 2.0 public REST API
+- Built embeddable widgets for social bookmarking service
+- Contributed to one of the pioneering social bookmarking platforms
+
+**Earlier Roles** (1995-2006)
+- Senior Interface Engineer at Organic (RSS-based Auto Show portals, Flash frameworks)
+- Technical Lead at J. Walter Thompson (ASP.NET web apps for Ford, White Castle)
+- Lead Software Architect at ePrize LLC (gamified promotions framework)
+- Various web development roles at agencies in Detroit area
+- Webmaster at The Industry Network ISP (1995-1997)
+
+For detailed work history, see my [resume (PDF)](https://lmorchard.com/resume.pdf).
+
+## Publications
+
+Author and contributor on technical books, primarily focused on RSS/feeds, web APIs, and JavaScript:
+
+- **Author**, *Hacking RSS and Atom* (Wiley, 2005) - ISBN: 978-0764597589
+- **Author**, *Hacking del.icio.us* (Wiley, 2006) - ISBN: 978-0470037850
+- **Author**, *Concise Guide to Dojo* (Wiley, 2008) - ISBN: 978-0470452028
+- **Tech Editor**, *Facebook Application Development* (Wiley, 2008) - ISBN: 978-0470246665
+- **Co-author**, *Professional JavaScript Frameworks* (Wiley, 2009) - ISBN: 978-0470384596
+- **Contributor**, *Spidering Hacks* (O'Reilly, 2003) - ISBN: 978-0596005771
+
+These books establish long-term expertise in RSS feeds, web syndication, social bookmarking APIs, and JavaScript framework development - themes that continue in my current personal projects.
+
+## Current Projects
+
+**Feed Reading & Aggregation**
+- [feedspool-go](https://github.com/lmorchard/feedspool-go): CLI tool and static site generator for RSS/Atom feeds with SQLite storage. Implements "river of news" philosophy without read/unread state. Features lazy-loading web components architecture for smooth progressive loading.
+- [linkding-to-markdown](https://github.com/lmorchard/linkding-to-markdown): Export bookmarks from Linkding to Markdown format.
+- [mastodon-to-markdown](https://github.com/lmorchard/mastodon-to-markdown): Export Mastodon toots to Markdown format.
+
+**Blogging & Content**
+- [blog.lmorchard.com](https://blog.lmorchard.com): Personal blog since early 2000s covering web development, RSS, IndieWeb, tinkering, and metablogging.
+- [Easy-Blog Oven](https://github.com/lmorchard/blog.lmorchard.com): Custom Node.js static site generator integrated with Obsidian for frictionless publishing.
+- [weeknotes-blog-post-composer](https://github.com/lmorchard/lmorchard-agent-skills/tree/main/weeknotes-blog-post-composer): Claude Code skill for drafting blog posts from aggregated social media and bookmark data.
+
+**Personal Infrastructure**
+- [about-me](https://github.com/lmorchard/about-me): This site - aggregates blog posts, GitHub activity, Mastodon toots, and media consumption across platforms.
+
+## Writing & Themes
+
+My blog explores:
+- **RSS & Feed Readers**: Building tools that respect reader autonomy, "river of news" patterns, alternatives to algorithmic feeds. Continues themes from *Hacking RSS and Atom* (2005).
+- **IndieWeb & PESOS**: Own your content, syndication strategies, decentralized web practices.
+- **Web Development**: Web components, static site generation, progressive enhancement, modern JavaScript.
+- **Metablogging**: Writing about writing, sustainable creative practices, blogging as "search query to find fascinating people".
+- **Tinkering**: Retrocomputing (Commodore 64, BBS systems), homelabs, ESP32 projects, 3D printing.
+
+Key concepts:
+- **Serial Enthusiasm**: Embracing rather than fighting bursts of intense project focus. [Confessions of a Serial Enthusiast](https://blog.lmorchard.com/2006/05/26/confessions-of-a-serial-enthusiast/) (2006)
+- **Pebbling**: Finding and sharing interesting things like penguins presenting shiny pebbles. Being a "human repeater" for interesting content.
+- **River of News**: Feed reading without inbox anxiety or read/unread state. Inspired by Dave Winer's philosophy.
+- **PESOS**: Publish Elsewhere, Syndicate (to your) Own Site. Collecting social media posts and reshaping them for my own blog.
+
+## Elsewhere
+
+- **Blog**: [blog.lmorchard.com](https://blog.lmorchard.com) ([RSS](https://blog.lmorchard.com/index.rss))
+- **Mastodon**: [@lmorchard@masto.hackers.town](https://masto.hackers.town/@lmorchard)
+- **GitHub**: [github.com/lmorchard](https://github.com/lmorchard)
+- **YouTube**: [@LesOrchard](https://www.youtube.com/@LesOrchard) - Tutorials and tinkering videos
+- **Twitch**: [twitch.tv/lmorchard](https://twitch.tv/lmorchard) - Occasional coding streams
+- **Discord**: [discord.com/invite/UXeuPNv](https://discord.com/invite/UXeuPNv)
+
+## Contact
+
+- Email: [me@lmorchard.com](mailto:me@lmorchard.com)
+- Mastodon: [@lmorchard@masto.hackers.town](https://masto.hackers.town/@lmorchard)
+
+## Technical Background
+
+**Languages & Frameworks**: JavaScript/Node.js, Python, Go, TypeScript, Ruby, C#, React, Redux, Django, web components
+
+**Areas**: Web development, browser tooling, static site generation, RSS/feed parsing, REST APIs, GraphQL, SQLite, developer tools, authentication systems (OAuth, OpenID Connect), identity management, subscription/payment systems (Stripe), experimentation platforms, AI/ML integration
+
+**Databases**: SQLite, PostgreSQL, Azure CosmosDB (graph database)
+
+**Specialties**:
+- Developer tools and browser extensions
+- Static site generation and progressive enhancement
+- RSS/Atom feed parsing and aggregation (25+ years)
+- Social bookmarking and personal knowledge management
+- Remote Settings and feature flag systems
+- Live streaming and technical content creation
+
+**Interests**: IndieWeb protocols, decentralized systems, personal data ownership, sustainable web technologies, progressive enhancement, AI tools for productivity
+
+## Optional
+
+- [Full blog archive](https://blog.lmorchard.com/archives/): Posts dating back to early 2000s
+- [Blog llms.txt](https://blog.lmorchard.com/llms.txt): Detailed description of blog themes and philosophy
+- [Source code for this site](https://github.com/lmorchard/about-me): Built with Node.js, aggregates data via GitHub Actions
+- [Resume (PDF)](https://lmorchard.com/resume.pdf): Complete work history and details

@@ -6,6 +6,7 @@ import { fs } from './lib/files.js';
 import { fetchAll } from './lib/fetch.js';
 import { buildStyles } from './lib/styles.js';
 import { buildAssets } from './lib/assets.js';
+import { buildContent } from './lib/content.js';
 import indexTemplate from './templates/index.js';
 import { Command } from 'commander';
 import { readFileSync } from 'fs';
@@ -31,6 +32,7 @@ program.command('build').description('build the page').action(buildAll);
 async function buildAll() {
   await buildStyles();
   await buildAssets();
+  await buildContent();
   await buildIndexPage();
 }
 
