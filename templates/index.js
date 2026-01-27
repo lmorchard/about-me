@@ -27,7 +27,7 @@ export default ({ config, data }) => html`
         href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16"
       />
       <script type="application/ld+json">
-        ${JSON.stringify(generatePersonSchema(), null, 2)}
+        ${() => JSON.stringify(generatePersonSchema(), null, 2)}
       </script>
     </head>
     <body>
