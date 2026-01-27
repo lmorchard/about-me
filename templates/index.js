@@ -1,5 +1,6 @@
 import { html } from '../lib/html.js';
 import fs from 'fs';
+import { generatePersonSchema } from '../lib/schema.js';
 
 import Header from './Header/index.js';
 import Layout from './Layout/index.js';
@@ -25,6 +26,9 @@ export default ({ config, data }) => html`
         rel="shortcut icon"
         href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16"
       />
+      <script type="application/ld+json">
+        ${JSON.stringify(generatePersonSchema(), null, 2)}
+      </script>
     </head>
     <body>
       <div id="root">
