@@ -12,12 +12,16 @@ FROM node:22
 WORKDIR /app
 
 # Dependencies first, so an edit to templates or content does not reinstall
-# them. yarn install without --frozen-lockfile to match what the GitHub
-# workflow did for years; this repo carries both a yarn.lock and a
-# package-lock.json, and pinning strictly here would be a behaviour change
-# bundled into a hosting move.
-COPY package.json yarn.lock ./
-RUN yarn install
+# them.
+#
+# npm ci, not the yarn install the GitHub workflow used. yarn 1.x resolves every
+# platform-specific optional dependency regardless of platform, so it fails here
+# on @rollup/rollup-win32-x64-msvc -- a Windows binary this build will never
+# need. npm honours the os/cpu fields and installs only the matching one. It is
+# also the reproducible choice: ci installs the lockfile exactly, where
+# `yarn install` was free to resolve fresh versions.
+COPY package.json package-lock.json ./
+RUN npm ci --no-audit --no-fund
 
 COPY . .
 
