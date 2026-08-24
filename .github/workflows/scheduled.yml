@@ -1,4 +1,4 @@
-name: Scheduled deploy to AWS S3
+name: Scheduled deploy to aerostat02
 on:
   schedule:
     - cron:  '0 * * * *'
@@ -43,21 +43,44 @@ jobs:
         GOODREADS_USER_NAME: ${{ secrets.GOODREADS_USER_NAME }}
         GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
         GOODREADS_SECRET: ${{ secrets.GOODREADS_SECRET }}
-    - name: Publish to S3
-      uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'us-east-1'
-        SOURCE_DIR: 'build'
-    - name: Invalidate Cloudfront
-      uses: chetan/invalidate-cloudfront-action@master
-      env:
-        DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
-        PATHS: '/*'
-        AWS_REGION: 'us-east-1'
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    # about-me owns exactly these paths under /srv/www/lmorchard.com. The rest
+    # of that directory -- images/, webfinger/, .well-known/, resume.html, the
+    # 2017 archive -- is hand-maintained in lmorchard/lmorchard.com, whose
+    # publish workflow runs `rsync --delete` and excludes this same list, so it
+    # can neither revert nor remove what is generated here.
+    #
+    # That exclude list is a coupling between two repos, so this step fails the
+    # build if build/ grows a path the list does not cover. Breaking here is the
+    # point: the alternative is a new file publishing fine and then being
+    # deleted an hour later by an unrelated push, which is far worse to debug.
+    - name: Check build output against the agreed path list
+      run: |
+        expected=$(echo "assets bio.md index.css index.html index.json llms.txt resume.pdf" | xargs -n1 | sort | xargs)
+        actual=$(cd build && ls -A | sort | xargs)
+        if [ "$actual" != "$expected" ]; then
+          echo "::error::build/ no longer matches the paths lmorchard.com excludes from --delete"
+          echo "  expected: $expected"
+          echo "  actual:   $actual"
+          echo "Update this list AND the --exclude list in lmorchard/lmorchard.com/.github/workflows/publish.yml together."
+          exit 1
+        fi
+        echo "build/ matches the agreed path list: $actual"
+
+    - name: Set up SSH key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan -H aerostat02.lmorchard.com >> ~/.ssh/known_hosts
+
+    # No --delete, deliberately. This publisher owns 7 paths in a directory of
+    # 250-odd files, so --delete here would erase everything it does not
+    # generate. The key is forced through rrsync server-side and confined to
+    # /srv/www/lmorchard.com, which is why the path after the colon is empty.
+    #
+    # Flags are the ones the aerostat02 README documents as load-bearing:
+    # -rlptvz or -a exit 23 against the root-owned site directory, after
+    # transferring every file correctly -- a red build on a successful deploy.
+    - name: Publish to aerostat02
+      run: |
+        rsync -rltvz --omit-dir-times -e 'ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes' ./build/ webdeploy@aerostat02.lmorchard.com:
