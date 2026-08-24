@@ -1,0 +1,20 @@
+---
+# Hourly site build, run from the host crontab via scripts/publish.sh rather
+# than as a long-running service -- this is a batch job, not a daemon.
+#
+#   docker compose run --rm build
+#
+# The 23 API credentials come from .env, which is gitignored and lives only on
+# the host. Nothing here holds a deploy key: the container builds, the host
+# publishes.
+services:
+  build:
+    build: .
+    # Every credential the generator needs. Absent values make the matching
+    # section come back empty rather than failing the build, so a rotated token
+    # shows up as a section quietly going blank -- check the log, not the page.
+    env_file: .env
+    # Mounted out so the host can rsync it. The image also has /app/build from
+    # the COPY, which this shadows.
+    volumes:
+      - ./build:/app/build

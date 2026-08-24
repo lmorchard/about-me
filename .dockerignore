@@ -1,0 +1,7 @@
+# node_modules is reinstalled in the image; copying the host's would both slow
+# the build and risk platform-specific binaries from a different OS.
+node_modules
+build
+.git
+.env
+*.log
