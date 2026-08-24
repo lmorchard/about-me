@@ -31,9 +31,9 @@ if [ "${SKIP_PULL:-0}" != "1" ]; then
   git pull --ff-only
 fi
 
-# Near-instant when nothing changed; rebuilds dependencies only when
-# package.json or yarn.lock did.
-docker compose build
+# Installs from the lockfile and builds, in the stock node:22 image. About 40
+# seconds with a warm .npm-cache. There is no image to build; see the comment in
+# docker-compose.yml for why.
 docker compose run --rm build
 
 # This publisher owns exactly these paths in /srv/www/lmorchard.com. The rest of
@@ -46,7 +46,11 @@ docker compose run --rm build
 # alternative is a new file publishing fine and then being deleted an hour later
 # by an unrelated push, which is far worse to diagnose.
 expected=$(echo "assets bio.md index.css index.html index.json llms.txt resume.pdf" | xargs -n1 | sort | xargs)
-actual=$(find build -mindepth 1 -maxdepth 1 -exec basename {} + | sort | xargs)
+# -exec ... ';' one at a time, not '+': GNU basename takes a single operand
+# and rejects the batch that '+' passes, which silently yields an empty list
+# and would fail this check on every run. BSD basename accepts the batch,
+# so this only shows up on the Linux host that actually runs it.
+actual=$(find build -mindepth 1 -maxdepth 1 -exec basename {} ';' | sort | xargs)
 if [ "$actual" != "$expected" ]; then
   echo "ERROR: build/ no longer matches the paths lmorchard.com excludes from --delete"
   echo "  expected: $expected"

@@ -4,17 +4,32 @@
 #
 #   docker compose run --rm build
 #
+# There is deliberately no Dockerfile. `npm ci` completes reliably under
+# `docker run` on this host but dies inside BuildKit with npm's "Exit handler
+# never called!" -- reproduced with and without --maxsockets, so it is the build
+# environment rather than the lockfile. Using the stock image sidesteps it, and
+# costs little: the install is cached in .npm-cache and the whole run takes
+# about 40 seconds.
+#
 # The 23 API credentials come from .env, which is gitignored and lives only on
 # the host. Nothing here holds a deploy key: the container builds, the host
 # publishes.
 services:
   build:
-    build: .
-    # Every credential the generator needs. Absent values make the matching
-    # section come back empty rather than failing the build, so a rotated token
-    # shows up as a section quietly going blank -- check the log, not the page.
+    image: node:22
+    working_dir: /app
+    # Matches the host account, so files written into the bind mount below are
+    # owned by it. As root, the build would leave root-owned files in the
+    # working tree and the next `git pull` in cron would fail.
+    user: "1000:1000"
+    # Absent values make the matching section come back empty rather than
+    # failing the build, so a rotated token shows up as a section quietly going
+    # blank -- check the log, not the page.
     env_file: .env
-    # Mounted out so the host can rsync it. The image also has /app/build from
-    # the COPY, which this shadows.
+    environment:
+      # Inside the bind mount rather than a named volume: a named volume is
+      # created root-owned, which uid 1000 could not write to.
+      npm_config_cache: /app/.npm-cache
     volumes:
-      - ./build:/app/build
+      - .:/app
+    command: sh -c "npm ci --no-audit --no-fund && npm run build:production"
