@@ -31,6 +31,32 @@ revert them.
 That duplicated list is a coupling between two repos, so `publish.sh` fails if
 `build/` grows a path the exclude list does not cover. Change the two together.
 
+### Setup on a new host
+
+```bash
+git clone https://github.com/lmorchard/about-me.git ~/docker/about-me
+cd ~/docker/about-me
+cp /path/to/.env .env && chmod 600 .env      # 23 API credentials
+ssh-keygen -t ed25519 -N '' -C 'about-me container' -f ~/.ssh/about-me-deploy
+# add the public half to caddy_sites[lmorchard.com].deploy_keys in the
+# aerostat02 repo, then deploy it
+ssh-keyscan -H aerostat02.lmorchard.com >> ~/.ssh/known_hosts
+./scripts/publish.sh
+```
+
+The `ssh-keyscan` line is easy to forget and fails late — the build runs for 40
+seconds and then rsync dies with `Host key verification failed`. Worth comparing
+the scanned fingerprints against a host you already trust rather than accepting
+them blind.
+
+Cron entry, matching the convention on `myriad-docker`:
+
+```
+7 * * * * /usr/bin/flock -n /tmp/about-me-publish.lock /home/lmorchard/docker/about-me/scripts/publish.sh >> /home/lmorchard/.local/log/about-me.log 2>&1
+```
+
+Minute 7 rather than 0 because that host already runs jobs on the hour.
+
 ### Why not GitHub Actions
 
 It used to publish from there. GitHub disables a scheduled workflow after 60
