@@ -19,14 +19,24 @@ needs the deploy key, and neither needs the other's.
 
 ### This is not the whole site
 
-`lmorchard.com` has two publishers. This one owns exactly seven paths —
-`index.html`, `index.css`, `index.json`, `bio.md`, `llms.txt`, `resume.pdf`,
-`assets/` — and rsyncs them **without `--delete`**, because it owns seven files
-in a directory of 250-odd. Everything else (`images/`, `webfinger/`,
-`.well-known/`, `resume.html`, the 2017 archive) is hand-maintained in
+`lmorchard.com` has two publishers. This one owns exactly three paths —
+`index.html`, `index.json`, and `about-me/` — and rsyncs them **without
+`--delete`**, because it owns a handful of files in a directory of 200-odd.
+Everything else (`images/`, `webfinger/`, `.well-known/`, `resume.html`,
+`llms.txt`, `resume.pdf`, the 2017 archive) is hand-maintained in
 [lmorchard/lmorchard.com](https://github.com/lmorchard/lmorchard.com), which
-publishes with `--delete` but excludes these seven so it can neither remove nor
+publishes with `--delete` but excludes those three so it can neither remove nor
 revert them.
+
+Everything generated except the two root files goes under `about-me/`
+(`config.assetSubPath`). That is the whole reason the subdirectory exists: a new
+stylesheet or asset lands inside an already-excluded directory, so the exclude
+list stays three entries long instead of growing a line per emitted file. It
+used to enumerate seven paths, which meant any new output was one push away from
+being deleted by the other publisher.
+
+`index.html` stays at the root because it is the front page. `index.json` stays
+because it is a data URL that may have consumers.
 
 That duplicated list is a coupling between two repos, so `publish.sh` fails if
 `build/` grows a path the exclude list does not cover. Change the two together.

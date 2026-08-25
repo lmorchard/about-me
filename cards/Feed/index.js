@@ -15,7 +15,7 @@ export default (props) => {
     feeds,
     link,
     feedUrls,
-    feedIcon = 'assets/feedicon.svg',
+    feedIcon = 'about-me/assets/feedicon.svg',
   } = props;
   const maxItems = props.maxItems || 12;
   const seenUrls = new Set();

@@ -21,7 +21,7 @@ export default ({ config, data }) => html`
       <meta charset="utf-8" />
       <meta name="viewport" content="initial-scale=1" />
       <title>${config.siteTitle}</title>
-      <link href="./index.css" rel="stylesheet" />
+      <link href="./${config.assetSubPath}/index.css" rel="stylesheet" />
       <link
         rel="shortcut icon"
         href="https://www.gravatar.com/avatar/b45c48fc9e05922e2f368a9d7d7d8de1?s=16"

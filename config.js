@@ -25,6 +25,18 @@ const {
 export default {
   siteTitle: 'lmorchard.com - about me',
   buildPath: './build',
+  // Everything this generator emits except index.html and index.json goes in
+  // here. lmorchard.com is served from one directory written by two publishers:
+  // this one, and the hand-maintained content repo. Confining the generated
+  // assets to a single subdirectory means that repo's `rsync --delete` needs to
+  // exclude only three stable paths -- index.html, index.json and this one --
+  // instead of enumerating every file this build happens to emit today. A new
+  // asset then lands inside an already-excluded directory rather than being
+  // silently deleted an hour later.
+  //
+  // index.html stays at the root because it is the site's front page.
+  // index.json stays because it is a data URL that may well have consumers.
+  assetSubPath: 'about-me',
   fetch: {
     Colophon: {},
     Blog: {

@@ -36,16 +36,21 @@ fi
 # docker-compose.yml for why.
 docker compose run --rm build
 
-# This publisher owns exactly these paths in /srv/www/lmorchard.com. The rest of
-# that directory is hand-maintained in lmorchard/lmorchard.com, whose publish
-# workflow runs `rsync --delete` and excludes this same list, so neither can
-# remove or revert the other's files.
+# This publisher owns exactly these three paths in /srv/www/lmorchard.com. The
+# rest of that directory is hand-maintained in lmorchard/lmorchard.com, whose
+# publish workflow runs `rsync --delete` and excludes this same list, so neither
+# can remove or revert the other's files.
+#
+# Everything generated except the two root files lives under about-me/, so a new
+# asset lands inside an already-excluded directory. That is the point of the
+# subdirectory: this list stays three entries long instead of growing a line per
+# emitted file.
 #
 # That exclude list is a coupling between two repos, so this fails if build/
 # grows a path the list does not cover. Failing here is the point: the
 # alternative is a new file publishing fine and then being deleted an hour later
 # by an unrelated push, which is far worse to diagnose.
-expected=$(echo "assets bio.md index.css index.html index.json llms.txt resume.pdf" | xargs -n1 | sort | xargs)
+expected=$(echo "about-me index.html index.json" | xargs -n1 | sort | xargs)
 # -exec ... ';' one at a time, not '+': GNU basename takes a single operand
 # and rejects the batch that '+' passes, which silently yields an empty list
 # and would fail this check on every run. BSD basename accepts the batch,
